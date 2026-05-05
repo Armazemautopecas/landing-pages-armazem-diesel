@@ -74,6 +74,11 @@
         "bullets_unknown": { "type": "array", "minItems": 1, "items": { "type": "string" } },
         "foto_default": { "type": "string" },
         "foto_por_marca": { "type": "object" },
+        "fotos_por_oem": {
+          "type": "object",
+          "description": "Mapeia OEM sanitizado (sem espaços/pontos) → path absoluto da foto. Tem precedência sobre foto_por_marca. Convenção: /pecas/<OEM>.webp em pasta shared.",
+          "additionalProperties": { "type": "string" }
+        },
         "equivalentes_por_motor": { "type": "object" }
       }
     },

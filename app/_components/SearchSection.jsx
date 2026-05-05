@@ -5,11 +5,21 @@ import { WhatsAppIcon } from './atoms';
 import Selector from './Selector';
 
 function pecaSrc(cfg, file) {
+  if (file.startsWith('/')) return file;
   return `/${cfg.slug}/${file}`;
+}
+
+function sanitizeOem(oem) {
+  return String(oem || '').replace(/[^A-Za-z0-9]/g, '');
 }
 
 function resolvePecaFoto(cfg, variant) {
   if (variant?.foto) return variant.foto;
+  const porOem = cfg.peca?.fotos_por_oem;
+  if (porOem && variant?.oem) {
+    const k = sanitizeOem(variant.oem);
+    if (porOem[k]) return porOem[k];
+  }
   const map = cfg.peca?.foto_por_marca;
   if (map && variant?.marca_bico && map[variant.marca_bico]) return map[variant.marca_bico];
   return cfg.peca.foto_default;

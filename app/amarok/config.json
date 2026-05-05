@@ -44,7 +44,11 @@
     "fabricante_label": "OEM BOSCH",
     "fabricante_principal_short": "Bosch",
     "fabricantes_aceitos": ["Bosch"],
-    "foto_default": "assets/bico-bosch-caixa.webp",
+    "foto_default": "/pecas/0445110369.webp",
+    "fotos_por_oem": {
+      "0445110369": "/pecas/0445110369.webp",
+      "0445117083": "/pecas/0445117083.webp"
+    },
     "foto_alt": "Bico injetor Bosch original na caixa",
     "tem_primeira_linha": true,
     "v6_disponibilidade_limitada": true,

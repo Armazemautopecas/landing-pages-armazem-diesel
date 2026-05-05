@@ -41,9 +41,12 @@
       "Delphi",
       "Bosch"
     ],
-    "foto_default": "assets/peca.webp",
-    "foto_por_marca": {
-      "Bosch": "assets/peca-bosch.webp"
+    "foto_default": "/pecas/0445110993.webp",
+    "fotos_por_oem": {
+      "KS28229873": "/pecas/KS28229873.webp",
+      "338004A710": "/pecas/KS28229873.webp",
+      "0445110993": "/pecas/0445110993.webp",
+      "338004A200": "/pecas/0445110993.webp"
     },
     "foto_alt": "Bico injetor original na caixa",
     "tem_primeira_linha": true,
