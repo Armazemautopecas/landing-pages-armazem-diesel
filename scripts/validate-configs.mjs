@@ -3,7 +3,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import Ajv from 'ajv';
 
-const APP_DIR = new URL('../app/', import.meta.url).pathname;
+const LANDING_BASE_DIR = new URL('../app/injecao-diesel/', import.meta.url).pathname;
 const SCHEMA_PATH = new URL('../data/config.schema.json', import.meta.url).pathname;
 
 async function main() {
@@ -11,7 +11,7 @@ async function main() {
   const ajv = new Ajv({ allErrors: true, strict: false });
   const validate = ajv.compile(schema);
 
-  const entries = await readdir(APP_DIR, { withFileTypes: true });
+  const entries = await readdir(LANDING_BASE_DIR, { withFileTypes: true });
   const lps = entries
     .filter((e) => e.isDirectory() && !e.name.startsWith('_') && e.name !== 'api')
     .map((e) => e.name);
@@ -19,7 +19,7 @@ async function main() {
   let failures = 0;
 
   for (const slug of lps) {
-    const cfgPath = join(APP_DIR, slug, 'config.json');
+    const cfgPath = join(LANDING_BASE_DIR, slug, 'config.json');
     let cfg;
     try {
       cfg = JSON.parse(await readFile(cfgPath, 'utf8'));

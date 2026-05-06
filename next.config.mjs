@@ -33,11 +33,6 @@ const nextConfig = {
       },
     ];
   },
-  async rewrites() {
-    return [
-      { source: '/injecao-diesel/:slug/', destination: '/:slug/' },
-    ];
-  },
 };
 
 export default nextConfig;

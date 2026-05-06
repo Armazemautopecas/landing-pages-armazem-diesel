@@ -4,7 +4,7 @@ import Selector from './Selector';
 
 export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSearch, isSearching }) {
   const imgSrc = heroImage === 'dust' ? cfg.hero.foto_dust : cfg.hero.foto_static;
-  const bgUrl = `/${cfg.slug}/${imgSrc}`;
+  const bgUrl = `/injecao-diesel/${cfg.slug}/${imgSrc}`;
   const [loaded, setLoaded] = useState(false);
   const fabricante = getFabricanteLabel(cfg);
   const garantiaLabel = fabricante ? `GARANTIA ${fabricante.toUpperCase()}` : 'GARANTIA DE FÁBRICA';

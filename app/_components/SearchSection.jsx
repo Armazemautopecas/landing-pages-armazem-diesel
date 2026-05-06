@@ -6,7 +6,7 @@ import Selector from './Selector';
 
 function pecaSrc(cfg, file) {
   if (file.startsWith('/')) return file;
-  return `/${cfg.slug}/${file}`;
+  return `/injecao-diesel/${cfg.slug}/${file}`;
 }
 
 function sanitizeOem(oem) {

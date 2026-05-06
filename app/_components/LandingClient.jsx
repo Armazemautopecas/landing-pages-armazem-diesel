@@ -54,7 +54,7 @@ export default function LandingClient({ cfg }) {
     const body = clean.length === 7 ? { placa: clean } : { chassi: clean };
 
     try {
-      const r = await fetch('/api/consulta-veiculo/', {
+      const r = await fetch('/injecao-diesel/api/consulta-veiculo/', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(body),

@@ -2,8 +2,8 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
-const APP_DIR = new URL('../app/', import.meta.url).pathname;
-const SERVER_APP_DIR = new URL('../.next/server/app/', import.meta.url).pathname;
+const LANDING_BASE_DIR = new URL('../app/injecao-diesel/', import.meta.url).pathname;
+const SERVER_LANDING_DIR = new URL('../.next/server/app/injecao-diesel/', import.meta.url).pathname;
 
 const MIN_SIZE = 25_000;
 const MIN_TITLE = 20;
@@ -23,13 +23,13 @@ const FORBIDDEN_PATTERNS = [
 ];
 
 async function findLandingPages() {
-  const entries = await readdir(APP_DIR, { withFileTypes: true });
+  const entries = await readdir(LANDING_BASE_DIR, { withFileTypes: true });
   const pages = [];
   for (const e of entries) {
     if (!e.isDirectory()) continue;
     if (e.name.startsWith('_') || e.name.startsWith('api')) continue;
     try {
-      const files = await readdir(join(APP_DIR, e.name));
+      const files = await readdir(join(LANDING_BASE_DIR, e.name));
       if (files.some((f) => f.startsWith('page.'))) {
         pages.push(e.name);
       }
@@ -40,8 +40,8 @@ async function findLandingPages() {
 
 async function readBuiltHtml(slug) {
   const candidates = [
-    join(SERVER_APP_DIR, `${slug}.html`),
-    join(SERVER_APP_DIR, slug, 'index.html'),
+    join(SERVER_LANDING_DIR, `${slug}.html`),
+    join(SERVER_LANDING_DIR, slug, 'index.html'),
   ];
   for (const path of candidates) {
     try {
@@ -71,7 +71,7 @@ function checkHtml(slug, html) {
 async function main() {
   const slugs = await findLandingPages();
   if (slugs.length === 0) {
-    console.error('verify-build: nenhuma LP encontrada em app/');
+    console.error('verify-build: nenhuma LP encontrada em app/injecao-diesel/');
     process.exit(1);
   }
 
@@ -79,15 +79,15 @@ async function main() {
   for (const slug of slugs) {
     const built = await readBuiltHtml(slug);
     if (!built) {
-      console.error(`✗ ${slug}: HTML pré-renderizado não encontrado em .next/server/app/`);
+      console.error(`✗ ${slug}: HTML pré-renderizado não encontrado em .next/server/app/injecao-diesel/`);
       allOk = false;
       continue;
     }
     const failures = checkHtml(slug, built.html);
     if (failures.length === 0) {
-      console.log(`✓ ${slug} (${built.html.length}B) — ${built.path.replace(SERVER_APP_DIR, '')}`);
+      console.log(`✓ ${slug} (${built.html.length}B) — ${built.path.replace(SERVER_LANDING_DIR, '')}`);
     } else {
-      console.error(`✗ ${slug} — ${built.path.replace(SERVER_APP_DIR, '')}`);
+      console.error(`✗ ${slug} — ${built.path.replace(SERVER_LANDING_DIR, '')}`);
       for (const f of failures) console.error(`    · ${f}`);
       allOk = false;
     }

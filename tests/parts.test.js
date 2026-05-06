@@ -6,8 +6,8 @@ import {
   getYearVariants,
   getVeiculoModelo,
 } from '@/app/_components/lib/parts.js';
-import amarokCfg from '@/app/amarok/config.json';
-import hrCfg from '@/app/hr/config.json';
+import amarokCfg from '@/app/injecao-diesel/amarok/config.json';
+import hrCfg from '@/app/injecao-diesel/hr/config.json';
 
 describe('resolvePart — Amarok', () => {
   it('seleciona bico V6 quando motor tem "V6" no nome', () => {
