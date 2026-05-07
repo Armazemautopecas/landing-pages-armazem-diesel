@@ -1150,9 +1150,10 @@ footer {
   padding: 48px 0 28px;
 }
 @media (min-width: 780px) { .foot-grid { grid-template-columns: 1.3fr 1fr 1fr 1fr; } }
-.foot-brand .logo {
-  font-family: var(--f-head); font-weight: 800; font-size: 22px;
-  text-transform: uppercase; letter-spacing: 0; color: var(--off); line-height: 1;
+.foot-logo {
+  display: block;
+  width: 160px;
+  height: auto;
 }
 .foot-brand .tl { margin-top: 8px; font-size: 13px; color: rgba(245,245,245,0.6); }
 .foot-col h3 {

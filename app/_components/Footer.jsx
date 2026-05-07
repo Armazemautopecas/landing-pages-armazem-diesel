@@ -6,7 +6,13 @@ export default function Footer() {
       <div className="container">
         <div className="foot-grid">
           <div className="foot-brand">
-            <div className="logo">Armazém Auto Peças</div>
+            <img
+              src="/injecao-diesel/logo-armazem.png"
+              alt="Armazém Auto Peças"
+              className="foot-logo"
+              width="160"
+              height="74"
+            />
             <div className="tl">Compra segura. Entrega garantida.</div>
             <div className="tl" style={{ marginTop: 20, fontFamily: 'var(--f-mono)', fontSize: 11 }}>
               CNPJ 20.195.765/0001-31
