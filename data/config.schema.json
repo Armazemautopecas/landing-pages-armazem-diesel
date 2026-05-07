@@ -213,7 +213,16 @@
             "name": { "type": "string" },
             "description": { "type": "string" },
             "brands": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-            "vehicles": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+            "vehicles": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+            "price_range": {
+              "type": "string",
+              "description": "Faixa de preço pra Schema.org Offer.priceSpecification.price (Google Rich Results exige). Formato: 'R$ X - R$ Y'. Ex: 'R$ 1.000 - R$ 2.000' (Amarok), 'R$ 1.300 - R$ 1.600' (HR). Realista — Google compara com concorrência.",
+              "pattern": "^R\\$ [\\d.]+ - R\\$ [\\d.]+$"
+            },
+            "free_shipping": {
+              "type": "boolean",
+              "description": "Quando true, JSON-LD ganha shippingDetails com frete grátis pro Brasil + Hero badge mostra 'FRETE GRÁTIS' em vez de 'DEVOLUÇÃO FÁCIL'. Default false."
+            }
           }
         }
       }

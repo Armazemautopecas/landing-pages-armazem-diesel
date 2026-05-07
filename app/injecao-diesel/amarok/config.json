@@ -157,7 +157,9 @@
       "vehicles": [
         "Volkswagen Amarok 2.0 TDI",
         "Volkswagen Amarok 3.0 V6 TDI"
-      ]
+      ],
+      "price_range": "R$ 1.000 - R$ 2.000",
+      "free_shipping": true
     }
   }
 }

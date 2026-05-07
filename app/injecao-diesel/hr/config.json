@@ -142,7 +142,9 @@
       "brands": ["Delphi", "Bosch"],
       "vehicles": [
         "Hyundai HR 2.5 D4CB CRDi"
-      ]
+      ],
+      "price_range": "R$ 1.300 - R$ 1.600",
+      "free_shipping": true
     }
   }
 }

@@ -53,7 +53,7 @@ export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSear
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF021E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                DEVOLUÇÃO FÁCIL
+                {cfg.seo?.product?.free_shipping ? 'FRETE GRÁTIS' : 'DEVOLUÇÃO FÁCIL'}
               </li>
             </ul>
           </div>
