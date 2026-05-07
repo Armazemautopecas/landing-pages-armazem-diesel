@@ -85,7 +85,7 @@ export default function Selector({ cfg, onSearch, isSearching, selectorStyle }) 
             >
               <option value="">Motor (opcional)</option>
               {motors.map((m, i) => (
-                <option key={i} value={m.motor}>{m.motor} — {m.cv}</option>
+                <option key={i} value={m.motor}>{m.motor} ({m.cv}cv)</option>
               ))}
             </select>
           )}
