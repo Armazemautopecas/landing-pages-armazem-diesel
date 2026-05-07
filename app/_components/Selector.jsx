@@ -10,8 +10,9 @@ export default function Selector({ cfg, onSearch, isSearching, selectorStyle }) 
   const [err, setErr] = useState('');
 
   const allMotors = year ? yearVariants[parseInt(year, 10)] || [] : [];
+  // Deduplica por nome do motor (cv não é mais exibido no dropdown — basta o motor).
   const motors = Array.from(
-    new Map(allMotors.map((m) => [`${m.motor}|${m.cv}`, m])).values()
+    new Map(allMotors.map((m) => [m.motor, m])).values()
   );
 
   const submitPlate = (e) => {
@@ -85,7 +86,7 @@ export default function Selector({ cfg, onSearch, isSearching, selectorStyle }) 
             >
               <option value="">Motor (opcional)</option>
               {motors.map((m, i) => (
-                <option key={i} value={m.motor}>{m.motor} — {m.cv}</option>
+                <option key={i} value={m.motor}>{m.motor}</option>
               ))}
             </select>
           )}
