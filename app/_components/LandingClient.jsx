@@ -9,6 +9,7 @@ import TrustBar from './TrustBar';
 import SearchSection from './SearchSection';
 import WhySection from './WhySection';
 import Testimonials from './Testimonials';
+import TechnicalBlock from './TechnicalBlock';
 import FAQ from './FAQ';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
@@ -131,6 +132,7 @@ export default function LandingClient({ cfg }) {
       </div>
       <WhySection cfg={cfg} style={tweaks.whyStyle} />
       <Testimonials cfg={cfg} />
+      <TechnicalBlock cfg={cfg} />
       <FAQ cfg={cfg} />
       <FinalCTA cfg={cfg} />
       <Footer />

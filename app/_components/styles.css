@@ -1263,3 +1263,35 @@ footer {
 .hide { display: none !important; }
 .fade-in { animation: fadeIn .4s ease both; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* TechnicalBlock — bloco de conteúdo técnico-educacional entre Testimonials e FAQ */
+.sec-tech { background: var(--off); color: var(--ink); }
+.container-narrow { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.tech-heading { margin-bottom: 24px; max-width: 28ch; }
+.tech-p { font-size: 16px; line-height: 1.7; color: var(--ink); margin: 0 0 18px; }
+.tech-p:last-child { margin-bottom: 0; }
+.tech-symptoms { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 10px; }
+.tech-symptoms li {
+  position: relative;
+  padding: 12px 14px 12px 42px;
+  background: #fff;
+  border: 1px solid var(--off-2);
+  border-radius: var(--r-md);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.tech-symptoms li::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; height: 16px;
+  background: var(--red);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+@media (max-width: 720px) {
+  .tech-heading { font-size: 28px; }
+  .tech-p { font-size: 15px; }
+}

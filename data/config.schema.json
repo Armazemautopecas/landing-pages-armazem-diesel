@@ -68,6 +68,10 @@
         "short_label": { "type": "string" },
         "fabricante_label": { "type": "string" },
         "fabricante_principal_short": { "type": "string" },
+        "motores_label": {
+          "type": "string",
+          "description": "String de motores cobertos pra interpolar em FAQ + TechnicalBlock + SEO. Ex: '2.0 TDI e 3.0 V6' (Amarok), '2.5 D4CB CRDi' (HR). Skill preenche na Fase 6."
+        },
         "tem_primeira_linha": { "type": "boolean" },
         "bullets_default": { "type": "array", "minItems": 1, "items": { "type": "string" } },
         "bullets_v6": { "type": "array", "items": { "type": "string" } },
@@ -161,7 +165,34 @@
       "type": "object",
       "properties": {
         "testimonials": { "type": "array" },
-        "faqs": { "type": "array" }
+        "faqs": {
+          "type": "object",
+          "description": "Override de FAQ por id (MERGE — não replace). Chaves são ids do template (sintomas, qualidade, calibracao, preco, compatibilidade, troca, prazo, pagamento). Cada valor pode ter q, a ou ambos. Ids desconhecidos viram perguntas extras no fim.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "q": { "type": "string" },
+              "a": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "technical_block": {
+      "type": "object",
+      "description": "Bloco de conteúdo técnico-educacional entre Testimonials e FAQ. Opcional — se ausente, componente não renderiza nada. ~200 palavras parametrizadas pra ranquear cauda longa (sintomas, OEM vs paralelo, cobertura).",
+      "required": ["heading", "intro", "symptoms", "quality_explanation", "closing"],
+      "properties": {
+        "heading": { "type": "string", "minLength": 30, "maxLength": 90 },
+        "intro": { "type": "string", "minLength": 80 },
+        "symptoms": {
+          "type": "array",
+          "minItems": 3, "maxItems": 8,
+          "items": { "type": "string", "minLength": 10 }
+        },
+        "quality_explanation": { "type": "string", "minLength": 80 },
+        "closing": { "type": "string", "minLength": 60 }
       }
     },
 

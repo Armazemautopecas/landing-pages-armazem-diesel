@@ -43,6 +43,7 @@
     "short_label": "BICO BOSCH",
     "fabricante_label": "OEM BOSCH",
     "fabricante_principal_short": "Bosch",
+    "motores_label": "2.0 TDI e 3.0 V6",
     "fabricantes_aceitos": ["Bosch"],
     "foto_default": "/injecao-diesel/pecas/0445110369.webp",
     "fotos_por_oem": {
@@ -127,8 +128,23 @@
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },
 
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional entre Testimonials e FAQ. Tom: consumidor final + leve densidade técnica (lead que rolou até aqui é qualificado). Reforça keyword Amarok + 2.0 TDI/3.0 V6 + Bosch pra ranquear cauda longa.",
+    "heading": "Como saber se o bico injetor da Amarok está com problema",
+    "intro": "O bico injetor da Amarok 2.0 TDI e 3.0 V6 é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "A diferença entre bico original (OEM Bosch) e primeira linha está na tolerância de fabricação. O original é calibrado de fábrica para o motor específico da Amarok — pressão de abertura, padrão de pulverização e vedação seguem a especificação da VW. Bico de procedência duvidosa pode operar fora da faixa correta, causando injeção irregular e danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi — sem margem de erro de compatibilidade. Estoque disponível para todas as versões da Amarok: 2.0 TDI 140cv/163cv/180cv Biturbo e 3.0 V6 TDI 224cv/258cv."
+  },
+
   "seo": {
-    "title": "Bico Injetor Amarok — Armazém Auto Peças",
+    "title": "Bico Injetor Amarok Original Bosch — Armazém Auto Peças",
     "description": "Bico injetor Bosch original ou primeira linha para VW Amarok 2.0 TDI e 3.0 V6. Identificamos seu motor pela placa ou chassi. Compra segura.",
     "og_image": "assets/amarok-static.png",
     "og_image_alt": "VW Amarok preta em ângulo frontal",
