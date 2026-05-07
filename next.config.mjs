@@ -23,6 +23,7 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  assetPrefix: '/injecao-diesel',
   trailingSlash: true,
   poweredByHeader: false,
   async headers() {
