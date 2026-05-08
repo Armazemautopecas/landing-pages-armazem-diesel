@@ -1,23 +1,35 @@
-import { useEffect, useState } from 'react';
 import { getFabricanteLabel } from '@/lib/content';
 import Selector from './Selector';
 
+// Hero é client component (envolve Selector que é interativo). Mas a tag <img>
+// e o reveal por CSS animation não dependem de JS — refactor 2026-05-08
+// removeu useState/useEffect (perf: -50ms TBT, browser resolve LCP nativamente
+// com fetchPriority + preload no page.jsx).
 export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSearch, isSearching }) {
-  const imgSrc = heroImage === 'dust' ? cfg.hero.foto_dust : cfg.hero.foto_static;
-  const bgUrl = `/injecao-diesel/${cfg.slug}/${imgSrc}`;
-  const [loaded, setLoaded] = useState(false);
+  const slug = cfg.slug;
+  const fileName = heroImage === 'dust' ? cfg.hero.foto_dust : cfg.hero.foto_static;
+  // base = 'amarok-static' a partir de 'assets/amarok-static.webp'
+  const base = fileName.replace(/^assets\//, '').replace(/\.webp$/, '');
+  const desktopSrc = `/injecao-diesel/${slug}/assets/${base}.webp`;
+  const mobileSrc = `/injecao-diesel/${slug}/assets/${base}-600.webp`;
+
   const fabricante = getFabricanteLabel(cfg);
   const garantiaLabel = fabricante ? `GARANTIA ${fabricante.toUpperCase()}` : 'GARANTIA DE FÁBRICA';
 
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => setLoaded(true);
-    img.src = bgUrl;
-  }, [bgUrl]);
-
   return (
-    <section className={`hero sec-navy sec-pad ${loaded ? 'is-loaded' : ''} ${heroImage === 'dust' ? 'is-dust' : ''}`}>
-      <div className="hero-bg" style={{ backgroundImage: `url('${bgUrl}')` }} />
+    <section className={`hero sec-navy sec-pad ${heroImage === 'dust' ? 'is-dust' : ''}`}>
+      <picture>
+        <source media="(max-width: 768px)" srcSet={mobileSrc} type="image/webp" />
+        <img
+          className="hero-bg"
+          src={desktopSrc}
+          alt=""
+          width="1200"
+          height="670"
+          fetchPriority="high"
+          decoding="async"
+        />
+      </picture>
       <div className="hero-overlay" />
       <div className="hero-swipe" />
       <div className="container">
