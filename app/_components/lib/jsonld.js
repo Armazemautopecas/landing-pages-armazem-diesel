@@ -7,9 +7,9 @@ const SITE_URL = 'https://www.armazemautopecas.com.br';
 
 const AUTOPARTS_STORE = {
   '@type': 'AutoPartsStore',
-  '@id': 'https://armazemautopecas.com.br/#business',
+  '@id': `${SITE_URL}/#business`,
   name: 'Armazém Auto Peças',
-  url: 'https://armazemautopecas.com.br',
+  url: SITE_URL,
   telephone: '+5549999484754',
   address: {
     '@type': 'PostalAddress',
