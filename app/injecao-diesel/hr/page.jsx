@@ -1,6 +1,15 @@
 import CFG from './config.json';
 import '../../_components/styles.css';
 import LandingClient from '../../_components/LandingClient';
+import TrustBar from '../../_components/TrustBar';
+import WhySection from '../../_components/WhySection';
+import Testimonials from '../../_components/Testimonials';
+import TechnicalBlock from '../../_components/TechnicalBlock';
+import FAQ from '../../_components/FAQ';
+import FinalCTA from '../../_components/FinalCTA';
+import Footer from '../../_components/Footer';
+import { WhatsAppIcon } from '../../_components/atoms';
+import { waLink } from '../../_components/lib/wa';
 import { buildJsonLd } from '../../_components/lib/jsonld';
 
 export const dynamic = 'force-static';
@@ -41,7 +50,21 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <link rel="preload" as="image" href={`/injecao-diesel/${CFG.slug}/${CFG.hero.foto_static}`} type="image/webp" fetchPriority="high" />
-      <LandingClient cfg={CFG} />
+
+      <LandingClient cfg={CFG}>
+        <TrustBar cfg={CFG} style="numbers" />
+      </LandingClient>
+
+      <WhySection cfg={CFG} style="stacked" />
+      <Testimonials cfg={CFG} />
+      <TechnicalBlock cfg={CFG} />
+      <FAQ cfg={CFG} />
+      <FinalCTA cfg={CFG} />
+      <Footer />
+
+      <a className="wa-fab" href={waLink(CFG.wa.fab_default)} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <WhatsAppIcon size={24} />
+      </a>
     </>
   );
 }

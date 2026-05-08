@@ -1,7 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
 import { TrustIcon } from './atoms';
 import { getFabricanteLabel } from '@/lib/content';
 
+// Server component (Onda 3 — 2026-05-08). Conteúdo aparece direto, sem
+// reveal-on-scroll que exigia useState+IntersectionObserver. Animation
+// removida pra zerar JS desse componente — TrustBar é visualmente estático
+// e perceptualmente igual sem o fade-in.
 export default function TrustBar({ cfg, style }) {
   const fabricante = getFabricanteLabel(cfg);
   const cells = [
@@ -11,24 +14,12 @@ export default function TrustBar({ cfg, style }) {
     { icon: 'factory', ttl: 'Bicos Vendidos', sub: 'Pra todo o Brasil', num: '10K+' },
   ];
 
-  const ref = useRef(null);
-  const [seen, setSeen] = useState(false);
-
-  useEffect(() => {
-    if (!ref.current) return;
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) setSeen(true); });
-    }, { rootMargin: '0px 0px -15% 0px', threshold: 0 });
-    io.observe(ref.current);
-    return () => io.disconnect();
-  }, []);
-
   return (
-    <section ref={ref} className={`trust ${style === 'minimal' ? 'is-minimal' : ''} ${style === 'numbers' ? 'is-numbers' : ''}`}>
+    <section className={`trust ${style === 'minimal' ? 'is-minimal' : ''} ${style === 'numbers' ? 'is-numbers' : ''}`}>
       <div className="container">
         <div className="trust-row">
           {cells.map((c, i) => (
-            <div className={`trust-cell reveal reveal-delay-${i % 4} ${seen ? 'is-visible' : ''}`} key={i}>
+            <div className="trust-cell" key={i}>
               {style === 'numbers'
                 ? <div className="num">{c.num}</div>
                 : <TrustIcon kind={c.icon} />}

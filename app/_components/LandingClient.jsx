@@ -1,18 +1,17 @@
 'use client';
 
+// Ilha interativa da LP (Onda 3 — 2026-05-08). Antes esse arquivo orquestrava
+// 10 componentes (todos virando client por contaminação). Agora encolheu pra
+// só Hero + SearchSection — único pedaço da LP que precisa state (busca por
+// placa/ano + scroll-to-result). O resto da LP é server-rendered no page.jsx.
+//
+// `children` é onde o page.jsx (server) injeta TrustBar — fica posicionado
+// entre Hero e SearchSection sem virar client.
+
 import { useEffect, useRef, useState } from 'react';
-import { waLink } from './lib/wa';
 import { enrichMotor, isSupported, resolvePart, getYearVariants } from './lib/parts';
-import { WhatsAppIcon } from './atoms';
 import Hero from './Hero';
-import TrustBar from './TrustBar';
 import SearchSection from './SearchSection';
-import WhySection from './WhySection';
-import Testimonials from './Testimonials';
-import TechnicalBlock from './TechnicalBlock';
-import FAQ from './FAQ';
-import FinalCTA from './FinalCTA';
-import Footer from './Footer';
 
 const TWEAK_DEFAULTS = {
   heroLayout: 'split',
@@ -22,7 +21,7 @@ const TWEAK_DEFAULTS = {
   heroImage: 'static',
 };
 
-export default function LandingClient({ cfg }) {
+export default function LandingClient({ cfg, children }) {
   const [tweaks] = useState(TWEAK_DEFAULTS);
   const [searching, setSearching] = useState(false);
   const [result, setResult] = useState(null);
@@ -108,8 +107,6 @@ export default function LandingClient({ cfg }) {
     }
   };
 
-  const waMsg = cfg.wa.fab_default;
-
   return (
     <>
       <Hero
@@ -120,7 +117,7 @@ export default function LandingClient({ cfg }) {
         onSearch={handleSearch}
         isSearching={searching}
       />
-      <TrustBar cfg={cfg} style={tweaks.trustStyle} />
+      {children}
       <div ref={resultRef}>
         <SearchSection
           cfg={cfg}
@@ -130,16 +127,6 @@ export default function LandingClient({ cfg }) {
           selectorStyle={tweaks.selectorStyle}
         />
       </div>
-      <WhySection cfg={cfg} style={tweaks.whyStyle} />
-      <Testimonials cfg={cfg} />
-      <TechnicalBlock cfg={cfg} />
-      <FAQ cfg={cfg} />
-      <FinalCTA cfg={cfg} />
-      <Footer />
-
-      <a className="wa-fab" href={waLink(waMsg)} target="_blank" rel="noreferrer" aria-label="WhatsApp">
-        <WhatsAppIcon size={24} />
-      </a>
     </>
   );
 }
