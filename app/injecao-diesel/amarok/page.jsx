@@ -50,6 +50,8 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <link rel="preload" as="image" href={`/injecao-diesel/${CFG.slug}/${CFG.hero.foto_static}`} type="image/webp" fetchPriority="high" />
+      <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" href="/injecao-diesel/fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2" />
+      <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" href="/injecao-diesel/fonts/QGYsz_wNahGAdqQ43Rh_fKDp.woff2" />
 
       <LandingClient cfg={CFG}>
         <TrustBar cfg={CFG} style="numbers" />
