@@ -11,8 +11,15 @@ const AUTOPARTS_STORE = {
   name: 'Armazém Auto Peças',
   url: SITE_URL,
   telephone: '+5549999484754',
+  // Schema.org LocalBusiness.priceRange: "$"/"$$"/"$$$"/"$$$$" ou descritivo.
+  // "$$" = mid-price retail (auto parts originais ficam nessa faixa).
+  priceRange: '$$',
+  // Logo Armazém — Schema.org LocalBusiness.image (Google Rich Results recomenda)
+  image: `${SITE_URL}/injecao-diesel/logo-armazem.png`,
   address: {
     '@type': 'PostalAddress',
+    // streetAddress: '...' — TODO pendente Diego/Vinicius (Search Console pediu)
+    // postalCode: '...'   — TODO pendente Diego/Vinicius (Search Console pediu)
     addressLocality: 'Chapecó',
     addressRegion: 'SC',
     addressCountry: 'BR',
@@ -92,11 +99,9 @@ function parseRange(priceRange) {
   return { low, high };
 }
 
-function buildOffersNode(product, sellerId, pageUrl) {
+function buildOffersNode(product, sellerId, pageUrl, oemCount) {
   const range = parseRange(product.price_range);
   if (!range) {
-    // Sem range válido → Offer sem price (Google vai reclamar de qualquer jeito,
-    // mas pelo menos não emite estrutura inválida)
     return {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
@@ -113,6 +118,7 @@ function buildOffersNode(product, sellerId, pageUrl) {
     priceCurrency: 'BRL',
     lowPrice: range.low,
     highPrice: range.high,
+    ...(oemCount ? { offerCount: String(oemCount) } : {}),
     seller: { '@id': sellerId },
     url: pageUrl,
     hasMerchantReturnPolicy: RETURN_POLICY,
@@ -120,7 +126,7 @@ function buildOffersNode(product, sellerId, pageUrl) {
   };
 }
 
-export function buildJsonLd(cfg, pageUrl) {
+export function buildJsonLd(cfg, pageUrl, opts = {}) {
   const product = cfg.seo?.product;
   if (!product) {
     throw new Error(`config.json sem cfg.seo.product (slug="${cfg.slug}")`);
@@ -141,7 +147,7 @@ export function buildJsonLd(cfg, pageUrl) {
     category: 'Peça automotiva — sistema de injeção diesel',
     isRelatedTo: (product.vehicles || []).map((name) => ({ '@type': 'Vehicle', name })),
     aggregateRating: AGGREGATE_RATING,
-    offers: buildOffersNode(product, AUTOPARTS_STORE['@id'], pageUrl),
+    offers: buildOffersNode(product, AUTOPARTS_STORE['@id'], pageUrl, opts.oemCount),
   };
 
   return {

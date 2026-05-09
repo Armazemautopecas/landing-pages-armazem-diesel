@@ -1,4 +1,5 @@
 import CFG from './config.json';
+import OEMS from '@/data/oems.json';
 import '../../_components/styles.css';
 import LandingClient from '../../_components/LandingClient';
 import TrustBar from '../../_components/TrustBar';
@@ -40,7 +41,15 @@ export const metadata = {
   },
 };
 
-const jsonLd = buildJsonLd(CFG, PAGE_URL);
+// offerCount: número de OEMs únicos vendidos (Schema.org AggregateOffer.offerCount)
+const oemCount = (() => {
+  const variants = OEMS[CFG.categoria]?.[CFG.veiculo_key]?.variants_por_ano || {};
+  const seen = new Set();
+  for (const arr of Object.values(variants)) for (const v of arr) seen.add(v.oem);
+  return seen.size;
+})();
+
+const jsonLd = buildJsonLd(CFG, PAGE_URL, { oemCount });
 
 export default function Page() {
   return (
