@@ -71,15 +71,52 @@ function brandNode(brands) {
   return { '@type': 'Brand', name: brands.join(' e ') };
 }
 
-// Constrói priceSpecification baseado em cfg.seo.product.price_range (string formato
-// "R$ 1.000 - R$ 2.000"). Sem range, retorna undefined e o Offer fica sem price (Google
-// vai reclamar — preencher price_range é obrigatório pra rich results).
-function priceSpec(priceRange) {
-  if (!priceRange) return undefined;
+// Parse "R$ 1.000 - R$ 2.000" → { lowPrice: "1000", highPrice: "2000" }
+//
+// FIX 2026-05-09: antes a gente devolvia priceSpecification.price como a string
+// inteira "R$ 1.000 - R$ 2.000". Schema.org aceita Text mas Google Rich Results
+// REJEITA — o validador parseia `price` como número e símbolo de moeda + range
+// quebra. Resultado: Search Console reportava "missing field priceSpecification"
+// pra Amarok e HR.
+//
+// Forma correta pra range: AggregateOffer com lowPrice + highPrice numéricos.
+// Sem símbolo de moeda (vai em priceCurrency separado), sem milhar com ponto
+// (Google espera dot como decimal, não milhar; brasileiro "1.000" vira ambíguo).
+function parseRange(priceRange) {
+  if (!priceRange) return null;
+  const m = priceRange.match(/^R\$ ([\d.]+) - R\$ ([\d.]+)$/);
+  if (!m) return null;
+  // Remove pontos de milhar pra ter número limpo: "1.000" → "1000"
+  const low = m[1].replace(/\./g, '');
+  const high = m[2].replace(/\./g, '');
+  return { low, high };
+}
+
+function buildOffersNode(product, sellerId, pageUrl) {
+  const range = parseRange(product.price_range);
+  if (!range) {
+    // Sem range válido → Offer sem price (Google vai reclamar de qualquer jeito,
+    // mas pelo menos não emite estrutura inválida)
+    return {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'BRL',
+      seller: { '@id': sellerId },
+      url: pageUrl,
+      hasMerchantReturnPolicy: RETURN_POLICY,
+      ...(product.free_shipping ? { shippingDetails: FREE_SHIPPING_BR } : {}),
+    };
+  }
   return {
-    '@type': 'PriceSpecification',
+    '@type': 'AggregateOffer',
+    availability: 'https://schema.org/InStock',
     priceCurrency: 'BRL',
-    price: priceRange,
+    lowPrice: range.low,
+    highPrice: range.high,
+    seller: { '@id': sellerId },
+    url: pageUrl,
+    hasMerchantReturnPolicy: RETURN_POLICY,
+    ...(product.free_shipping ? { shippingDetails: FREE_SHIPPING_BR } : {}),
   };
 }
 
@@ -95,19 +132,6 @@ export function buildJsonLd(cfg, pageUrl) {
     ? `${SITE_URL}${cfg.seo.canonical_path}${cfg.seo.og_image}`
     : undefined;
 
-  const offer = {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStock',
-    priceCurrency: 'BRL',
-    seller: { '@id': AUTOPARTS_STORE['@id'] },
-    url: pageUrl,
-    priceSpecification: priceSpec(product.price_range),
-    hasMerchantReturnPolicy: RETURN_POLICY,
-  };
-  if (product.free_shipping) {
-    offer.shippingDetails = FREE_SHIPPING_BR;
-  }
-
   const productNode = {
     '@type': 'Product',
     name: product.name,
@@ -117,7 +141,7 @@ export function buildJsonLd(cfg, pageUrl) {
     category: 'Peça automotiva — sistema de injeção diesel',
     isRelatedTo: (product.vehicles || []).map((name) => ({ '@type': 'Vehicle', name })),
     aggregateRating: AGGREGATE_RATING,
-    offers: offer,
+    offers: buildOffersNode(product, AUTOPARTS_STORE['@id'], pageUrl),
   };
 
   return {
