@@ -16,11 +16,14 @@ const AUTOPARTS_STORE = {
   priceRange: '$$',
   // Logo Armazém — Schema.org LocalBusiness.image (Google Rich Results recomenda)
   image: `${SITE_URL}/injecao-diesel/logo-armazem.png`,
+  // Endereço da Matriz (Centro de Distribuição) — de onde os pedidos saem.
+  // Filial (R. São João 108 E, CEP 89802-240) é escritório administrativo,
+  // não usado aqui. Ver memory reference_cnpj_armazem.md.
   address: {
     '@type': 'PostalAddress',
-    // streetAddress: '...' — TODO pendente Diego/Vinicius (Search Console pediu)
-    // postalCode: '...'   — TODO pendente Diego/Vinicius (Search Console pediu)
+    streetAddress: 'Rua Igarassu, 840 D',
     addressLocality: 'Chapecó',
+    postalCode: '89812-764',
     addressRegion: 'SC',
     addressCountry: 'BR',
   },
