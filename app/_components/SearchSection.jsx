@@ -40,7 +40,7 @@ function ResultPlate({ cfg, vehicle }) {
       </div>
       <div className="vehicle-name">{vehicle.marca} {vehicle.modelo}</div>
       <div className="vehicle-spec">
-        {vehicle.motor} · {vehicle.ano} · {vehicle.cv}cv<br />
+        {vehicle.motor} · {vehicle.ano}<br />
         Placa: {vehicle.plate} · Chassi final: {vehicle.chassi_tail}
       </div>
       <hr className="hr-dashed" />
@@ -81,7 +81,7 @@ function ResultYear({ cfg, year, variants }) {
   const veiculoModelo = getVeiculoModelo(cfg);
   const groupsMap = new Map();
   variants.forEach((v) => {
-    const key = `${v.motor}|${v.cv}`;
+    const key = v.motor;
     if (!groupsMap.has(key)) groupsMap.set(key, { ...v, alternativeOems: [] });
     else groupsMap.get(key).alternativeOems.push(v.oem);
   });
@@ -109,7 +109,6 @@ function ResultYear({ cfg, year, variants }) {
                 <Image src={fotoSrc} alt={`${cfg.peca.nome} ${g.oem}`} width={600} height={600} sizes="(max-width: 768px) 45vw, 300px" />
               </div>
               <div className="v-motor">{g.motor}</div>
-              {g.cv && <div className="v-hp">{g.cv}</div>}
               <div className="v-part">
                 <div className="v-part-name">{cfg.peca.short_label}</div>
                 <div className="v-part-oem">Cód. OEM: {g.oem}{g.marca_bico ? ` · ${g.marca_bico}` : ''}</div>

@@ -1,0 +1,157 @@
+{
+  "_doc": "Config LP Chevrolet S10. Cobre 3 gerações BR de motor (MWM Sprint 2005-2011, Duramax 2012-2013, Duramax LWN 2014-2024). Multi-marca: Bosch (gerações antigas) + Denso (LWN atual). Perfil cliente: misto (consumidor + agro). Fotos: PLACEHOLDER — substituir depois. price_range: pendente Diego.",
+  "slug": "s10",
+  "categoria": "bico-injetor",
+  "veiculo_key": "s10",
+  "veiculo": {
+    "marca_aliases": [
+      "CHEVROLET",
+      "GM"
+    ],
+    "modelo_aliases": [
+      "S10",
+      "S-10",
+      "BLAZER",
+      "TRAILBLAZER"
+    ]
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "CHEVROLET S10",
+    "h1_sub": "Peças originais · pronta entrega",
+    "sub": "Para Chevrolet S10 2.8 Diesel (MWM Sprint e Duramax).",
+    "foto_static": "assets/hero-static.webp",
+    "foto_dust": "assets/hero-static.webp",
+    "foto_alt": "Chevrolet S10 caminhonete diesel em pátio",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "center center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua S10",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR ORIGINAL",
+    "short_label": "BICO ORIGINAL",
+    "fabricante_label": "PEÇA ORIGINAL",
+    "fabricante_principal_short": "",
+    "motores_label": "2.8 MWM Sprint e 2.8 Duramax",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Denso"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110231.webp",
+    "fotos_por_oem": {
+      "0445110231": "/injecao-diesel/pecas/0445110231.webp",
+      "0445110424": "/injecao-diesel/pecas/0445110424.webp",
+      "0445110354": "/injecao-diesel/pecas/0445110424.webp",
+      "2950500960": "/injecao-diesel/pecas/2950500960.webp",
+      "12640381": "/injecao-diesel/pecas/2950500960.webp"
+    },
+    "foto_alt": "Bico injetor original na caixa",
+    "tem_primeira_linha": true,
+    "v6_disponibilidade_limitada": false,
+    "bullets_default": [
+      "Peça original de fábrica",
+      "Garantia de fábrica",
+      "Pronta entrega de Chapecó/SC pra todo Brasil"
+    ],
+    "bullets_v6": [],
+    "bullets_unknown": [
+      "Peça compatível com sua S10",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Também temos versão primeira linha",
+    "hint_primeira_linha_tail": "com qualidade equivalente e preço mais acessível. Consulte no WhatsApp.",
+    "not_supported_default": "Esta LP é específica para Chevrolet S10. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, preciso de bico injetor pra Chevrolet S10.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Chevrolet S10.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra minha S10 {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Chevrolet S10 {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha S10. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page S10 e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page S10 e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Chevrolet S10."
+  },
+  "why": {
+    "h2_l1": "S10 parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "no seu dia",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo. Sua S10 volta a rodar mais rápido."
+      },
+      {
+        "num": "02",
+        "ttl": "Marcas originais homologadas.",
+        "body": "Bosch (S10 MWM Sprint e Duramax 2012-2013) e Denso (S10 Duramax LWN 2014+) — fabricantes que montam o sistema de injeção da S10 de fábrica. Códigos OEM confirmados por consulta FIPE/Denatran. Quando disponível, primeira linha de qualidade equivalente, com garantia."
+      },
+      {
+        "num": "03",
+        "ttl": "Despacho 24h pra todo Brasil.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua S10 não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira a placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico entre Testimonials e FAQ. Perfil misto (consumidor + agro). Foco em identificar sintomas antes do prejuízo. Cobre transição Bosch (MWM Sprint + Duramax LML 2005-2013) → Denso (Duramax LWN 2014+).",
+    "heading": "Como saber se o bico injetor da S10 está com problema",
+    "intro": "O bico injetor da S10 2.8 Diesel é o componente mais crítico do sistema de injeção. Quando começa a falhar, o consumo dispara e o desempenho cai. Identificar os sintomas cedo evita que a S10 fique parada na pior hora — seja no trabalho, na estrada ou na fazenda.",
+    "symptoms": [
+      "Fumaça preta no escapamento, principalmente sob carga",
+      "Perda de potência em subida ou tracionando",
+      "Consumo de diesel acima do normal",
+      "Tranco e marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "A S10 teve duas marcas originais homologadas pela GM ao longo das gerações: Bosch (S10 MWM Sprint 2005-2011 e Duramax LML 2012-2013) e Denso (Duramax LWN 2014+). Ambas seguem a especificação de fábrica de cada motor — pressão de abertura, pulverização e vedação calibradas. A primeira linha é fabricada por outros fornecedores também homologados, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa, sem rastreabilidade nem homologação — esses operam fora da faixa correta e causam injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi — sem margem de erro de compatibilidade. Estoque disponível para todas as gerações da S10 2.8 Diesel (Bosch e Denso), com despacho 24h pra todo o Brasil de Chapecó/SC."
+  },
+  "seo": {
+    "_doc_title": "Title multi-marca (S10 = Bosch + Denso). NUNCA citar 2 marcas no title (regra feedback_lp_seo_marca_unica.md 2026-05-11). Padrão: Bico Injetor <Modelo> <Motor> Original — Armazém Auto Peças.",
+    "title": "Bico Injetor S10 2.8 Diesel Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Chevrolet S10 2.8 Diesel — Bosch (MWM Sprint 2005-2011 e Duramax 2012-2013) e Denso (Duramax LWN 2014+). Identificamos seu motor pela placa ou chassi. Compra segura.",
+    "og_image": "assets/hero-static.png",
+    "og_image_alt": "Chevrolet S10 caminhonete diesel em pátio",
+    "twitter_description": "Bico injetor original para Chevrolet S10 2.8 Diesel (Bosch e Denso, 2005-2024).",
+    "canonical_path": "/injecao-diesel/s10/",
+    "product": {
+      "_doc": "price_range R$ 1.000-2.000 (alinhado com Amarok — decisão Diego 2026-05-11). Hero S10 substituído por foto real 2026-05-11. Fotos das 3 peças (0445110231 MWM, 0445110424 Duramax, 295050-0960 Denso LWN) ainda apontam pro Amarok temporariamente.",
+      "name": "Bico Injetor para Chevrolet S10 2.8 Diesel",
+      "description": "Bico injetor original para Chevrolet S10 2.8 Diesel (MWM Sprint 140cv, Duramax 180cv e Duramax LWN 200cv) — Bosch e Denso, anos 2005-2024. Códigos OEM confirmados por consulta FIPE/Denatran.",
+      "brands": ["Bosch", "Denso"],
+      "vehicles": [
+        "Chevrolet S10 2.8 MWM Sprint",
+        "Chevrolet S10 2.8 Duramax",
+        "Chevrolet S10 2.8 Duramax LWN",
+        "Chevrolet Blazer 2.8 MWM Sprint",
+        "Chevrolet Trailblazer 2.8 Duramax"
+      ],
+      "price_range": "R$ 1.000 - R$ 2.000",
+      "free_shipping": true
+    }
+  }
+}
