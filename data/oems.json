@@ -7,41 +7,132 @@
         "modelo": "Amarok"
       },
       "variants_por_ano": {
-        "2010": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2011": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2012": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2013": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2014": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2015": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
-        "2016": [{ "motor": "2.0 TDI", "oem": "0 445 110 369" }],
+        "2010": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          }
+        ],
         "2017": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
         "2018": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
         "2019": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
         "2020": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
         "2021": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
         "2022": [
-          { "motor": "2.0 TDI", "oem": "0 445 110 369" },
-          { "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }
+          {
+            "motor": "2.0 TDI",
+            "oem": "0 445 110 369"
+          },
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
         ],
-        "2023": [{ "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }],
-        "2024": [{ "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }],
-        "2025": [{ "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }],
-        "2026": [{ "motor": "3.0 V6 TDI", "oem": "0 445 117 083" }]
+        "2023": [
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
+        ],
+        "2026": [
+          {
+            "motor": "3.0 V6 TDI",
+            "oem": "0 445 117 083"
+          }
+        ]
       }
     },
     "hr": {
@@ -258,6 +349,219 @@
             "cv": 130,
             "oem": "338004A200",
             "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "s10": {
+      "veiculo": {
+        "marca": "CHEVROLET",
+        "modelo": "S10"
+      },
+      "variants_por_ano": {
+        "2005": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.8 MWM Sprint",
+            "oem": "0445110231",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.8 Duramax",
+            "oem": "0445110424",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8 Duramax",
+            "oem": "0445110354",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.8 Duramax",
+            "oem": "0445110424",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8 Duramax",
+            "oem": "0445110354",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "2950500960",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 Duramax LWN",
+            "oem": "12640381",
+            "marca_bico": "Denso"
           }
         ]
       }
