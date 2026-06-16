@@ -1,8 +1,8 @@
 {
-  "_doc": "Config específica desta LP. Cobre Boxer 2.3 Multijet F1AE. Conteúdo genérico (Trust/Why/FAQ/Testi/Footer) fica em data.jsx.",
-  "slug": "boxer-2-3",
+  "_doc": "LP Boxer — cobre 1 variante(s) de motor que o M8 vende. Slug por modelo (estilo Amarok).",
+  "slug": "boxer",
   "categoria": "bico-injetor",
-  "veiculo_key": "boxer-2-3",
+  "veiculo_key": "boxer",
   "veiculo": {
     "marca_aliases": [
       "PEUGEOT"
@@ -11,10 +11,10 @@
       "BOXER"
     ],
     "motor_por_cv": {
-      "120": "2.3 Multijet Diesel",
-      "127": "2.3 Multijet Diesel",
-      "130": "2.3 Multijet Diesel",
-      "150": "2.3 Multijet Diesel"
+      "120": "2.3 Multijet",
+      "127": "2.3 Multijet",
+      "130": "2.3 Multijet",
+      "150": "2.3 Multijet"
     }
   },
   "hero": {
@@ -44,7 +44,11 @@
       "Bosch"
     ],
     "foto_default": "/injecao-diesel/pecas/0445110520.webp",
-    "foto_alt": "Bico injetor Bosch 0445110520 original",
+    "foto_alt": "Bico injetor original",
+    "fotos_por_oem": {
+      "0445110520": "/injecao-diesel/pecas/0445110520.webp",
+      "0445110273": "/injecao-diesel/pecas/0445110520.webp"
+    },
     "tem_primeira_linha": false,
     "equivalentes_por_motor": {
       "2.3 Multijet": [
@@ -53,36 +57,32 @@
       ]
     },
     "bullets_default": [
-      "Peça original Bosch",
-      "Garantia de fábrica",
+      "Peça original de fábrica",
+      "Garantia do fabricante",
       "Pronta entrega de Chapecó/SC"
     ],
     "bullets_unknown": [
-      "Peça compatível com um Boxer",
+      "Peça compatível com seu Boxer",
       "Entrega de Chapecó/SC pra todo Brasil",
       "Garantia de fábrica + Armazém"
-    ],
-    "fotos_por_oem": {
-      "0445110520": "/injecao-diesel/pecas/0445110520.webp",
-      "0445110273": "/injecao-diesel/pecas/0445110520.webp"
-    }
+    ]
   },
   "result_messages": {
     "default_oem_unknown": "Consulte no WhatsApp",
     "hint_primeira_linha_bold": "Também temos opções alternativas",
     "hint_primeira_linha_tail": "para alguns motores. Consulte no WhatsApp.",
-    "not_supported_default": "Esta LP é específica para Boxer 2.3 Multijet. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+    "not_supported_default": "Esta LP é específica para Peugeot Boxer. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
   },
   "wa": {
-    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Boxer 2.3.",
-    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Boxer 2.3.",
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Boxer.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Boxer.",
     "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra meu {modelo} {ano} {motor}. Quero cotar.",
     "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Boxer {year} {motor}.",
     "result_dontknow_motor": "Olá, não sei qual é o motor do meu Boxer. Podem me ajudar?",
     "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
     "result_notsupported_template": "Olá, consultei {query} na landing page Boxer e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
     "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
-    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Boxer 2.3."
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Boxer."
   },
   "why": {
     "h2_l1": "Bico injetor é segurança.",
@@ -97,11 +97,11 @@
       {
         "num": "02",
         "ttl": "A marca que o fabricante recomenda.",
-        "body": "Bosch — a mesma marca montada de fábrica no Boxer 2.3 Multijet F1AE, com código OEM confirmado. Plataforma Sevel (compartilhada com Ducato, Boxer e Jumper) usa o mesmo bico Bosch."
+        "body": "Bosch — a marca homologada de fábrica no Boxer, com código OEM confirmado."
       },
       {
         "num": "03",
-        "ttl": "O boxer volta a rodar no mesmo dia.",
+        "ttl": "Seu Boxer volta a rodar no mesmo dia.",
         "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota não fica parada esperando peça."
       }
     ]
@@ -118,9 +118,9 @@
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },
   "technical_block": {
-    "_doc": "Bloco técnico-educacional. Reforça keyword Boxer 2.3 Multijet Bosch.",
+    "_doc": "Bloco técnico-educacional. Reforça keyword Boxer + 2.3 Multijet.",
     "heading": "Como saber se o bico injetor do seu Boxer está com problema",
-    "intro": "O bico injetor do motor 2.3 Multijet F1AE — equipado no Boxer (mesma plataforma Sevel do Ducato, Boxer e Jumper) — é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "intro": "O bico injetor do Boxer (2.3 Multijet) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
     "symptoms": [
       "Fumaça preta ou branca no escapamento",
       "Perda de potência em aceleração e em subida com carga",
@@ -128,19 +128,19 @@
       "Tranco ao engatar marcha ou marcha lenta irregular",
       "Dificuldade na partida a frio"
     ],
-    "quality_explanation": "Bico original Bosch (OEM) é a opção confiável pro Boxer 2.3 — calibrado de fábrica pro motor F1AE: pressão de abertura, padrão de pulverização e vedação seguem a especificação Sevel. Bicos de procedência duvidosa — sem rastreabilidade nem homologação Bosch — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo. Em uma van que roda 200km/dia, o custo de um bico errado supera muito o preço do original.",
-    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões 2.3 Multijet F1AE Euro 3 (OEM 0445110273) e Euro 5 (OEM 0445110520) do Boxer, anos 2009 em diante."
+    "quality_explanation": "Bico original Bosch (OEM) é a opção confiável pro Boxer — calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo. Em uma van que roda 200km/dia, o custo de um bico errado supera muito o preço do original.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões 2.3 Multijet do Boxer."
   },
   "seo": {
-    "title": "Bico Injetor Boxer 2.3 Multijet Bosch — Armazém Auto Peças",
-    "description": "Bico injetor Bosch original para Peugeot Boxer 2.3 Multijet F1AE. Identificamos seu bico pela placa ou chassi. Compra segura.",
+    "title": "Bico Injetor Peugeot Boxer Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Peugeot Boxer (2.3 Multijet). Identificamos seu bico pela placa ou chassi. Compra segura.",
     "og_image": "assets/boxer-static.webp",
     "og_image_alt": "Boxer branca em ângulo lateral",
-    "twitter_description": "Bico injetor Bosch original para Peugeot Boxer 2.3 Multijet.",
-    "canonical_path": "/injecao-diesel/boxer-2-3/",
+    "twitter_description": "Bico injetor original para Peugeot Boxer (2.3 Multijet).",
+    "canonical_path": "/injecao-diesel/boxer/",
     "product": {
-      "name": "Bico Injetor Bosch para Peugeot Boxer 2.3 Multijet",
-      "description": "Bico injetor Bosch original para Peugeot Boxer 2.3 Multijet F1AE Euro 3 (OEM 0445110273) e Euro 5 (OEM 0445110520), anos 2009 em diante. Código OEM confirmado por consulta FIPE/Denatran.",
+      "name": "Bico Injetor para Peugeot Boxer",
+      "description": "Bico injetor original para Peugeot Boxer (2.3 Multijet). Códigos OEM confirmados por consulta FIPE/Denatran.",
       "brands": [
         "Bosch"
       ],
