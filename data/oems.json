@@ -565,6 +565,57 @@
           }
         ]
       }
+    },
+    "ducato-2-3": {
+      "veiculo": { "marca": "Fiat", "modelo": "Ducato" },
+      "variants_por_ano": {
+        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }]
+      }
+    },
+    "boxer-2-3": {
+      "veiculo": { "marca": "Peugeot", "modelo": "Boxer" },
+      "variants_por_ano": {
+        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }]
+      }
+    },
+    "jumper-2-3": {
+      "veiculo": { "marca": "Citroën", "modelo": "Jumper" },
+      "variants_por_ano": {
+        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }]
+      }
     }
   }
 }
