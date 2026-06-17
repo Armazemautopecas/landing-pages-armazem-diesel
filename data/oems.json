@@ -565,6 +565,77 @@
           }
         ]
       }
+    },
+    "ducato": {
+      "veiculo": { "marca": "Fiat", "modelo": "Ducato" },
+      "variants_por_ano": {
+        "2005": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
+        "2006": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
+        "2007": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
+        "2008": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
+        "2009": [
+          { "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }
+        ],
+        "2010": [
+          { "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }
+        ],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2023": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }],
+        "2024": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }],
+        "2025": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }]
+      }
+    },
+    "boxer": {
+      "veiculo": { "marca": "Peugeot", "modelo": "Boxer" },
+      "variants_por_ano": {
+        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }]
+      }
+    },
+    "jumper": {
+      "veiculo": { "marca": "Citroën", "modelo": "Jumper" },
+      "variants_por_ano": {
+        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2013": [
+          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
+          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        ],
+        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
+        "2019": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2020": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2021": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2022": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2023": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2024": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
+        "2025": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }]
+      }
     }
   }
 }
