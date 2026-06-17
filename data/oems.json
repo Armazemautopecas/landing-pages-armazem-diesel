@@ -567,74 +567,1038 @@
       }
     },
     "ducato": {
-      "veiculo": { "marca": "Fiat", "modelo": "Ducato" },
+      "veiculo": {
+        "marca": "Fiat",
+        "modelo": "Ducato"
+      },
       "variants_por_ano": {
-        "2005": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
-        "2006": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
-        "2007": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
-        "2008": [{ "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" }],
+        "2005": [
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
         "2009": [
-          { "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" },
-          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
         ],
         "2010": [
-          { "motor": "2.8 JTD", "oem": "0 445 120 002", "marca_bico": "Bosch" },
-          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }
+          {
+            "motor": "2.8 JTD",
+            "oem": "0 445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
         ],
-        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
+        "2011": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
         "2013": [
-          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
-          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
         ],
-        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2023": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }],
-        "2024": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }],
-        "2025": [{ "motor": "2.2 Multijet Euro 6", "oem": "KS28657626", "marca_bico": "Kingstar" }]
+        "2014": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.2 Multijet Euro 6",
+            "oem": "KS28657626",
+            "marca_bico": "Kingstar"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.2 Multijet Euro 6",
+            "oem": "KS28657626",
+            "marca_bico": "Kingstar"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "2.2 Multijet Euro 6",
+            "oem": "KS28657626",
+            "marca_bico": "Kingstar"
+          }
+        ]
       }
     },
     "boxer": {
-      "veiculo": { "marca": "Peugeot", "modelo": "Boxer" },
+      "veiculo": {
+        "marca": "Peugeot",
+        "modelo": "Boxer"
+      },
       "variants_por_ano": {
-        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2013": [
-          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
-          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        "2009": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
         ],
-        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }]
+        "2010": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ]
       }
     },
     "jumper": {
-      "veiculo": { "marca": "Citroën", "modelo": "Jumper" },
+      "veiculo": {
+        "marca": "Citroën",
+        "modelo": "Jumper"
+      },
       "variants_por_ano": {
-        "2009": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2010": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2011": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2012": [{ "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" }],
-        "2013": [
-          { "motor": "2.3 Multijet", "oem": "0 445 110 273", "marca_bico": "Bosch" },
-          { "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }
+        "2009": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
         ],
-        "2014": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2015": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2016": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2017": [{ "motor": "2.3 Multijet", "oem": "0 445 110 520", "marca_bico": "Bosch" }],
-        "2019": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2020": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2021": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2022": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2023": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2024": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }],
-        "2025": [{ "motor": "2.0 BlueHDi Euro 6", "oem": "28602948", "marca_bico": "Delphi" }]
+        "2010": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 273",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.3 Multijet",
+            "oem": "0 445 110 520",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "2.0 BlueHDi Euro 6",
+            "oem": "28602948",
+            "marca_bico": "Delphi"
+          }
+        ]
+      }
+    },
+    "transit": {
+      "veiculo": {
+        "marca": "Ford",
+        "modelo": "Transit"
+      },
+      "variants_por_ano": {
+        "2009": [
+          {
+            "motor": "2.4 Duratorq TDCi",
+            "oem": "095000-5800",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "2.4 Duratorq TDCi",
+            "oem": "095000-5800",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.4 Duratorq TDCi",
+            "oem": "095000-5800",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.4 Duratorq TDCi",
+            "oem": "095000-5800",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.)",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ]
+      }
+    },
+    "hilux": {
+      "veiculo": {
+        "marca": "Toyota",
+        "modelo": "Hilux"
+      },
+      "variants_por_ano": {
+        "2005": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D IKD",
+            "oem": "095000-8290",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.5 D4D 2KD-FTV",
+            "oem": "095000-7761",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.0 D4D 1KD-FTV",
+            "oem": "23670-30270",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "2.8 D4D 1GD-FTV",
+            "oem": "23670-11030",
+            "marca_bico": "Denso"
+          }
+        ]
+      }
+    },
+    "daily": {
+      "veiculo": {
+        "marca": "Iveco",
+        "modelo": "Daily"
+      },
+      "variants_por_ano": {
+        "2005": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "2.8 JTD Sofim",
+            "oem": "0445 120 002",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.8/3.0 Diesel Euro 3",
+            "oem": "0445 110 248",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "3.0 F1CE 70C17 Euro 5",
+            "oem": "0445 116 059",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "3.0 Diesel Euro 6",
+            "oem": "0445 110 564",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "3.0 Diesel Euro 6",
+            "oem": "0445 110 564",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "3.0 Diesel Euro 6",
+            "oem": "0445 110 564",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "sprinter": {
+      "veiculo": {
+        "marca": "Mercedes-Benz",
+        "modelo": "Sprinter"
+      },
+      "variants_por_ano": {
+        "2000": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2001": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2002": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2003": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2004": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2005": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "OM611 2.2 CDI (até 2012)",
+            "oem": "0445 110 189",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          },
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          },
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "OM651 2.2 CDI Euro 5",
+            "oem": "28342997",
+            "marca_bico": "Delphi"
+          },
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "OM651 2.2 CDI Euro 6 (ARLA)",
+            "oem": "28307309",
+            "marca_bico": "Delphi"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "Nova geração 2.0/2.1 (Após 2023)",
+            "oem": "0445 117 034",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "Nova geração 2.0/2.1 (Após 2023)",
+            "oem": "0445 117 034",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "Nova geração 2.0/2.1 (Após 2023)",
+            "oem": "0445 117 034",
+            "marca_bico": "Bosch"
+          }
+        ]
       }
     }
   }

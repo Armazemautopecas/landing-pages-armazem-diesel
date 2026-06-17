@@ -1,0 +1,168 @@
+{
+  "_doc": "LP Daily — cobre 4 variante(s) de motor que o M8 vende. Slug por modelo (estilo Amarok).",
+  "slug": "daily",
+  "categoria": "bico-injetor",
+  "veiculo_key": "daily",
+  "veiculo": {
+    "marca_aliases": [
+      "IVECO"
+    ],
+    "modelo_aliases": [
+      "DAILY"
+    ],
+    "motor_por_cv": {
+      "105": "2.8 JTD Sofim",
+      "125": "2.8/3.0 Diesel Euro 3",
+      "146": "3.0 F1CE 70C17 Euro 5",
+      "170": "3.0 F1CE 70C17 Euro 5",
+      "180": "3.0 Diesel Euro 6"
+    }
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "DAILY",
+    "h1_sub": "Original Bosch",
+    "sub": "Para Daily 2.8 JTD Sofim, 2.8/3.0 Diesel Euro 3, 3.0 F1CE 70C17 Euro 5 e 3.0 Diesel Euro 6.",
+    "foto_static": "assets/daily-static.webp",
+    "foto_alt": "Caminhão leve Iveco Daily branca em uso de transporte",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "62% center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu veículo",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR BOSCH",
+    "short_label": "BICO BOSCH",
+    "fabricante_label": "OEM BOSCH",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6",
+    "fabricantes_aceitos": [
+      "Bosch"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110520.webp",
+    "foto_alt": "Bico injetor original",
+    "fotos_por_oem": {
+      "0445120002": "/injecao-diesel/pecas/0445110520.webp",
+      "0445110248": "/injecao-diesel/pecas/0445110520.webp",
+      "0445116059": "/injecao-diesel/pecas/0445110520.webp",
+      "0445110564": "/injecao-diesel/pecas/0445110520.webp"
+    },
+    "tem_primeira_linha": false,
+    "equivalentes_por_motor": {
+      "2.8 JTD Sofim": [
+        "0445120002"
+      ],
+      "2.8/3.0 Diesel Euro 3": [
+        "0445110248"
+      ],
+      "3.0 F1CE 70C17 Euro 5": [
+        "0445116059"
+      ],
+      "3.0 Diesel Euro 6": [
+        "0445110564"
+      ]
+    },
+    "bullets_default": [
+      "Peça original de fábrica",
+      "Garantia do fabricante",
+      "Pronta entrega de Chapecó/SC"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Daily",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Também temos opções alternativas",
+    "hint_primeira_linha_tail": "para alguns motores. Consulte no WhatsApp.",
+    "not_supported_default": "Esta LP é específica para Iveco Daily. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Daily.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Daily.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra meu {modelo} {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Daily {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Daily. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Daily e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Daily."
+  },
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza sua placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo do seu Daily. Sem achismo, sem telefone trocado, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Bosch — a marca homologada de fábrica no Daily, com código OEM confirmado."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu Daily volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira sua placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Daily + 2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6.",
+    "heading": "Como saber se o bico injetor do seu Daily está com problema",
+    "intro": "O bico injetor do Daily (2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração e em subida com carga",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha ou marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "Bico original Bosch (OEM) é a opção confiável pro Daily — calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões 2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6 do Daily."
+  },
+  "seo": {
+    "title": "Bico Injetor Iveco Daily Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Iveco Daily (2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6). Identificamos seu bico pela placa ou chassi. Compra segura.",
+    "og_image": "assets/daily-static.webp",
+    "og_image_alt": "Caminhão leve Iveco Daily branca em uso de transporte",
+    "twitter_description": "Bico injetor original para Iveco Daily (2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6).",
+    "canonical_path": "/injecao-diesel/daily/",
+    "product": {
+      "name": "Bico Injetor para Iveco Daily",
+      "description": "Bico injetor original para Iveco Daily (2.8 JTD Sofim / 2.8/3.0 Diesel Euro 3 / 3.0 F1CE 70C17 Euro 5 / 3.0 Diesel Euro 6). Códigos OEM confirmados por consulta FIPE/Denatran.",
+      "brands": [
+        "Bosch"
+      ],
+      "vehicles": [
+        "Iveco Daily 2.8 JTD Sofim",
+        "Iveco Daily 2.8/3.0 Diesel Euro 3",
+        "Iveco Daily 3.0 F1CE 70C17 Euro 5",
+        "Iveco Daily 3.0 Diesel Euro 6"
+      ],
+      "price_range": "R$ 900 - R$ 2.300",
+      "free_shipping": true
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "_doc": "LP Hilux — cobre 4 variante(s) de motor que o M8 vende. Slug por modelo (estilo Amarok).",
+  "slug": "hilux",
+  "categoria": "bico-injetor",
+  "veiculo_key": "hilux",
+  "veiculo": {
+    "marca_aliases": [
+      "TOYOTA"
+    ],
+    "modelo_aliases": [
+      "HILUX",
+      "SW4"
+    ],
+    "motor_por_cv": {
+      "102": "2.5 D4D 2KD-FTV",
+      "116": "2.5 D4D 2KD-FTV",
+      "163": "3.0 D4D 1KD-FTV",
+      "171": "3.0 D4D 1KD-FTV",
+      "177": "2.8 D4D 1GD-FTV",
+      "204": "2.8 D4D 1GD-FTV"
+    }
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "HILUX",
+    "h1_sub": "Original Denso",
+    "sub": "Para Hilux 2.5 D4D 2KD-FTV, 3.0 D4D IKD, 3.0 D4D 1KD-FTV e 2.8 D4D 1GD-FTV.",
+    "foto_static": "assets/hilux-static.webp",
+    "foto_alt": "Toyota Hilux em terreno aberto, geração compatível",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "62% center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu veículo",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR DENSO",
+    "short_label": "BICO DENSO",
+    "fabricante_label": "OEM DENSO",
+    "fabricante_principal_short": "Denso",
+    "motores_label": "2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV",
+    "fabricantes_aceitos": [
+      "Denso"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110520.webp",
+    "foto_alt": "Bico injetor original",
+    "fotos_por_oem": {
+      "095000-7761": "/injecao-diesel/pecas/0445110520.webp",
+      "295050-0810": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-0L110": "/injecao-diesel/pecas/0445110520.webp",
+      "095000-8290": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-30270": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-0L090": "/injecao-diesel/pecas/0445110520.webp",
+      "295050-0520": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-11030": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-0E060": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-0E060SM": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-09470": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-0E010": "/injecao-diesel/pecas/0445110520.webp",
+      "295700-0550": "/injecao-diesel/pecas/0445110520.webp",
+      "23670-39485": "/injecao-diesel/pecas/0445110520.webp"
+    },
+    "tem_primeira_linha": false,
+    "equivalentes_por_motor": {
+      "2.5 D4D 2KD-FTV": [
+        "095000-7761",
+        "295050-0810",
+        "23670-0L110"
+      ],
+      "3.0 D4D IKD": [
+        "095000-8290"
+      ],
+      "3.0 D4D 1KD-FTV": [
+        "23670-30270",
+        "23670-0L090",
+        "295050-0520"
+      ],
+      "2.8 D4D 1GD-FTV": [
+        "23670-11030",
+        "23670-0E060",
+        "23670-0E060SM",
+        "23670-09470",
+        "23670-0E010",
+        "295700-0550",
+        "23670-39485"
+      ]
+    },
+    "bullets_default": [
+      "Peça original de fábrica",
+      "Garantia do fabricante",
+      "Pronta entrega de Chapecó/SC"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Hilux",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Também temos opções alternativas",
+    "hint_primeira_linha_tail": "para alguns motores. Consulte no WhatsApp.",
+    "not_supported_default": "Esta LP é específica para Toyota Hilux. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Hilux.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Hilux.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra meu {modelo} {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Hilux {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Hilux. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Hilux e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Hilux."
+  },
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza sua placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo do seu Hilux. Sem achismo, sem telefone trocado, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Denso — a marca homologada de fábrica no Hilux, com código OEM confirmado."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu Hilux volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira sua placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Hilux + 2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV.",
+    "heading": "Como saber se o bico injetor do seu Hilux está com problema",
+    "intro": "O bico injetor do Hilux (2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração e em subida com carga",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha ou marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "Bico original Denso (OEM) é a opção confiável pro Hilux — calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões 2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV do Hilux."
+  },
+  "seo": {
+    "title": "Bico Injetor Toyota Hilux Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Toyota Hilux (2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV). Identificamos seu bico pela placa ou chassi. Compra segura.",
+    "og_image": "assets/hilux-static.webp",
+    "og_image_alt": "Toyota Hilux em terreno aberto, geração compatível",
+    "twitter_description": "Bico injetor original para Toyota Hilux (2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV).",
+    "canonical_path": "/injecao-diesel/hilux/",
+    "product": {
+      "name": "Bico Injetor para Toyota Hilux",
+      "description": "Bico injetor original para Toyota Hilux (2.5 D4D 2KD-FTV / 3.0 D4D IKD / 3.0 D4D 1KD-FTV / 2.8 D4D 1GD-FTV). Códigos OEM confirmados por consulta FIPE/Denatran.",
+      "brands": [
+        "Denso"
+      ],
+      "vehicles": [
+        "Toyota Hilux 2.5 D4D 2KD-FTV",
+        "Toyota Hilux 3.0 D4D IKD",
+        "Toyota Hilux 3.0 D4D 1KD-FTV",
+        "Toyota Hilux 2.8 D4D 1GD-FTV"
+      ],
+      "price_range": "R$ 1.800 - R$ 3.500",
+      "free_shipping": true
+    }
+  }
+}

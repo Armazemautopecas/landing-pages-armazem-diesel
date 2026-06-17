@@ -1,0 +1,180 @@
+{
+  "_doc": "LP Sprinter — cobre 4 variante(s) de motor que o M8 vende. Slug por modelo (estilo Amarok).",
+  "slug": "sprinter",
+  "categoria": "bico-injetor",
+  "veiculo_key": "sprinter",
+  "veiculo": {
+    "marca_aliases": [
+      "MERCEDES",
+      "MERCEDES-BENZ",
+      "MB"
+    ],
+    "modelo_aliases": [
+      "SPRINTER"
+    ],
+    "motor_por_cv": {
+      "109": "OM611 2.2 CDI (até 2012)",
+      "129": "OM611 2.2 CDI (até 2012)",
+      "143": "OM651 2.2 CDI Euro 5",
+      "150": "OM651 2.2 CDI Euro 5",
+      "163": "OM651 2.2 CDI Euro 6 (ARLA)",
+      "170": "OM651 2.2 CDI Euro 6 (ARLA)",
+      "177": "Nova geração 2.0/2.1 (Após 2023)"
+    }
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "SPRINTER",
+    "h1_sub": "Original",
+    "sub": "Para Sprinter OM611 2.2 CDI (até 2012), OM651 2.2 CDI Euro 5, OM651 2.2 CDI Euro 6 (ARLA) e Nova geração 2.0/2.1 (Após 2023).",
+    "foto_static": "assets/sprinter-static.webp",
+    "foto_alt": "Van Mercedes-Benz Sprinter branca (transporte/escolar)",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "62% center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu veículo",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023)",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110520.webp",
+    "foto_alt": "Bico injetor original",
+    "fotos_por_oem": {
+      "0445110189": "/injecao-diesel/pecas/0445110520.webp",
+      "0445110190": "/injecao-diesel/pecas/0445110520.webp",
+      "28342997": "/injecao-diesel/pecas/28602948.webp",
+      "28307309": "/injecao-diesel/pecas/28602948.webp",
+      "0445117034": "/injecao-diesel/pecas/0445110520.webp",
+      "0445117035": "/injecao-diesel/pecas/0445110520.webp",
+      "0445117048": "/injecao-diesel/pecas/0445110520.webp"
+    },
+    "tem_primeira_linha": false,
+    "equivalentes_por_motor": {
+      "OM611 2.2 CDI (até 2012)": [
+        "0445110189",
+        "0445110190"
+      ],
+      "OM651 2.2 CDI Euro 5": [
+        "28342997"
+      ],
+      "OM651 2.2 CDI Euro 6 (ARLA)": [
+        "28307309"
+      ],
+      "Nova geração 2.0/2.1 (Após 2023)": [
+        "0445117034",
+        "0445117035",
+        "0445117048"
+      ]
+    },
+    "bullets_default": [
+      "Peça original de fábrica",
+      "Garantia do fabricante",
+      "Pronta entrega de Chapecó/SC"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Sprinter",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Também temos opções alternativas",
+    "hint_primeira_linha_tail": "para alguns motores. Consulte no WhatsApp.",
+    "not_supported_default": "Esta LP é específica para Mercedes-Benz Sprinter. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Sprinter.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Sprinter.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra meu {modelo} {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Sprinter {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Sprinter. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Sprinter e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Sprinter."
+  },
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza sua placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo do seu Sprinter. Sem achismo, sem telefone trocado, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi — as marcas homologadas pra cada geração do Sprinter, com código OEM confirmado por ano/motor."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu Sprinter volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira sua placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Sprinter + OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023).",
+    "heading": "Como saber se o bico injetor do seu Sprinter está com problema",
+    "intro": "O bico injetor do Sprinter (OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023)) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração e em subida com carga",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha ou marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "Cada geração do Sprinter usa uma marca diferente de bico (Bosch, Delphi) — todas homologadas. Calibração de fábrica garante pressão de abertura, padrão de pulverização e vedação corretas pro motor específico. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023) do Sprinter."
+  },
+  "seo": {
+    "title": "Bico Injetor Mercedes-Benz Sprinter Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Mercedes-Benz Sprinter (OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023)). Identificamos seu bico pela placa ou chassi. Compra segura.",
+    "og_image": "assets/sprinter-static.webp",
+    "og_image_alt": "Van Mercedes-Benz Sprinter branca (transporte/escolar)",
+    "twitter_description": "Bico injetor original para Mercedes-Benz Sprinter (OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023)).",
+    "canonical_path": "/injecao-diesel/sprinter/",
+    "product": {
+      "name": "Bico Injetor para Mercedes-Benz Sprinter",
+      "description": "Bico injetor original para Mercedes-Benz Sprinter (OM611 2.2 CDI (até 2012) / OM651 2.2 CDI Euro 5 / OM651 2.2 CDI Euro 6 (ARLA) / Nova geração 2.0/2.1 (Após 2023)). Códigos OEM confirmados por consulta FIPE/Denatran.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "Mercedes-Benz Sprinter OM611 2.2 CDI (até 2012)",
+        "Mercedes-Benz Sprinter OM651 2.2 CDI Euro 5",
+        "Mercedes-Benz Sprinter OM651 2.2 CDI Euro 6 (ARLA)",
+        "Mercedes-Benz Sprinter Nova geração 2.0/2.1 (Após 2023)"
+      ],
+      "price_range": "R$ 1.500 - R$ 3.200",
+      "free_shipping": true
+    }
+  }
+}
