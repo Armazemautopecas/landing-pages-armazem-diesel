@@ -44,13 +44,13 @@
     "fabricantes_aceitos": [
       "Bosch"
     ],
-    "foto_default": "/injecao-diesel/pecas/0445110520.webp",
+    "foto_default": "/injecao-diesel/pecas/0445116059.webp",
     "foto_alt": "Bico injetor original",
     "fotos_por_oem": {
-      "0445120002": "/injecao-diesel/pecas/0445110520.webp",
-      "0445110248": "/injecao-diesel/pecas/0445110520.webp",
-      "0445116059": "/injecao-diesel/pecas/0445110520.webp",
-      "0445110564": "/injecao-diesel/pecas/0445110520.webp"
+      "0445120002": "/injecao-diesel/pecas/0445120002.webp",
+      "0445110248": "/injecao-diesel/pecas/0445110248.webp",
+      "0445116059": "/injecao-diesel/pecas/0445116059.webp",
+      "0445110564": "/injecao-diesel/pecas/0445110564.webp"
     },
     "tem_primeira_linha": false,
     "equivalentes_por_motor": {

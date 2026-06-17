@@ -44,11 +44,11 @@
       "Continental",
       "Denso"
     ],
-    "foto_default": "/injecao-diesel/pecas/0445110520.webp",
+    "foto_default": "/injecao-diesel/pecas/095000-5800.webp",
     "foto_alt": "Bico injetor original",
     "fotos_por_oem": {
-      "095000-5800": "/injecao-diesel/pecas/0445110520.webp",
-      "095000-5801": "/injecao-diesel/pecas/0445110520.webp",
+      "095000-5800": "/injecao-diesel/pecas/095000-5800.webp",
+      "095000-5801": "/injecao-diesel/pecas/095000-5801.webp",
       "A2C59517051": "/injecao-diesel/pecas/0445110520.webp"
     },
     "tem_primeira_linha": false,
