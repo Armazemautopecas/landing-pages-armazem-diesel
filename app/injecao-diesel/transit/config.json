@@ -1,0 +1,161 @@
+{
+  "_doc": "LP Transit — cobre 2 variante(s) de motor que o M8 vende. Slug por modelo (estilo Amarok).",
+  "slug": "transit",
+  "categoria": "bico-injetor",
+  "veiculo_key": "transit",
+  "veiculo": {
+    "marca_aliases": [
+      "FORD"
+    ],
+    "modelo_aliases": [
+      "TRANSIT"
+    ],
+    "motor_por_cv": {
+      "125": "2.4 Duratorq TDCi",
+      "140": "2.4 Duratorq TDCi",
+      "155": "3.2 Duratorq TDCi (5 cil.)",
+      "200": "3.2 Duratorq TDCi (5 cil.)"
+    }
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "TRANSIT",
+    "h1_sub": "Original",
+    "sub": "Para Transit 2.4 Duratorq TDCi e 3.2 Duratorq TDCi (5 cil.).",
+    "foto_static": "assets/transit-static.webp",
+    "foto_alt": "Van Ford Transit branca em ângulo lateral",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "62% center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu veículo",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Continental",
+    "motores_label": "2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.)",
+    "fabricantes_aceitos": [
+      "Continental",
+      "Denso"
+    ],
+    "foto_default": "/injecao-diesel/pecas/095000-5800.webp",
+    "foto_alt": "Bico injetor original",
+    "fotos_por_oem": {
+      "095000-5800": "/injecao-diesel/pecas/095000-5800.webp",
+      "095000-5801": "/injecao-diesel/pecas/095000-5801.webp",
+      "A2C59517051": "/injecao-diesel/pecas/A2C59517051.webp"
+    },
+    "tem_primeira_linha": false,
+    "equivalentes_por_motor": {
+      "2.4 Duratorq TDCi": [
+        "095000-5800",
+        "095000-5801"
+      ],
+      "3.2 Duratorq TDCi (5 cil.)": [
+        "A2C59517051"
+      ]
+    },
+    "bullets_default": [
+      "Peça original de fábrica",
+      "Garantia do fabricante",
+      "Pronta entrega de Chapecó/SC"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Transit",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Também temos opções alternativas",
+    "hint_primeira_linha_tail": "para alguns motores. Consulte no WhatsApp.",
+    "not_supported_default": "Esta LP é específica para Ford Transit. Fale com a gente no WhatsApp pra consultar peças do seu veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Transit.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Transit.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pra meu {modelo} {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Transit {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Transit. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Transit e meu veículo é {ident}. Podem me ajudar a encontrar a peça?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Transit."
+  },
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza sua placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo do seu Transit. Sem achismo, sem telefone trocado, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Continental, Denso — as marcas homologadas pra cada geração do Transit, com código OEM confirmado por ano/motor."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu Transit volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira sua placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Transit + 2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.).",
+    "heading": "Como saber se o bico injetor do seu Transit está com problema",
+    "intro": "O bico injetor do Transit (2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.)) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração e em subida com carga",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha ou marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "Cada geração do Transit usa uma marca diferente de bico (Continental, Denso) — todas homologadas. Calibração de fábrica garante pressão de abertura, padrão de pulverização e vedação corretas pro motor específico. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi. Estoque disponível pras versões 2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.) do Transit."
+  },
+  "seo": {
+    "title": "Bico Injetor Ford Transit Original — Armazém Auto Peças",
+    "description": "Bico injetor original para Ford Transit (2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.)). Identificamos seu bico pela placa ou chassi. Compra segura.",
+    "og_image": "assets/transit-static.webp",
+    "og_image_alt": "Van Ford Transit branca em ângulo lateral",
+    "twitter_description": "Bico injetor original para Ford Transit (2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.)).",
+    "canonical_path": "/injecao-diesel/transit/",
+    "product": {
+      "name": "Bico Injetor para Ford Transit",
+      "description": "Bico injetor original para Ford Transit (2.4 Duratorq TDCi / 3.2 Duratorq TDCi (5 cil.)). Códigos OEM confirmados por consulta FIPE/Denatran.",
+      "brands": [
+        "Continental",
+        "Denso"
+      ],
+      "vehicles": [
+        "Ford Transit 2.4 Duratorq TDCi",
+        "Ford Transit 3.2 Duratorq TDCi (5 cil.)"
+      ],
+      "price_range": "R$ 1.500 - R$ 2.900",
+      "free_shipping": true
+    }
+  }
+}
