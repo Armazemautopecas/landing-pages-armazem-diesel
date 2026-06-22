@@ -1600,6 +1600,178 @@
           }
         ]
       }
+    },
+    "ranger": {
+      "veiculo": {
+        "marca": "Ford",
+        "modelo": "Ranger"
+      },
+      "variants_por_ano": {
+        "2005": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "3.0 Powerstroke (até 2012)",
+            "oem": "A2C59515264",
+            "marca_bico": "Continental"
+          },
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) 2012-2016",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) 2012-2016",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) 2012-2016",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) 2012-2016",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) 2012-2016",
+            "oem": "A2C59517051",
+            "marca_bico": "Continental"
+          },
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2026": [
+          {
+            "motor": "3.2 Duratorq TDCi (5 cil.) após 2016",
+            "oem": "A2C8139490080",
+            "marca_bico": "Continental"
+          }
+        ]
+      }
     }
   }
 }
