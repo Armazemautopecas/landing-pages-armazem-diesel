@@ -1772,6 +1772,78 @@
           }
         ]
       }
+    },
+    "frontier": {
+      "veiculo": {
+        "marca": "Nissan",
+        "modelo": "Frontier NP300"
+      },
+      "variants_por_ano": {
+        "2022": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ]
+      }
+    },
+    "master": {
+      "veiculo": {
+        "marca": "Renault",
+        "modelo": "Master"
+      },
+      "variants_por_ano": {
+        "2022": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ],
+        "2025": [
+          {
+            "motor": "2.3 dCi Euro 5",
+            "oem": "1660000Q2K",
+            "marca_bico": "Vitesco"
+          }
+        ]
+      }
     }
   }
 }
