@@ -53,6 +53,14 @@ function checkOemsEntry(slug, cfg, oems) {
   const issues = [];
   const cat = cfg.categoria;
   const key = cfg.veiculo_key;
+
+  // Segmento máquina/caminhão pesado (piloto Cummins 2026-07-02): não usa
+  // seletor por placa, então data/oems.json é opcional pra estes slugs.
+  // Sinal: presença de catalogo_pecas não-vazio no config.
+  const isSegmentoMaquina =
+    Array.isArray(cfg.catalogo_pecas) && cfg.catalogo_pecas.length > 0;
+  if (isSegmentoMaquina) return issues;
+
   if (!oems[cat]) {
     issues.push(`data/oems.json sem categoria "${cat}"`);
     return issues;
