@@ -1,0 +1,228 @@
+{
+  "_doc": "LP piloto do segmento máquina/caminhão pesado. Layout novo: sem seletor de placa, catálogo estático de peças + aplicações organizadas por família de motor Cummins. Componentes: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "cummins",
+  "categoria": "bico-injetor",
+  "veiculo_key": "cummins",
+  "veiculo": {
+    "marca_aliases": ["CUMMINS"],
+    "modelo_aliases": ["ISB", "ISBE", "ISF", "QSF", "QSB", "QSL9", "M11", "ISM11", "QSM11", "ISLE", "ISL9"]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "CUMMINS",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "ISB, ISF, QSB, ISM. Pra Ford Cargo, VW Constellation, Foton, XCMG, Komatsu e mais. Identificamos pelo código do motor ou da peça.",
+    "foto_static": "assets/cummins-static.webp",
+    "foto_alt": "Mecânico inspecionando motor de caminhão pesado",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua máquina",
+    "subtexto": "Localize a família do motor Cummins e confirme a peça pelo código."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua máquina",
+  "aplicacoes_sub": "Cummins é uma família de motores — quem monta busca pelo motor, não pelo veículo. Localize sua família aqui, e no catálogo abaixo tá o código da peça pra cada aplicação.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "ISB 4.5 / 5.9 / 6.7 (série B)",
+      "veiculos": ["Ford Cargo Euro V", "Geradores 24V"]
+    },
+    {
+      "motor": "ISBe4 / ISBe6",
+      "veiculos": ["Ford Cargo", "VW Worker"]
+    },
+    {
+      "motor": "ISF 2.8 / 3.8 · QSF 3.8",
+      "veiculos": ["Ford F350/F4000", "Foton", "VW Delivery", "XCMG XE150BR"]
+    },
+    {
+      "motor": "QSB 4.5 / 6.7",
+      "veiculos": ["Komatsu PC200/PC220/PC270", "Escavadeira Hyundai 260L"]
+    },
+    {
+      "motor": "QSL9 8.9 (série C)",
+      "veiculos": ["Komatsu PC300", "New Holland", "Case"]
+    },
+    {
+      "motor": "M11 / QSM11 / ISM11",
+      "veiculos": ["Caminhões pesados", "Aplicações industriais"]
+    },
+    {
+      "motor": "ISLE / ISL9",
+      "veiculos": ["Catálogo sob consulta — chama no WhatsApp"]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo/ano da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor ISB 6.7/4.5 Euro V",
+      "ref_fabricante": "0445120384 / 0445120161",
+      "cod_montadora": "5269194",
+      "aplicacao": "Ford Cargo Euro V",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor ISB 4.5/6.7 Euro 5",
+      "ref_fabricante": "0445120267",
+      "cod_montadora": "0445120267",
+      "aplicacao": "Ford Cargo Euro 5",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor ISF/QSF 3.8",
+      "ref_fabricante": "0445120134",
+      "cod_montadora": "0445120134",
+      "aplicacao": "Foton, VW Delivery, XCMG XE150BR",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSB 6.7/4.5",
+      "ref_fabricante": "0445120231",
+      "cod_montadora": "0445120231",
+      "aplicacao": "Komatsu PC200/220/270, Hyundai 260L",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSL9 8.9",
+      "ref_fabricante": "0445120236",
+      "cod_montadora": "6745-12-3100",
+      "aplicacao": "Komatsu PC300, New Holland, Case",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor M11 / QSM11 / ISM11",
+      "ref_fabricante": "4903472",
+      "cod_montadora": "4903472",
+      "aplicacao": "Caminhões pesados e aplicações industriais M11",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor ISB 5.9 24V",
+      "ref_fabricante": "0445120028",
+      "cod_montadora": "0445120028",
+      "aplicacao": "Geradores 24V",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Sensor de rail + Válvula IMV",
+      "ref_fabricante": "0281006325 / 0928400644",
+      "aplicacao": "Ford Cargo, VW Constellation",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR CUMMINS",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "Cummins ISB, ISF, QSB, QSL9, M11 e ISM11",
+    "fabricantes_aceitos": ["Bosch", "Delphi"],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua máquina",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre o segmento Cummins. Fale com a gente no WhatsApp que a gente confirma a compatibilidade pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Cummins.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Cummins.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Cummins.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Cummins.",
+    "result_dontknow_motor": "Olá, não sei qual é a família do motor Cummins da minha máquina. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Cummins e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Cummins e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Cummins e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Cummins."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou da montadora antes de fechar. Sem achismo, sem peça voltando, sem obra parada esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch e Delphi — as marcas homologadas pros motores Cummins ISB, ISF, QSB, QSL9, M11 e ISM11, com códigos confirmados por família de motor."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Cummins + ISB + Ford Cargo + Bosch pra ranquear cauda longa.",
+    "heading": "Como saber se o bico injetor do motor Cummins está com problema",
+    "intro": "O bico injetor do Cummins ISB, ISF, QSB, QSL9 ou ISM é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro numa máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em subida com carga ou operação pesada",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM Bosch/Delphi) e primeira linha são as duas opções confiáveis pra motores Cummins — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor (ISB, ISF, QSB, QSL9): pressão de abertura, padrão de pulverização e vedação seguem a especificação Cummins. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da máquina — sem margem de erro de compatibilidade. Estoque disponível pras famílias ISB (4.5/5.9/6.7), ISBe4/e6, ISF/QSF 3.8, QSB, QSL9 8.9 e M11/ISM11."
+  },
+  "seo": {
+    "title": "Bico Injetor Cummins — ISB, ISF, QSB | Ford Cargo, VW, Komatsu | Armazém Auto Peças",
+    "description": "Bico injetor pra motor Cummins ISB, ISF, QSB e ISM. Ford Cargo, VW Constellation, Foton, XCMG e Komatsu. 0445120384, 0445120134 e mais. Compatibilidade confirmada no WhatsApp.",
+    "og_image": "assets/cummins-static.png",
+    "og_image_alt": "Mecânico inspecionando motor de caminhão pesado",
+    "twitter_description": "Bico injetor pra motor Cummins ISB, ISF, QSB e ISM. Ford Cargo, VW Constellation, Foton, XCMG e Komatsu.",
+    "canonical_path": "/injecao-diesel/cummins/",
+    "product": {
+      "name": "Bico Injetor Bosch/Delphi para motor Cummins ISB, ISF, QSB, QSL9 e ISM",
+      "description": "Bico injetor original e primeira linha (Bosch, Delphi) para família de motores Cummins ISB 4.5/5.9/6.7, ISBe4/e6, ISF 2.8/3.8, QSF 3.8, QSB 4.5/6.7, QSL9 8.9, M11 e ISM11. Aplicações: Ford Cargo, VW Constellation/Worker/Delivery, Foton, XCMG, Komatsu, Case, New Holland.",
+      "brands": ["Bosch", "Delphi"],
+      "vehicles": [
+        "Ford Cargo Euro V",
+        "VW Constellation",
+        "VW Worker",
+        "VW Delivery",
+        "Foton",
+        "XCMG XE150BR",
+        "Komatsu PC200/220/270/300",
+        "Case",
+        "New Holland"
+      ],
+      "price_range": "R$ 800 - R$ 6.000",
+      "free_shipping": true
+    }
+  }
+}
