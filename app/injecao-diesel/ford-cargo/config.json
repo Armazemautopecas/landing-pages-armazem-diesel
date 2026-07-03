@@ -1,0 +1,207 @@
+{
+  "_doc": "LP segunda-piloto do segmento máquina/caminhão. Valida REUSO de peças com Cummins (mesmo bico 0445120384 aparece nas duas LPs, cada uma ranqueando pelo seu termo). Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "ford-cargo",
+  "categoria": "bico-injetor",
+  "veiculo_key": "ford-cargo",
+  "veiculo": {
+    "marca_aliases": ["FORD"],
+    "modelo_aliases": ["CARGO"]
+  },
+  "hero": {
+    "eyebrow": "CAMINHÃO PARADO É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "FORD CARGO",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Cargo Euro V, C1119, C2932. Motor Cummins ISB — identificamos o bico exato pelo modelo e ano do caminhão.",
+    "foto_static": "assets/ford-cargo-static.webp",
+    "foto_alt": "Caminhão pesado branco em rodovia",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu Cargo",
+    "subtexto": "Manda o código da peça ou o modelo/ano do caminhão — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pro seu Cargo",
+  "aplicacoes_sub": "Todo Cargo diesel usa motor Cummins — muda a família (ISB, ISBe, ISF, ISL/ISC) por linha e ano. Localize aqui a família do seu caminhão e no catálogo abaixo tá o código do bico.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Cummins ISB 6.7 Euro V",
+      "veiculos": ["Cargo 2422", "Cargo 2429", "Cargo 2842", "Linha Euro V (2012+)"]
+    },
+    {
+      "motor": "Cummins ISB 4.5/6.7 Euro 5",
+      "veiculos": ["Cargo Euro 5 (2019+)"]
+    },
+    {
+      "motor": "Cummins ISBe4 / ISBe6",
+      "veiculos": ["Cargo 1719", "Cargo 1722", "Cargo 1723", "VW Worker (usa a mesma peça)"]
+    },
+    {
+      "motor": "Cummins ISL / ISC 8.3",
+      "veiculos": ["Cargo C2932", "Linha pesada"]
+    },
+    {
+      "motor": "Cummins ISF 4.5 (após 2013)",
+      "veiculos": ["Cargo C1119"]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo/ano do caminhão. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor ISB 6.7/4.5 Euro V",
+      "ref_fabricante": "0445120384 / 0445120161",
+      "cod_montadora": "5269194",
+      "aplicacao": "Cargo Euro V (2422, 2429, 2842)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor ISB 4.5/6.7 Euro 5",
+      "ref_fabricante": "0445120267",
+      "cod_montadora": "0445120267",
+      "aplicacao": "Cargo Euro 5 (2019+)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor ISBe4 / ISBe6",
+      "ref_fabricante": "0445120007 / 0445120212",
+      "cod_montadora": "1405332 / 2830224",
+      "aplicacao": "Cargo 1719/1722/1723 e VW Worker",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Sensor de pressão do rail",
+      "ref_fabricante": "0281006325",
+      "cod_montadora": "0281006325",
+      "aplicacao": "Cargo Cummins (todas as linhas)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Válvula IMV bomba injetora",
+      "ref_fabricante": "0928400774",
+      "cod_montadora": "07W127615",
+      "aplicacao": "Cargo C1119 (após 2013)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogo completo bicos ISB Euro V (6 uni)",
+      "ref_fabricante": "0445120384 x6",
+      "aplicacao": "Cargo Euro V — reposição completa 6 cilindros",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR FORD CARGO",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "Cummins ISB, ISBe, ISF e ISL/ISC",
+    "fabricantes_aceitos": ["Bosch"],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia Bosch",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Cargo",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pro seu Cargo.",
+    "not_supported_default": "Esta LP cobre a linha Ford Cargo. Fale no WhatsApp que a gente confirma pelo modelo e ano do seu caminhão."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Ford Cargo.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Ford Cargo.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Ford Cargo.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Ford Cargo.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Ford Cargo. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Cargo e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Cargo e meu caminhão é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Cargo e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Ford Cargo."
+  },
+  "why": {
+    "h2_l1": "Caminhão parado",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo/ano do Cargo antes de fechar. Sem achismo, sem peça voltando, sem frota parada esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Bosch — a marca que a Ford monta de fábrica no motor Cummins do Cargo, com código OEM confirmado por linha e ano. Quando disponível, também oferecemos primeira linha de qualidade equivalente."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu Cargo volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua frota Cargo não fica parada esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Mande o código da peça ou o modelo/ano do Cargo no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Ford Cargo + Cummins ISB + Bosch pra cauda longa.",
+    "heading": "Como saber se o bico injetor do Cargo está com problema",
+    "intro": "O bico injetor do Ford Cargo (motor Cummins ISB, ISBe, ISF ou ISL/ISC) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de um caminhão que já é caro pra ficar parado.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (Bosch OEM) e primeira linha são as duas opções confiáveis pro Cargo — a diferença está na origem. O original é calibrado de fábrica pra família Cummins específica (ISB 4.5, ISB 6.7, ISBe4/e6, ISF, ISL): pressão de abertura, padrão de pulverização e vedação seguem a especificação Cummins/Ford. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo/ano do seu Cargo — sem margem de erro de compatibilidade. Estoque disponível pra ISB Euro V (2422/2429/2842), ISB Euro 5, ISBe4/e6 (1719/1722/1723), ISF 4.5 (C1119) e ISL/ISC 8.3 (C2932)."
+  },
+  "seo": {
+    "title": "Bico Injetor Ford Cargo — Euro V, C1119, Cummins ISB | Armazém Auto Peças",
+    "description": "Bico injetor pro Ford Cargo Euro V e Euro 5 (Cummins ISB 4.5/6.7). 0445120384, 0445120267 e mais. Original e primeira linha, compatibilidade confirmada no WhatsApp.",
+    "og_image": "assets/ford-cargo-static.png",
+    "og_image_alt": "Caminhão pesado branco em rodovia",
+    "twitter_description": "Bico injetor pro Ford Cargo Euro V e Euro 5 (Cummins ISB 4.5/6.7).",
+    "canonical_path": "/injecao-diesel/ford-cargo/",
+    "product": {
+      "name": "Bico Injetor Bosch para Ford Cargo (Cummins ISB, ISBe, ISF, ISL/ISC)",
+      "description": "Bico injetor Bosch original e primeira linha para Ford Cargo com motor Cummins ISB 4.5/6.7 Euro V e Euro 5, ISBe4/e6 (Cargo 1719/1722/1723), ISF 4.5 (C1119) e ISL/ISC 8.3 (C2932).",
+      "brands": ["Bosch"],
+      "vehicles": [
+        "Ford Cargo Euro V",
+        "Ford Cargo Euro 5",
+        "Ford Cargo 1719",
+        "Ford Cargo 1722",
+        "Ford Cargo 1723",
+        "Ford Cargo 2422",
+        "Ford Cargo 2429",
+        "Ford Cargo 2842",
+        "Ford Cargo C1119",
+        "Ford Cargo C2932"
+      ],
+      "price_range": "R$ 800 - R$ 6.000",
+      "free_shipping": true
+    }
+  }
+}
