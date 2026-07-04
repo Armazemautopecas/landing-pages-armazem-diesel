@@ -1,0 +1,235 @@
+{
+  "_doc": "LP Case — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "case",
+  "categoria": "bico-injetor",
+  "veiculo_key": "case",
+  "veiculo": {
+    "marca_aliases": [
+      "CASE",
+      "CNH"
+    ],
+    "modelo_aliases": [
+      "821E",
+      "721E",
+      "CX130",
+      "CX130B",
+      "CX135SR",
+      "CX160B",
+      "A8800",
+      "AF413",
+      "AF5130"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "CASE",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Escavadeiras, carregadeiras e bulldozers Case. Confirmamos a peça exata pelo código FPT ou pelo modelo da máquina.",
+    "foto_static": "assets/case-static.webp",
+    "foto_alt": "Pá carregadeira Case amarela em pedreira",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua Case",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua Case",
+  "aplicacoes_sub": "Case e New Holland compartilham a plataforma FPT — muitas peças são idênticas. Localize sua linha aqui e no catálogo tá o código.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Carregadeiras 821E / 721E",
+      "veiculos": [
+        "821E (= NH 7040/7060)",
+        "721E bulldozer",
+        "AF413",
+        "AF5130",
+        "A8800"
+      ]
+    },
+    {
+      "motor": "Escavadeiras CX",
+      "veiculos": [
+        "CX130",
+        "CX130B",
+        "CX135SR",
+        "CX160B"
+      ]
+    },
+    {
+      "motor": "Motor Cummins QSL9 8.9",
+      "veiculos": [
+        "Compartilhado com Komatsu PC300",
+        "Britador Sandvik QJ241"
+      ]
+    },
+    {
+      "motor": "Colheitadeira A8800",
+      "veiculos": [
+        "A8800 (= NH CR)"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor 821E",
+      "ref_fabricante": "0445120075",
+      "cod_montadora": "2855135 / 504128307",
+      "aplicacao": "Carregadeira 821E (= NH 7040/7060)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor A8800",
+      "ref_fabricante": "0445120092",
+      "cod_montadora": "504194432",
+      "aplicacao": "Colheitadeira A8800 (= NH CR)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor 721E",
+      "ref_fabricante": "0445120057",
+      "cod_montadora": "2854608",
+      "aplicacao": "Bulldozer 721E",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor linha CX",
+      "ref_fabricante": "87560084R",
+      "cod_montadora": "87560084R",
+      "aplicacao": "CX130, CX130B, CX135SR, CX160B",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSL9 8.9",
+      "ref_fabricante": "0445120236",
+      "cod_montadora": "6745-12-3100",
+      "aplicacao": "Máquinas com Cummins QSL9 (Komatsu PC300, Sandvik)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogos completos (kits)",
+      "ref_fabricante": "conforme aplicação",
+      "aplicacao": "Todas as linhas Case acima",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR CASE",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "FPT Case e Cummins QSL9 8.9",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua Case",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha Case. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Case.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Case.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Case.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Case.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha Case. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Case e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Case e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Case e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Case."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da máquina antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Case + motor.",
+    "heading": "Como saber se o bico injetor da máquina Case está com problema",
+    "intro": "O bico injetor do motor (FPT Case e Cummins QSL9 8.9) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua Case. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação. Máquina New Holland com a mesma plataforma FPT? A peça pode ser a mesma — veja também a LP New Holland."
+  },
+  "seo": {
+    "title": "Bico Injetor Case — 821E, 721E, CX130, CX160B | Armazém Auto Peças",
+    "description": "Bico injetor pra Case 821E, 721E e escavadeiras CX130-CX160B. Plataforma FPT, original e primeira linha. 0445120075 e mais. Confirme pelo código no WhatsApp.",
+    "og_image": "assets/case-static.png",
+    "og_image_alt": "Pá carregadeira Case amarela em pedreira",
+    "twitter_description": "Bico injetor pra Case 821E, 721E e escavadeiras CX130-CX160B. Plataforma FPT, original e primeira linha. 0445120075 e mais. Confirme pelo código no WhatsApp.",
+    "canonical_path": "/injecao-diesel/case/",
+    "product": {
+      "name": "Bico Injetor para Case (FPT Case e Cummins QSL9 8.9)",
+      "description": "Bico injetor pra Case 821E, 721E e escavadeiras CX130-CX160B. Plataforma FPT, original e primeira linha. 0445120075 e mais. Confirme pelo código no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "Case 821E",
+        "Case 721E",
+        "Case CX130",
+        "Case CX130B",
+        "Case CX135SR",
+        "Case CX160B",
+        "Case A8800"
+      ],
+      "price_range": "R$ 900 - R$ 5.000",
+      "free_shipping": true
+    }
+  }
+}
