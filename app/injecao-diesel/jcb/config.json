@@ -1,0 +1,224 @@
+{
+  "_doc": "LP JCB — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "jcb",
+  "categoria": "bico-injetor",
+  "veiculo_key": "jcb",
+  "veiculo": {
+    "marca_aliases": [
+      "JCB"
+    ],
+    "modelo_aliases": [
+      "JS200",
+      "JS210",
+      "JS220",
+      "3CX",
+      "416S",
+      "T3"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "JCB",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Escavadeiras JS200, JS210, JS220 e retroescavadeira 3CX. Máquina parada é prejuízo — resolvemos pelo código da peça.",
+    "foto_static": "assets/jcb-static.webp",
+    "foto_alt": "Retroescavadeira JCB 3CX em obra rural",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua JCB",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua JCB",
+  "aplicacoes_sub": "JCB usa duas famílias principais (4.40 e 4.8L). Localize a linha e no catálogo tá o código do bico.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Motor 4.40 (linha 200)",
+      "veiculos": [
+        "JCB 200",
+        "JCB 320",
+        "Pá carregadeira 416S"
+      ]
+    },
+    {
+      "motor": "Motor 4.8L T3",
+      "veiculos": [
+        "JS200 T3",
+        "JS210 T3"
+      ]
+    },
+    {
+      "motor": "Escavadeiras JS",
+      "veiculos": [
+        "JS200",
+        "JS210",
+        "JS220"
+      ]
+    },
+    {
+      "motor": "Motores Isuzu 4HK1 / 6HK1",
+      "veiculos": [
+        "Válvula IMV bomba injetora"
+      ]
+    },
+    {
+      "motor": "Retroescavadeira 3CX",
+      "veiculos": [
+        "Bomba injetora sob consulta — chama no WhatsApp"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor JS200 / JS220",
+      "ref_fabricante": "EJBR05001D",
+      "cod_montadora": "320/06623",
+      "aplicacao": "JCB 200, 320, 416S — motor 4.40",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor JS210 4.8",
+      "ref_fabricante": "28270450",
+      "cod_montadora": "320/06828",
+      "aplicacao": "Escavadeira JS210",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor T3 4.8L",
+      "ref_fabricante": "28258683",
+      "cod_montadora": "320/06833",
+      "aplicacao": "JS200 T3",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Válvula IMV bomba injetora",
+      "ref_fabricante": "294200-0650",
+      "aplicacao": "Motores Isuzu 4HK1 e 6HK1",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogos completos (kits)",
+      "ref_fabricante": "conforme aplicação",
+      "aplicacao": "JS200/220, JS210, T3",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR JCB",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "4.40, 4.8 T3 e Isuzu 4HK1/6HK1",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua JCB",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha JCB. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para JCB.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para JCB.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra JCB.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra JCB.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha JCB. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page JCB e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page JCB e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page JCB e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para JCB."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da máquina antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword JCB + motor.",
+    "heading": "Como saber se o bico injetor da máquina JCB está com problema",
+    "intro": "O bico injetor do motor (4.40, 4.8 T3 e Isuzu 4HK1/6HK1) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua JCB. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+  },
+  "seo": {
+    "title": "Bico Injetor JCB — JS200, JS210, JS220, 3CX | Armazém Auto Peças",
+    "description": "Bico injetor JCB original e primeira linha. JS200, JS210, JS220 e 3CX. EJBR05001D, 28270450 e mais. Confirmamos pelo código da peça. Fale no WhatsApp.",
+    "og_image": "assets/jcb-static.png",
+    "og_image_alt": "Retroescavadeira JCB 3CX em obra rural",
+    "twitter_description": "Bico injetor JCB original e primeira linha. JS200, JS210, JS220 e 3CX. EJBR05001D, 28270450 e mais. Confirmamos pelo código da peça. Fale no WhatsApp.",
+    "canonical_path": "/injecao-diesel/jcb/",
+    "product": {
+      "name": "Bico Injetor para JCB (4.40, 4.8 T3 e Isuzu 4HK1/6HK1)",
+      "description": "Bico injetor JCB original e primeira linha. JS200, JS210, JS220 e 3CX. EJBR05001D, 28270450 e mais. Confirmamos pelo código da peça. Fale no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "JCB JS200",
+        "JCB JS210",
+        "JCB JS220",
+        "JCB 3CX",
+        "JCB 416S"
+      ],
+      "price_range": "R$ 800 - R$ 4.500",
+      "free_shipping": true
+    }
+  }
+}

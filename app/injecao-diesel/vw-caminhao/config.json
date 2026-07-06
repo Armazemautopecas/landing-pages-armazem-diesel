@@ -1,0 +1,265 @@
+{
+  "_doc": "LP VW Constellation/Worker/Delivery — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "vw-caminhao",
+  "categoria": "bico-injetor",
+  "veiculo_key": "vw-caminhao",
+  "veiculo": {
+    "marca_aliases": [
+      "VW",
+      "VOLKSWAGEN",
+      "MAN"
+    ],
+    "modelo_aliases": [
+      "CONSTELLATION",
+      "WORKER",
+      "DELIVERY",
+      "TGA",
+      "TGX",
+      "TGS"
+    ]
+  },
+  "hero": {
+    "eyebrow": "CAMINHÃO PARADO É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "VW CONSTELLATION, WORKER E DELIVERY",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Toda a linha VW caminhões e MAN: bico, ponteira, bomba e válvula. Identificamos pelo modelo (13.190 ao 31-280) ou pelo código da peça.",
+    "foto_static": "assets/vw-caminhao-static.webp",
+    "foto_alt": "Caminhão pesado azul em rodovia",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu VW",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pro seu caminhão",
+  "aplicacoes_sub": "Toda a linha VW/MAN cobre motores Cummins e MWM/D0836. Localize seu modelo aqui e no catálogo tá o código do bico, ponteira ou bomba.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Constellation Euro V 190-280",
+      "veiculos": [
+        "13.190",
+        "15.190",
+        "17.190",
+        "17.210",
+        "17.260",
+        "23-230",
+        "24-250/260/280",
+        "26-280",
+        "31-280"
+      ]
+    },
+    {
+      "motor": "Constellation Titan (ISC 8.3)",
+      "veiculos": [
+        "19320 Titan",
+        "17250",
+        "23250"
+      ]
+    },
+    {
+      "motor": "Worker (Cummins ISBe4/e6)",
+      "veiculos": [
+        "Peça compartilhada com Ford Cargo"
+      ]
+    },
+    {
+      "motor": "Delivery (linha leve)",
+      "veiculos": [
+        "Delivery 8.150",
+        "9.150",
+        "9.170",
+        "14.180",
+        "15.180",
+        "8-160/9-160/10-160"
+      ]
+    },
+    {
+      "motor": "MAN Constellation e ônibus (D0836)",
+      "veiculos": [
+        "TGA",
+        "TGX",
+        "TGS"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Ponteira bico D0836",
+      "ref_fabricante": "0433172119 / DLLA153P1831",
+      "cod_montadora": "DLLA153P1831",
+      "aplicacao": "VW/MAN Constellation",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Ponteira Constellation / Worker",
+      "ref_fabricante": "DLLA145P2397",
+      "cod_montadora": "0433172120",
+      "aplicacao": "13.190, 15.190, 17.190",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Euro V (linha 260-280)",
+      "ref_fabricante": "0445120186",
+      "cod_montadora": "0445120186",
+      "aplicacao": "26-280, 31-280, 17/24-280, 17/24-260",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Euro V (linha 190-230)",
+      "ref_fabricante": "0445120162",
+      "cod_montadora": "07W130205",
+      "aplicacao": "17-190, 13/15-190, 17/23-230",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Delivery",
+      "ref_fabricante": "0445120089 / 0445120330",
+      "aplicacao": "Delivery 8.150/9.150 + Const 17.210/17.260/14.180/15.180",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bomba Injetora MAN",
+      "ref_fabricante": "0445020208 / 0445020075",
+      "aplicacao": "TGA, TGX, TGS",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bomba Injetora Constellation",
+      "ref_fabricante": "0445020207",
+      "cod_montadora": "07W130759C",
+      "aplicacao": "Constellation linha Euro V",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Válvula IMV Euro V",
+      "ref_fabricante": "0928400761",
+      "cod_montadora": "07W130765B",
+      "aplicacao": "Constellation (todas)",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR VW CONSTELLATION, WORKER E DELIVERY",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "Cummins ISB/ISBe, ISC 8.3 e MAN D0836",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua VW Constellation/Worker/Delivery",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha VW Constellation/Worker/Delivery. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para VW Constellation/Worker/Delivery.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para VW Constellation/Worker/Delivery.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra VW Constellation/Worker/Delivery.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra VW Constellation/Worker/Delivery.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu VW Constellation/Worker/Delivery. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page VW Constellation/Worker/Delivery e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page VW Constellation/Worker/Delivery e meu máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page VW Constellation/Worker/Delivery e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para VW Constellation/Worker/Delivery."
+  },
+  "why": {
+    "h2_l1": "Caminhão parado",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da seu caminhão antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua caminhão volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Mande o código da peça ou o modelo do seu caminhão no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword VW Constellation/Worker/Delivery + motor.",
+    "heading": "Como saber se o bico injetor da máquina VW Constellation/Worker/Delivery está com problema",
+    "intro": "O bico injetor do motor (Cummins ISB/ISBe, ISC 8.3 e MAN D0836) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua VW Constellation/Worker/Delivery. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+  },
+  "seo": {
+    "title": "Bico Injetor VW Constellation, Worker e Delivery + MAN | Armazém Auto Peças",
+    "description": "Bico, ponteira e bomba injetora pra VW Constellation (13.190 a 31-280), Worker, Delivery e MAN TGA/TGX. Original e primeira linha, em estoque. Confirme o modelo no WhatsApp.",
+    "og_image": "assets/vw-caminhao-static.png",
+    "og_image_alt": "Caminhão pesado azul em rodovia",
+    "twitter_description": "Bico, ponteira e bomba injetora pra VW Constellation (13.190 a 31-280), Worker, Delivery e MAN TGA/TGX. Original e primeira linha, em estoque. Confirme o modelo no WhatsApp.",
+    "canonical_path": "/injecao-diesel/vw-caminhao/",
+    "product": {
+      "name": "Bico Injetor para VW Constellation/Worker/Delivery (Cummins ISB/ISBe, ISC 8.3 e MAN D0836)",
+      "description": "Bico, ponteira e bomba injetora pra VW Constellation (13.190 a 31-280), Worker, Delivery e MAN TGA/TGX. Original e primeira linha, em estoque. Confirme o modelo no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "VW Constellation 13.190",
+        "VW Constellation 15.190",
+        "VW Constellation 17.190",
+        "VW Constellation 24-250",
+        "VW Constellation 31-280",
+        "VW Worker",
+        "VW Delivery 8.150",
+        "VW Delivery 9.150",
+        "MAN TGA",
+        "MAN TGX",
+        "MAN TGS"
+      ],
+      "price_range": "R$ 400 - R$ 6.000",
+      "free_shipping": true
+    }
+  }
+}

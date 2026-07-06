@@ -1,0 +1,221 @@
+{
+  "_doc": "LP John Deere — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "john-deere",
+  "categoria": "bico-injetor",
+  "veiculo_key": "john-deere",
+  "veiculo": {
+    "marca_aliases": [
+      "JOHN DEERE",
+      "DEERE",
+      "JD"
+    ],
+    "modelo_aliases": [
+      "410J",
+      "450K",
+      "550K",
+      "550J",
+      "6100D",
+      "700",
+      "7530",
+      "7830"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "JOHN DEERE",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Tratores, retroescavadeiras e motoniveladoras. Busque pelo código DZ ou RE — confirmamos a compatibilidade na hora.",
+    "foto_static": "assets/john-deere-static.webp",
+    "foto_alt": "Trator John Deere verde e amarelo",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua John",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua John Deere",
+  "aplicacoes_sub": "JD organiza a peça pelo código DZ (Deere) ou RE (motor PowerTech). Localize sua linha e no catálogo tá a peça exata.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Tratores e retroescavadeiras",
+      "veiculos": [
+        "410J",
+        "450K",
+        "550K",
+        "550J",
+        "6100D",
+        "700"
+      ]
+    },
+    {
+      "motor": "Motoniveladoras (após 2010)",
+      "veiculos": [
+        "7530",
+        "7830"
+      ]
+    },
+    {
+      "motor": "Motores PowerTech 4.5L / 6.8L",
+      "veiculos": [
+        "Aplicações agrícolas e industriais"
+      ]
+    },
+    {
+      "motor": "Linha 310J–344J (sob consulta)",
+      "veiculos": [
+        "Catálogo estendido — chama no WhatsApp"
+      ]
+    },
+    {
+      "motor": "Colheitadeiras (sob consulta)",
+      "veiculos": [
+        "S450 (motor 8530)",
+        "8235R",
+        "8260R"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor tratores JD",
+      "ref_fabricante": "095000-6312",
+      "cod_montadora": "RE530362 / DZ100212",
+      "aplicacao": "410J, 450K, 550K, 550J, 6100D, 700",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor motoniveladora",
+      "ref_fabricante": "KS.095000-6491",
+      "cod_montadora": "DZ100217 / RE529118",
+      "aplicacao": "Motoniveladoras 7530 e 7830 (após 2010)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogos completos (kits)",
+      "ref_fabricante": "conforme aplicação",
+      "aplicacao": "Tratores e motoniveladoras JD",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR JOHN DEERE",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "PowerTech 4.5L e 6.8L (linhas J/K/D)",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua John Deere",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha John Deere. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para John Deere.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para John Deere.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra John Deere.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra John Deere.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha John Deere. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page John Deere e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page John Deere e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page John Deere e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para John Deere."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da máquina antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword John Deere + motor.",
+    "heading": "Como saber se o bico injetor da máquina John Deere está com problema",
+    "intro": "O bico injetor do motor (PowerTech 4.5L e 6.8L (linhas J/K/D)) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua John Deere. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+  },
+  "seo": {
+    "title": "Bico Injetor John Deere — DZ100212, DZ100217, Tratores e Motoniveladoras | Armazém Auto Peças",
+    "description": "Bico injetor John Deere pra trator 410J-550K, 6100D e motoniveladora 7530/7830. DZ100212, DZ100217, RE530362. Original e primeira linha. Confirme pelo código no WhatsApp.",
+    "og_image": "assets/john-deere-static.png",
+    "og_image_alt": "Trator John Deere verde e amarelo",
+    "twitter_description": "Bico injetor John Deere pra trator 410J-550K, 6100D e motoniveladora 7530/7830. DZ100212, DZ100217, RE530362. Original e primeira linha. Confirme pelo código no WhatsApp.",
+    "canonical_path": "/injecao-diesel/john-deere/",
+    "product": {
+      "name": "Bico Injetor para John Deere (PowerTech 4.5L e 6.8L (linhas J/K/D))",
+      "description": "Bico injetor John Deere pra trator 410J-550K, 6100D e motoniveladora 7530/7830. DZ100212, DZ100217, RE530362. Original e primeira linha. Confirme pelo código no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "John Deere 410J",
+        "John Deere 450K",
+        "John Deere 550K",
+        "John Deere 550J",
+        "John Deere 6100D",
+        "John Deere 700",
+        "John Deere motoniveladora 7530",
+        "John Deere motoniveladora 7830"
+      ],
+      "price_range": "R$ 900 - R$ 4.800",
+      "free_shipping": true
+    }
+  }
+}

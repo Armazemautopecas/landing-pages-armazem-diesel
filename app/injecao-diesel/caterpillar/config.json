@@ -1,0 +1,260 @@
+{
+  "_doc": "LP Caterpillar — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "caterpillar",
+  "categoria": "bico-injetor",
+  "veiculo_key": "caterpillar",
+  "veiculo": {
+    "marca_aliases": [
+      "CATERPILLAR",
+      "CAT"
+    ],
+    "modelo_aliases": [
+      "320D",
+      "312D",
+      "312DI",
+      "336",
+      "340",
+      "345",
+      "350",
+      "3114",
+      "3116"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "CATERPILLAR",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Escavadeiras, carregadeiras e rolos compactadores. Compatibilidade confirmada pelo código da peça. Sua máquina não pode ficar parada.",
+    "foto_static": "assets/caterpillar-static.webp",
+    "foto_alt": "Escavadeira Caterpillar amarela em obra rodoviária",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua Caterpillar",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua Caterpillar",
+  "aplicacoes_sub": "Cat cobre uma família ampla de motores. Localize a linha do seu equipamento e no catálogo abaixo tá o código do bico exato.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Motor C7 / C9 / C9.3",
+      "veiculos": [
+        "Escavadeira 320D",
+        "Escavadeira 336",
+        "Escavadeira 340",
+        "Escavadeira 345 GC",
+        "Escavadeira 350"
+      ]
+    },
+    {
+      "motor": "Motor C6.4 / C6.6 (linha 312D)",
+      "veiculos": [
+        "Escavadeira 312D",
+        "Escavadeira 312DI"
+      ]
+    },
+    {
+      "motor": "Motores 3114 / 3116",
+      "veiculos": [
+        "Tratores e motores industriais 3114 e 3116"
+      ]
+    },
+    {
+      "motor": "Rolos compactadores CP / CS / CB",
+      "veiculos": [
+        "CP44B",
+        "CS54B",
+        "CB-66B",
+        "CP54B"
+      ]
+    },
+    {
+      "motor": "Carregadeiras (catálogo estendido)",
+      "veiculos": [
+        "924H",
+        "928H",
+        "930H",
+        "938H",
+        "D6N",
+        "D5R (sob consulta)"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor C7 / C9",
+      "ref_fabricante": "328-2585 / 10R-7225",
+      "cod_montadora": "328-2585",
+      "aplicacao": "Motores C7 e C9",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor C9.3",
+      "ref_fabricante": "617-1905",
+      "cod_montadora": "617-1905",
+      "aplicacao": "Escavadeiras 336, 340, 345 GC, 350",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor 320D",
+      "ref_fabricante": "326-4700",
+      "cod_montadora": "326-4700",
+      "aplicacao": "Escavadeira 320D",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor 312D / 312DI",
+      "ref_fabricante": "326-4756",
+      "cod_montadora": "326-4756",
+      "aplicacao": "Escavadeira 312D e 312DI",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor 3114 / 3116",
+      "ref_fabricante": "127-8216",
+      "cod_montadora": "127-8216",
+      "aplicacao": "Tratores e motores 3114-3116",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor rolos CP / CS / CB",
+      "ref_fabricante": "0445120400 / 0445120399",
+      "aplicacao": "CP44B, CS54B, CB-66B, CP54B",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor 230-8999",
+      "ref_fabricante": "230-8999",
+      "cod_montadora": "230-8999",
+      "aplicacao": "Linha CAT original",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogos completos (kits)",
+      "ref_fabricante": "conforme aplicação",
+      "aplicacao": "320D, 312D, C9.3, 3114/3116",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR CATERPILLAR",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "C7, C9, C9.3, C6.4, C6.6, 3114 e 3116",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua Caterpillar",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha Caterpillar. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Caterpillar.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Caterpillar.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Caterpillar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Caterpillar.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha Caterpillar. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Caterpillar e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Caterpillar e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Caterpillar e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Caterpillar."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da máquina antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Caterpillar + motor.",
+    "heading": "Como saber se o bico injetor da máquina Caterpillar está com problema",
+    "intro": "O bico injetor do motor (C7, C9, C9.3, C6.4, C6.6, 3114 e 3116) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua Caterpillar. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+  },
+  "seo": {
+    "title": "Bico Injetor Caterpillar — 320D, 312D, C7, C9, C9.3 | Armazém Auto Peças",
+    "description": "Bico injetor Caterpillar original e primeira linha pra escavadeira, carregadeira e rolo. 328-2585, 326-4700, 617-1905 e mais. Confirmamos a compatibilidade pelo código. Fale no WhatsApp.",
+    "og_image": "assets/caterpillar-static.png",
+    "og_image_alt": "Escavadeira Caterpillar amarela em obra rodoviária",
+    "twitter_description": "Bico injetor Caterpillar original e primeira linha pra escavadeira, carregadeira e rolo. 328-2585, 326-4700, 617-1905 e mais. Confirmamos a compatibilidade pelo código. Fale no Wha",
+    "canonical_path": "/injecao-diesel/caterpillar/",
+    "product": {
+      "name": "Bico Injetor para Caterpillar (C7, C9, C9.3, C6.4, C6.6, 3114 e 3116)",
+      "description": "Bico injetor Caterpillar original e primeira linha pra escavadeira, carregadeira e rolo. 328-2585, 326-4700, 617-1905 e mais. Confirmamos a compatibilidade pelo código. Fale no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "Caterpillar 320D",
+        "Caterpillar 312D",
+        "Caterpillar 336",
+        "Caterpillar 340",
+        "Caterpillar 345 GC",
+        "Caterpillar 350",
+        "Caterpillar motores C7/C9/C9.3",
+        "Caterpillar CP44B/CS54B/CB-66B"
+      ],
+      "price_range": "R$ 900 - R$ 5.500",
+      "free_shipping": true
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "_doc": "LP New Holland — segmento máquina/caminhão. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "new-holland",
+  "categoria": "bico-injetor",
+  "veiculo_key": "new-holland",
+  "veiculo": {
+    "marca_aliases": [
+      "NEW HOLLAND",
+      "NH",
+      "CNH"
+    ],
+    "modelo_aliases": [
+      "CR",
+      "CR6.80",
+      "CR6080",
+      "CR9040",
+      "CR9060",
+      "CR8.80",
+      "CR8.90",
+      "CR9.80",
+      "CR9.90",
+      "7040",
+      "7060",
+      "T4"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "NEW HOLLAND",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Colheitadeiras CR, tratores e linha 7040/7060. Colheita não espera — confirmamos a peça pelo código FPT na hora.",
+    "foto_static": "assets/new-holland-static.webp",
+    "foto_alt": "Colheitadeira New Holland amarela em trigal",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua New",
+    "subtexto": "Consultamos código da peça ou modelo da máquina — confirmamos a compatibilidade na hora."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua New Holland",
+  "aplicacoes_sub": "New Holland e Case compartilham a plataforma FPT. Localize sua linha aqui — muitas peças são as mesmas usadas nas Case.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Colheitadeiras CR (linha 2014-2016)",
+      "veiculos": [
+        "CR6.80",
+        "CR6080",
+        "CR9040",
+        "CR9060"
+      ]
+    },
+    {
+      "motor": "Colheitadeiras CR (pós-2016)",
+      "veiculos": [
+        "CR8.80",
+        "CR8.90",
+        "CR9.80",
+        "CR9.90"
+      ]
+    },
+    {
+      "motor": "Linha 7040 / 7060",
+      "veiculos": [
+        "Compartilha peça com Case 821E"
+      ]
+    },
+    {
+      "motor": "Trator T4",
+      "veiculos": [
+        "Trator T4 (= peça Case CX / Sandvik QJ241)"
+      ]
+    },
+    {
+      "motor": "Motor Hino J08E (sob consulta)",
+      "veiculos": [
+        "Catálogo estendido — chama no WhatsApp"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor NH 7040 / 7060",
+      "ref_fabricante": "0445120075",
+      "cod_montadora": "2855135 / 504128307",
+      "aplicacao": "NH 7040, 7060 (= Case 821E)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor colheitadeiras CR",
+      "ref_fabricante": "0445120092",
+      "cod_montadora": "504194432",
+      "aplicacao": "CR6.80, CR6080, CR9040, CR9060",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor CR pós-2016",
+      "ref_fabricante": "0445124036",
+      "cod_montadora": "5801906153",
+      "aplicacao": "CR8.80, CR8.90, CR9.80, CR9.90",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Trator T4",
+      "ref_fabricante": "0445110540",
+      "cod_montadora": "5801569141",
+      "aplicacao": "Trator T4 (= Sandvik QJ241)",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSL9 8.9",
+      "ref_fabricante": "0445120236",
+      "cod_montadora": "6745-12-3100",
+      "aplicacao": "Máquinas com Cummins QSL9",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Jogos completos (kits)",
+      "ref_fabricante": "conforme aplicação",
+      "aplicacao": "Todas as linhas NH acima",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR NEW HOLLAND",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "FPT NH, Cummins QSL9 8.9 e Hino J08E",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua New Holland",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha New Holland. Fale no WhatsApp que a gente confirma pelo modelo e código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para New Holland.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para New Holland.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra New Holland.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra New Holland.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor da minha New Holland. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page New Holland e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page New Holland e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page New Holland e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para New Holland."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo da máquina antes de fechar. Sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch, Delphi, Denso e Vitesco — as marcas homologadas pra cada família de motor, com código OEM confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword New Holland + motor.",
+    "heading": "Como saber se o bico injetor da máquina New Holland está com problema",
+    "intro": "O bico injetor do motor (FPT NH, Cummins QSL9 8.9 e Hino J08E) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua New Holland. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação. Máquina Case com a mesma plataforma FPT? A peça pode ser a mesma — veja também a LP Case."
+  },
+  "seo": {
+    "title": "Bico Injetor New Holland — CR9060, CR8.80, 7040, T4 | Armazém Auto Peças",
+    "description": "Bico injetor pra colheitadeira New Holland CR, linha 7040/7060 e trator T4. Plataforma FPT, original e primeira linha. 0445120092 e mais. Confirme pelo código no WhatsApp.",
+    "og_image": "assets/new-holland-static.png",
+    "og_image_alt": "Colheitadeira New Holland amarela em trigal",
+    "twitter_description": "Bico injetor pra colheitadeira New Holland CR, linha 7040/7060 e trator T4. Plataforma FPT, original e primeira linha. 0445120092 e mais. Confirme pelo código no WhatsApp.",
+    "canonical_path": "/injecao-diesel/new-holland/",
+    "product": {
+      "name": "Bico Injetor para New Holland (FPT NH, Cummins QSL9 8.9 e Hino J08E)",
+      "description": "Bico injetor pra colheitadeira New Holland CR, linha 7040/7060 e trator T4. Plataforma FPT, original e primeira linha. 0445120092 e mais. Confirme pelo código no WhatsApp.",
+      "brands": [
+        "Bosch",
+        "Delphi"
+      ],
+      "vehicles": [
+        "New Holland CR6.80",
+        "New Holland CR9060",
+        "New Holland CR8.80",
+        "New Holland CR9.90",
+        "New Holland 7040",
+        "New Holland 7060",
+        "New Holland T4"
+      ],
+      "price_range": "R$ 900 - R$ 5.000",
+      "free_shipping": true
+    }
+  }
+}
