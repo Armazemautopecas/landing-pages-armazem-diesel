@@ -1,0 +1,157 @@
+{
+  "_doc": "LP Land Rover Discovery Sport — passeio/comercial leve. Curadoria manual (M8 sem aplicações curadas).",
+  "slug": "discovery-sport",
+  "categoria": "bico-injetor",
+  "veiculo_key": "discovery-sport",
+  "veiculo": {
+    "marca_aliases": [
+      "LAND ROVER",
+      "LANDROVER"
+    ],
+    "modelo_aliases": [
+      "DISCOVERY SPORT",
+      "DISCOVERYSPORT"
+    ],
+    "motor_por_cv": {
+      "150": "2.0 Ingenium Diesel",
+      "180": "2.0 Ingenium Diesel"
+    }
+  },
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "DISCOVERY SPORT",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Para Discovery Sport 2.0 Diesel Ingenium (após 2015).",
+    "foto_static": "assets/discovery-sport-static.webp",
+    "foto_alt": "Land Rover Discovery Sport branca em ambiente ensolarado",
+    "bg_position_mobile": "50% 50%",
+    "bg_position_desktop": "62% center",
+    "cta_mobile_label": "Achar o bico certo"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro sua Discovery Sport",
+    "subtexto": "Consultamos FIPE/Denatran pra você comprar a peça certa."
+  },
+  "peca": {
+    "nome": "BICO INJETOR LAND ROVER DISCOVERY SPORT",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Bosch",
+    "motores_label": "2.0 Ingenium Diesel",
+    "fabricantes_aceitos": [
+      "Bosch"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor original na caixa",
+    "fotos_por_oem": {
+      "0445111019": "/injecao-diesel/pecas/0445110189.webp",
+      "0445111020": "/injecao-diesel/pecas/0445110189.webp",
+      "0445110653": "/injecao-diesel/pecas/0445110189.webp"
+    },
+    "tem_primeira_linha": true,
+    "equivalentes_por_motor": {
+      "2.0 Ingenium Diesel": [
+        "0445111019",
+        "0445111020",
+        "0445110653"
+      ]
+    },
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Pronta entrega de Chapecó/SC"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua Discovery Sport",
+      "Entrega de Chapecó/SC pra todo Brasil",
+      "Garantia de fábrica + Armazém"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte a disponibilidade pro motor exato.",
+    "not_supported_default": "Esta LP é específica para Land Rover Discovery Sport. Fale com a gente no WhatsApp pra consultar peças do sua veículo."
+  },
+  "wa": {
+    "hero_link": "Olá, quero falar com um vendedor sobre bico injetor pra Discovery Sport.",
+    "fab_default": "Olá, cheguei pela landing page e quero falar sobre bico injetor pra Discovery Sport.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e vi o bico injetor {oem} pro meu {modelo} {ano} {motor}. Quero cotar.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Discovery Sport {year} {motor}.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Discovery Sport. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Discovery Sport e sua veículo é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor pra Discovery Sport."
+  },
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Nosso sistema cruza sua placa com FIPE/Denatran. Você compra o bico certo pro motor certo, no ano certo sua Discovery Sport. Sem achismo, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch — as marcas de fábrica pro Discovery Sport, com códigos confirmados por motor e ano."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua Discovery Sport volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua Discovery Sport não fica parado esperando peça."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Insira sua placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Discovery Sport + 2.0 Ingenium Diesel.",
+    "heading": "Como saber se o bico injetor sua Discovery Sport está com problema",
+    "intro": "O bico injetor sua Discovery Sport (2.0 Ingenium Diesel) é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração e em subida com carga",
+      "Consumo de combustível acima do normal",
+      "Tranco ao engatar marcha ou marcha lenta irregular",
+      "Dificuldade na partida a frio"
+    ],
+    "quality_explanation": "O bico injetor Bosch que o Discovery Sport usa é calibrado de fábrica pro motor específico (2.0 Ingenium Diesel): pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi sua Discovery Sport. Estoque disponível pra 2.0 Ingenium Diesel, com despacho no mesmo dia útil."
+  },
+  "seo": {
+    "title": "Bico Injetor Land Rover Discovery Sport 2.0 Diesel | Armazém",
+    "description": "Bico injetor Land Rover Discovery Sport 2.0 Ingenium Diesel (após 2015). Bosch 0445111019/20/0445110653. Original e primeira linha. Fale no WhatsApp.",
+    "og_image": "assets/discovery-sport-static.png",
+    "og_image_alt": "Land Rover Discovery Sport branca em ambiente ensolarado",
+    "twitter_description": "Bico injetor Land Rover Discovery Sport 2.0 Ingenium Diesel (após 2015). Bosch 0445111019/20/0445110653. Original e primeira linha. Fale no WhatsApp.",
+    "canonical_path": "/injecao-diesel/discovery-sport/",
+    "product": {
+      "name": "Bico Injetor para Land Rover Discovery Sport (2.0 Ingenium Diesel)",
+      "description": "Bico injetor Land Rover Discovery Sport 2.0 Ingenium Diesel (após 2015). Bosch 0445111019/20/0445110653. Original e primeira linha. Fale no WhatsApp.",
+      "brands": [
+        "Bosch"
+      ],
+      "vehicles": [
+        "Land Rover Discovery Sport 2.0 Ingenium Diesel",
+        "Land Rover Discovery Sport 2.0 Ingenium Diesel"
+      ],
+      "price_range": "R$ 3.200 - R$ 3.600",
+      "free_shipping": true
+    }
+  }
+}

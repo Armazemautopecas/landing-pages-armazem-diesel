@@ -1844,6 +1844,821 @@
           }
         ]
       }
+    },
+    "discovery": {
+      "veiculo": {
+        "marca": "Land Rover",
+        "modelo": "Discovery"
+      },
+      "variants_por_ano": {
+        "2004": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2005": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "4H2Q-9K545-AF",
+            "marca_bico": "Continental"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "discovery-sport": {
+      "veiculo": {
+        "marca": "Land Rover",
+        "modelo": "Discovery Sport"
+      },
+      "variants_por_ano": {
+        "2015": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.0 Ingenium Diesel",
+            "oem": "0445111019",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "range-rover-sport": {
+      "veiculo": {
+        "marca": "Range Rover",
+        "modelo": "Range Rover Sport"
+      },
+      "variants_por_ano": {
+        "2005": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2007": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2008": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "4.4 V8 SDV8",
+            "oem": "0445116068",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "4.4 V8 SDV8",
+            "oem": "0445116068",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          },
+          {
+            "motor": "4.4 V8 SDV8",
+            "oem": "0445116068",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.0 V6 SDV6",
+            "oem": "0445116064",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "freelander": {
+      "veiculo": {
+        "marca": "Land Rover",
+        "modelo": "Freelander"
+      },
+      "variants_por_ano": {
+        "2004": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "A2C59513553",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2005": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "A2C59513553",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2006": [
+          {
+            "motor": "2.7 V6 TDV6",
+            "oem": "A2C59513553",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "evoque": {
+      "veiculo": {
+        "marca": "Range Rover",
+        "modelo": "Evoque"
+      },
+      "variants_por_ano": {
+        "2011": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.2 SD4 Diesel",
+            "oem": "0445116043",
+            "marca_bico": "Bosch"
+          }
+        ]
+      }
+    },
+    "pajero": {
+      "veiculo": {
+        "marca": "Mitsubishi",
+        "modelo": "Pajero Full"
+      },
+      "variants_por_ano": {
+        "2008": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ]
+      }
+    },
+    "pajero-sport": {
+      "veiculo": {
+        "marca": "Mitsubishi",
+        "modelo": "Pajero Sport"
+      },
+      "variants_por_ano": {
+        "2016": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.4 MIVEC Diesel",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ]
+      }
+    },
+    "triton": {
+      "veiculo": {
+        "marca": "Mitsubishi",
+        "modelo": "Triton"
+      },
+      "variants_por_ano": {
+        "2008": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2009": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2010": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2011": [
+          {
+            "motor": "3.2 DI-D (2008-2011)",
+            "oem": "095000-5760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2012": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          },
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2023": [
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2024": [
+          {
+            "motor": "2.4 MIVEC (New Triton pós-2016)",
+            "oem": "295050-1760",
+            "marca_bico": "Denso"
+          }
+        ]
+      }
+    },
+    "l200": {
+      "veiculo": {
+        "marca": "Mitsubishi",
+        "modelo": "L200"
+      },
+      "variants_por_ano": {
+        "2012": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2013": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2014": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2015": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2016": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2017": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2018": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2019": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2020": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2021": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ],
+        "2022": [
+          {
+            "motor": "3.2 DI-D (2012-2022)",
+            "oem": "095000-8110",
+            "marca_bico": "Denso"
+          }
+        ]
+      }
     }
   }
 }
