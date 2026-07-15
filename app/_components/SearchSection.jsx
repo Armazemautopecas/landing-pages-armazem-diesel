@@ -126,7 +126,10 @@ function ResultYear({ cfg, year, variants }) {
                   Confira o nº estampado na sua peça antiga ou chame o vendedor.
                 </div>
               )}
-              <a className="btn btn-red btn-block" style={{ marginTop: 16 }}
+              <div style={{ fontSize: 12, marginTop: 12, lineHeight: 1.45 }}>
+                <b>Não serviu? Troca sem custo ou reembolso integral.</b>
+              </div>
+              <a className="btn btn-red btn-block" style={{ marginTop: 12 }}
                  href={waLink(msg, cfg.slug)} target="_blank" rel="noreferrer">
                 <WhatsAppIcon /> Cotar no WhatsApp
               </a>
