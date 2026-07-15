@@ -61,6 +61,7 @@ function ResultPlate({ cfg, vehicle }) {
           <div className="brand-tag">{p.brand}</div>
           <ul className="part-bullets">
             {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
+            <li><b>Não serviu? Troca sem custo ou reembolso integral</b> — identificamos pela placa via FIPE/Denatran.</li>
           </ul>
           <a className="btn btn-red btn-lg" style={{ marginTop: 18 }}
              href={waLink(msg, cfg.slug)} target="_blank" rel="noreferrer">
@@ -125,9 +126,9 @@ function ResultYear({ cfg, year, variants }) {
                   Confira o nº estampado na sua peça antiga ou chame o vendedor.
                 </div>
               )}
-              <a className="btn btn-navy btn-block" style={{ marginTop: 16 }}
+              <a className="btn btn-red btn-block" style={{ marginTop: 16 }}
                  href={waLink(msg, cfg.slug)} target="_blank" rel="noreferrer">
-                Ver detalhes
+                <WhatsAppIcon /> Cotar no WhatsApp
               </a>
             </div>
           );
@@ -189,7 +190,7 @@ function ResultError({ cfg, query, message }) {
   );
 }
 
-export default function SearchSection({ cfg, result, onSearch, isSearching, selectorStyle }) {
+export default function SearchSection({ cfg, result, onSearch, onReset, isSearching, selectorStyle }) {
   const hasResult = !!result;
   return (
     <section className={`sec-off sec-pad search-section ${hasResult ? 'has-result' : 'is-empty'}`} id="buscar">
@@ -202,6 +203,12 @@ export default function SearchSection({ cfg, result, onSearch, isSearching, sele
             {result.kind === 'notfound' && <ResultNotFound cfg={cfg} query={result.query} />}
             {result.kind === 'notsupported' && <ResultNotSupported cfg={cfg} vehicle={result.vehicle} query={result.query} message={result.message} />}
             {result.kind === 'error' && <ResultError cfg={cfg} query={result.query} message={result.message} />}
+            {onReset && (
+              <button type="button" className="btn btn-ghost btn-block" style={{ marginTop: 20 }}
+                      onClick={onReset}>
+                ↻ Consultar outra placa
+              </button>
+            )}
           </>
         ) : (
           <div className="search-section-empty-wrap">

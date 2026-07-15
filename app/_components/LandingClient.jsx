@@ -58,6 +58,7 @@ export default function LandingClient({ cfg, children }) {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(body),
+        signal: AbortSignal.timeout(10000),
       });
 
       if (r.status === 429) {
@@ -101,7 +102,14 @@ export default function LandingClient({ cfg, children }) {
       });
     } catch (e) {
       console.error('consulta_veiculo_error', e);
-      setResult({ kind: 'error', query: clean, message: 'Erro de conexão. Tente novamente ou fale com um vendedor no WhatsApp.' });
+      const timedOut = e?.name === 'TimeoutError' || e?.name === 'AbortError';
+      setResult({
+        kind: 'error',
+        query: clean,
+        message: timedOut
+          ? 'A consulta demorou demais. Tente de novo ou fale com um vendedor no WhatsApp.'
+          : 'Erro de conexão. Tente novamente ou fale com um vendedor no WhatsApp.',
+      });
     } finally {
       setSearching(false);
     }
@@ -123,6 +131,7 @@ export default function LandingClient({ cfg, children }) {
           cfg={cfg}
           result={result}
           onSearch={handleSearch}
+          onReset={() => setResult(null)}
           isSearching={searching}
           selectorStyle={tweaks.selectorStyle}
         />
