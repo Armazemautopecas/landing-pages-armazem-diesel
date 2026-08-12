@@ -5,6 +5,7 @@
 
 import { waLink } from '../../_components/lib/wa';
 import { WhatsAppIcon } from '../../_components/atoms';
+import { GRUPOS } from './linhas-data';
 
 const WA_MSG = 'Olá! Achei a linha do meu veículo na landing page de bico injetor diesel. Vou mandar o modelo e o ano pra confirmarem o bico certo e o prazo de envio.';
 
@@ -12,59 +13,6 @@ const WA_MSG = 'Olá! Achei a linha do meu veículo na landing page de bico inje
 function linhaMsg(nome) {
   return `Olá! Tenho um(a) ${nome} e preciso de bico injetor diesel. Pode me ajudar a achar o código certo e cotar?`;
 }
-
-const GRUPOS = [
-  {
-    titulo: 'Picapes e SUVs diesel',
-    itens: [
-      { nome: 'VW Amarok', slug: 'amarok' },
-      { nome: 'Toyota Hilux', slug: 'hilux' },
-      { nome: 'Ford Ranger', slug: 'ranger' },
-      { nome: 'Chevrolet S10', slug: 's10' },
-      { nome: 'Nissan Frontier', slug: 'frontier' },
-      { nome: 'Mitsubishi L200', slug: 'l200' },
-      { nome: 'Mitsubishi Triton', slug: 'triton' },
-      { nome: 'Mitsubishi Pajero', slug: 'pajero' },
-      { nome: 'Mitsubishi Pajero Sport', slug: 'pajero-sport' },
-    ],
-  },
-  {
-    titulo: 'Vans e utilitários',
-    itens: [
-      { nome: 'Mercedes-Benz Sprinter', slug: 'sprinter' },
-      { nome: 'Renault Master', slug: 'master' },
-      { nome: 'Fiat Ducato', slug: 'ducato' },
-      { nome: 'Peugeot Boxer', slug: 'boxer' },
-      { nome: 'Citroën Jumper', slug: 'jumper' },
-      { nome: 'Iveco Daily', slug: 'daily' },
-      { nome: 'Hyundai HR', slug: 'hr' },
-      { nome: 'Ford Transit', slug: 'transit' },
-    ],
-  },
-  {
-    titulo: 'Land Rover',
-    itens: [
-      { nome: 'Discovery', slug: 'discovery' },
-      { nome: 'Discovery Sport', slug: 'discovery-sport' },
-      { nome: 'Range Rover Sport', slug: 'range-rover-sport' },
-      { nome: 'Evoque', slug: 'evoque' },
-      { nome: 'Freelander', slug: 'freelander' },
-    ],
-  },
-  {
-    titulo: 'Caminhões e máquinas',
-    itens: [
-      { nome: 'Motores Cummins', slug: 'cummins' },
-      { nome: 'Ford Cargo', slug: 'ford-cargo' },
-      { nome: 'VW Constellation', slug: 'vw-caminhao' },
-      { nome: 'Caterpillar', slug: 'caterpillar' },
-      { nome: 'JCB', slug: 'jcb' },
-      { nome: 'John Deere', slug: 'john-deere' },
-      { nome: 'Case', slug: 'case' },
-      { nome: 'New Holland', slug: 'new-holland' },
-    ],
-  },
-];
 
 export default function Linhas() {
   return (
