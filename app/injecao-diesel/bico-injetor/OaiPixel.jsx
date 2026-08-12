@@ -8,6 +8,7 @@
 // Docs: https://developers.openai.com/ads/measurement-pixel
 
 import { useEffect } from 'react';
+import { LINHAS, normalizar } from './linhas-data';
 
 const PIXEL_ID = 'L6sE6mJzi9S38GNo8MAAsF';
 
@@ -37,38 +38,35 @@ export default function OaiPixel() {
       window.__oaiqInitDone = true;
     }
 
-    // Identifica O QUE o visitante escolheu: o slug do bridge é sempre
-    // 'bico-injetor' (carimbo da campanha), então o veículo vem da mensagem
-    // pré-preenchida do link (?text=...). Recorta o modelo conhecido e manda
-    // no contents — mesmo formato do page_viewed.
-    const VEICULOS = [
-      'PAJERO SPORT', 'DISCOVERY SPORT', 'RANGE ROVER SPORT', 'NEW HOLLAND',
-      'FORD CARGO', 'CONSTELLATION', 'JOHN DEERE', 'CATERPILLAR', 'AMAROK',
-      'HILUX', 'RANGER', 'FRONTIER', 'SPRINTER', 'MASTER', 'DUCATO', 'BOXER',
-      'JUMPER', 'TRANSIT', 'DAILY', 'TRITON', 'PAJERO', 'EVOQUE', 'FREELANDER',
-      'DISCOVERY', 'CUMMINS', 'S10', 'L200', 'JCB', 'CASE', 'HR',
-    ];
-    const vehicleFromHref = (href) => {
+    // Identifica O QUE o visitante escolheu. O slug do bridge é sempre
+    // 'bico-injetor' (carimbo da campanha); o veículo vem da mensagem
+    // pré-preenchida do link (?text=...). Casamento por LISTA (linhas-data.js,
+    // a mesma que monta a grade — linha nova nasce medida), nunca por gramática:
+    // se a copy mudar mas seguir citando o veículo, continua funcionando.
+    // Falha visível: clique em área de veículo sem casamento → 'nao-identificado'
+    // (nunca vazio); CTAs genéricos (hero/fab/CTA final) → 'cta-geral'.
+    const vehicleFromClick = (a) => {
+      let text = '';
       try {
-        const text = decodeURIComponent(new URL(href).searchParams.get('text') || '').toUpperCase();
-        const hit = VEICULOS.find((v) => text.includes(v));
-        if (hit) return hit;
-        const oem = text.match(/BICO INJETOR ([A-Z0-9-]{6,})/);
-        if (oem) return `OEM ${oem[1]}`;
-      } catch (_) { /* href fora do padrão — segue genérico */ }
-      return 'geral';
+        text = normalizar(decodeURIComponent(new URL(a.href).searchParams.get('text') || ''));
+      } catch (_) { /* href fora do padrão */ }
+      const hit = LINHAS.find((l) => text.includes(l.chave) || text.includes(normalizar(l.nome)));
+      if (hit) return { id: hit.slug, name: hit.nome };
+      const oem = text.match(/bico injetor ([a-z0-9-]{6,})/);
+      if (oem) return { id: `oem-${oem[1]}`, name: `OEM ${oem[1].toUpperCase()}` };
+      // Área onde DEVIA ter veículo (busca por placa ou grade de linhas)?
+      const areaVeiculo = a.closest('#buscar') || a.closest('#linhas');
+      return areaVeiculo
+        ? { id: 'nao-identificado', name: 'Não identificado' }
+        : { id: 'cta-geral', name: 'CTA geral' };
     };
     const onClick = (e) => {
       const a = e.target.closest && e.target.closest('a[href*="/wa/bico-injetor"]');
       if (!a || !window.oaiq) return;
-      const veic = vehicleFromHref(a.href);
+      const veic = vehicleFromClick(a);
       window.oaiq('measure', 'custom', {
         type: 'custom',
-        contents: [{
-          id: veic.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-          name: `WhatsApp: ${veic}`,
-          content_type: 'cta',
-        }],
+        contents: [{ id: veic.id, name: veic.name, content_type: 'cta' }],
       }, { custom_event_name: 'whatsapp_click' });
     };
     document.addEventListener('click', onClick, true);
