@@ -25,7 +25,11 @@ export default function OaiPixel() {
       f.parentNode.insertBefore(js, f);
     })(window, document, 'script', 'https://bzrcdn.openai.com/sdk/oaiq.min.js');
 
-    window.oaiq('init', { pixelId: PIXEL_ID });
+    // Init uma única vez — navegação SPA de volta pra página não re-inicializa
+    if (!window.__oaiqInitDone) {
+      window.oaiq('init', { pixelId: PIXEL_ID });
+      window.__oaiqInitDone = true;
+    }
 
     const onClick = (e) => {
       const a = e.target.closest && e.target.closest('a[href*="/wa/bico-injetor"]');
