@@ -1,0 +1,193 @@
+{
+  "_doc": "LP HUB genérica de bico injetor diesel — destino de campanha ChatGPT Ads. Deliberadamente ampla ('vendemos bico injetor pra todas as linhas diesel'). Layout custom: hero (HeroMaquina) + consulta por placa GENÉRICA que roteia pra LP dedicada quando existe (senão CTA WhatsApp com marca/modelo preenchido) + grade de linhas que trabalhamos. catalogo_pecas presente (não-vazio) só pra sinalizar ao validate-configs que esta LP não usa oems.json.",
+
+  "slug": "bico-injetor",
+  "categoria": "bico-injetor",
+  "veiculo_key": "bico-injetor",
+
+  "veiculo": {
+    "marca_aliases": ["DIESEL"],
+    "modelo_aliases": ["diesel"]
+  },
+
+  "hero": {
+    "eyebrow": "COMPRA SEGURA. ENTREGA GARANTIDA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "DIESEL",
+    "h1_sub": "Original ou remanufaturado",
+    "sub": "Pronta entrega para as principais linhas diesel do Brasil. Envio para todo o país.",
+    "foto_static": "assets/hero-static.webp",
+    "foto_alt": "Bico injetor diesel Bosch na caixa",
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+  },
+
+  "selector": {
+    "titulo_l1": "Consulte a placa",
+    "titulo_l2": "e ache o bico certo",
+    "subtexto": "Digite a placa ou o chassi que a gente identifica o veículo e o bico injetor compatível."
+  },
+
+  "catalogo_pecas": [
+    { "peca": "Bico Injetor Diesel Common-Rail", "aplicacao": "Linhas diesel em geral", "sob_consulta": true }
+  ],
+
+  "peca": {
+    "nome": "BICO INJETOR DIESEL",
+    "short_label": "BICO INJETOR",
+    "fabricante_label": "ORIGINAL OU PRIMEIRA LINHA",
+    "fabricante_principal_short": "",
+    "motores_label": "common-rail diesel",
+    "tem_primeira_linha": true,
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "bullets_default": [
+      "Peça original ou primeira linha homologada",
+      "Garantia de fábrica + garantia Armazém",
+      "Envio de Chapecó/SC pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu veículo diesel",
+      "Envio de Chapecó/SC pra todo o Brasil",
+      "Compatibilidade confirmada antes do envio"
+    ]
+  },
+
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte a disponibilidade pro seu veículo.",
+    "not_supported_default": "Trabalhamos com bico injetor diesel pras principais linhas do Brasil. Fale com a gente no WhatsApp que confirmamos a peça pro seu veículo."
+  },
+
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page de bico injetor diesel e quero falar com um vendedor.",
+    "fab_default": "Olá, cheguei pela landing page de bico injetor diesel e quero falar sobre a peça pro meu veículo.",
+    "result_plate_template": "Olá, consultei a placa {plate} na landing page e preciso de bico injetor pro meu {marca} {modelo} {ano}. Quero cotar.",
+    "result_vehicle_template": "Olá! Tenho um {marca} {modelo} e preciso de bico injetor diesel. Podem me ajudar a cotar?",
+    "result_year_template": "Olá, quero cotar bico injetor diesel.",
+    "result_dontknow_motor": "Olá, não sei o motor do meu veículo diesel. Podem me ajudar a achar o bico injetor certo?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page de bico injetor diesel e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page e meu veículo é {ident}. Preciso de bico injetor diesel. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page de bico injetor diesel e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor diesel."
+  },
+
+  "why": {
+    "h2_l1": "Bico injetor é segurança.",
+    "h2_l2": "Escolha errada",
+    "h2_l2_red": "custa caro",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "A peça certa pro seu veículo.",
+        "body": "Consulte a placa ou chame no WhatsApp: identificamos o veículo e confirmamos o bico injetor compatível antes de fechar. Sem achismo, sem peça voltando."
+      },
+      {
+        "num": "02",
+        "ttl": "Original ou primeira linha.",
+        "body": "Trabalhamos com as marcas homologadas pra cada motor diesel — Bosch, Delphi, Denso e Continental — com código confirmado. Quando disponível, também oferecemos primeira linha de qualidade equivalente, com garantia."
+      },
+      {
+        "num": "03",
+        "ttl": "Envio pra todo o Brasil.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Seu veículo não fica parado esperando peça."
+      }
+    ]
+  },
+
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Consulte a placa no",
+    "sub_anchor": "seletor acima",
+    "sub_post": "ou chame direto no WhatsApp.",
+    "btn": "Falar com o vendedor agora",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional genérico pra ranquear cauda longa 'bico injetor diesel'.",
+    "heading": "Como saber se o bico injetor diesel está com problema",
+    "intro": "O bico injetor é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica, seja numa picape, numa van, num caminhão ou numa máquina. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de potência em aceleração ou em subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica para o motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação da montadora. A primeira linha é fabricada por outros fornecedores também homologados para o mesmo motor, com qualidade equivalente, garantia e preço mais acessível. O que você precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pela placa, pelo chassi ou pelo código da peça — sem margem de erro de compatibilidade. Trabalhamos com as principais linhas diesel do Brasil: picapes e SUVs, vans e utilitários, caminhões e máquinas pesadas."
+  },
+
+  "content": {
+    "faqs": {
+      "sintomas": {
+        "q": "Quais os sintomas de bico injetor diesel defeituoso?",
+        "a": "Os principais sinais são: fumaça preta ou branca no escapamento, perda de potência em aceleração, consumo de diesel acima do normal, tranco ao acelerar, marcha lenta irregular ou dificuldade na partida a frio. Se você notar a combinação desses sintomas, consulte um mecânico de confiança antes da pane total — bico injetor falhando danifica o motor a médio prazo."
+      },
+      "qualidade": {
+        "q": "Qual a diferença entre bico original e primeira linha?",
+        "a": "O original é a peça do fabricante que monta na sua de fábrica, calibrada pro motor específico. Primeira linha é de outro fornecedor homologado, com qualidade equivalente e garantia, a um preço mais acessível. Mostramos as duas opções quando disponíveis pra você escolher."
+      },
+      "calibracao": {
+        "q": "Preciso calibrar ou codificar o bico depois de trocar?",
+        "a": "Sim. Bicos common-rail modernos têm um código IMA/CSC gravado a laser na carcaça que precisa ser inserido na ECU via scanner profissional após a troca, pra ECU saber a tolerância exata daquele bico. Sem essa codificação, o motor pode apresentar marcha irregular e consumo alto. Qualquer oficina equipada com scanner que trabalha com diesel faz esse procedimento em poucos minutos por bico."
+      },
+      "preco": {
+        "q": "Quanto custa um bico injetor diesel?",
+        "a": "O preço varia conforme o motor e o nível de exigência: bicos OEM originais ficam mais caros que a primeira linha homologada. Como cada referência tem preço próprio e o estoque muda, o jeito mais rápido é consultar pelo WhatsApp informando a placa ou o modelo/ano do seu veículo. Mostramos os valores das opções disponíveis na hora."
+      },
+      "compatibilidade": {
+        "q": "Como sei que o bico é o certo pro meu veículo?",
+        "a": "Inserindo a placa ou chassi, nosso sistema identifica seu veículo via consulta FIPE/Denatran. Se já temos página dedicada pra ele, te levamos direto pra ela; se não, o vendedor confere o código do bico compatível antes do envio."
+      },
+      "troca": {
+        "q": "E se a peça não servir no meu veículo?",
+        "a": "A gente confirma a compatibilidade antes de liberar o pedido. Se mesmo assim a peça não servir, resolvemos: troca sem custo pra você ou reembolso integral."
+      },
+      "prazo": {
+        "q": "Prazo de entrega e garantia?",
+        "a": "Despacho no mesmo dia útil da confirmação do pagamento, entrega rastreada pra todo o Brasil de Chapecó/SC. Garantia de fábrica mais garantia de loja da Armazém Auto Peças."
+      },
+      "pagamento": {
+        "q": "Formas de pagamento, nota fiscal e troca?",
+        "a": "PIX, boleto e cartão em até 10x; toda compra sai com nota fiscal eletrônica (pessoa física ou CNPJ). Troca/devolução em até 7 dias (CDC) + garantia de defeito. Oficinas e frotistas têm condição de revenda — chame no WhatsApp."
+      }
+    }
+  },
+
+  "seo": {
+    "title": "Bico Injetor Diesel | Armazém Auto Peças",
+    "description": "Bico injetor diesel original ou primeira linha para as principais linhas do Brasil: picapes, SUVs, vans, caminhões e máquinas. Consulte a placa e fale no WhatsApp.",
+    "og_image": "assets/og.webp",
+    "og_image_alt": "Bico injetor diesel Bosch original na caixa",
+    "twitter_description": "Bico injetor diesel original ou primeira linha para picapes, vans, caminhões e máquinas. Consulte a placa e fale no WhatsApp.",
+    "canonical_path": "/injecao-diesel/bico-injetor/",
+    "product": {
+      "name": "Bico Injetor Diesel Original ou Primeira Linha",
+      "description": "Bico injetor diesel original (OEM) ou primeira linha homologada para as principais linhas diesel do Brasil: picapes e SUVs (Amarok, Hilux, Ranger, S10, Frontier, L200/Triton, Pajero), vans e utilitários (Sprinter, Master, Ducato, Boxer, Jumper, Daily, HR, Transit), Land Rover e caminhões/máquinas (Cummins, Ford Cargo, VW Constellation, Caterpillar, John Deere, Case, New Holland).",
+      "brands": ["Bosch", "Delphi", "Denso", "Continental"],
+      "vehicles": [
+        "VW Amarok",
+        "Toyota Hilux",
+        "Ford Ranger",
+        "Chevrolet S10",
+        "Mercedes-Benz Sprinter",
+        "Renault Master",
+        "Fiat Ducato",
+        "Iveco Daily",
+        "Hyundai HR",
+        "Mitsubishi L200 Triton",
+        "Ford Cargo",
+        "VW Constellation",
+        "Motores Cummins"
+      ],
+      "price_range": "R$ 800 - R$ 6.000",
+      "free_shipping": true
+    }
+  }
+}
