@@ -25,9 +25,15 @@ export default function OaiPixel() {
       f.parentNode.insertBefore(js, f);
     })(window, document, 'script', 'https://bzrcdn.openai.com/sdk/oaiq.min.js');
 
-    // Init uma única vez — navegação SPA de volta pra página não re-inicializa
+    // Init + page_viewed uma única vez — navegação SPA de volta não repete.
+    // page_viewed é chamada explícita (docs: o SDK NÃO dispara sozinho) e é o
+    // denominador da campanha: sem ela só teríamos cliques, sem taxa de conversão.
     if (!window.__oaiqInitDone) {
       window.oaiq('init', { pixelId: PIXEL_ID });
+      window.oaiq('measure', 'page_viewed', {
+        type: 'contents',
+        contents: [{ id: 'bico-injetor', name: 'LP Bico Injetor Diesel', content_type: 'page' }],
+      });
       window.__oaiqInitDone = true;
     }
 
