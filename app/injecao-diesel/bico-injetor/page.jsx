@@ -1,6 +1,6 @@
 import CFG from './config.json';
 import '../../_components/styles.css';
-import HeroMaquina from '../../_components/HeroMaquina';
+import HeroArc from './HeroArc';
 import TrustBar from '../../_components/TrustBar';
 import PlacaHub from './PlacaHub';
 import Linhas from './Linhas';
@@ -52,10 +52,10 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <link rel="preload" as="image" href={`/injecao-diesel/${CFG.slug}/${CFG.hero.foto_static}`} type="image/webp" fetchPriority="high" />
+      <link rel="preload" as="image" href={`/injecao-diesel/${CFG.slug}/assets/car-amarok.webp`} type="image/webp" fetchPriority="high" />
       <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" href="/injecao-diesel/fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2" />
 
-      <HeroMaquina cfg={CFG} />
+      <HeroArc cfg={CFG} />
       <TrustBar cfg={CFG} style="numbers" />
       <PlacaHub cfg={CFG} />
       <Linhas />

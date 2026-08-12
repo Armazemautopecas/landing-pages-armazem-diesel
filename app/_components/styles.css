@@ -365,6 +365,116 @@ section { position: relative; }
 .search-section.is-empty { display: none; }
 .search-section { scroll-margin-top: 16px; }
 
+/* HUB de bico injetor: a consulta por placa e a UNICA (o HeroArc nao embute
+   selector), entao ela precisa aparecer no desktop mesmo vazia. */
+.search-section.search-hub.is-empty { display: block; padding: 56px 0; }
+.search-section.search-hub .selector { max-width: 620px; margin: 0 auto; }
+
+/* ---------- CTA abaixo da grade "Linhas que trabalhamos" ---------- */
+.linhas-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  margin-top: 44px;
+  padding: 28px 32px;
+  border-radius: 16px;
+  background: var(--navy, #041f30);
+  color: var(--off, #f5f5f5);
+  box-shadow: 0 16px 40px rgba(4,31,48,0.18);
+}
+.linhas-cta-title {
+  font-family: var(--f-head);
+  font-size: clamp(19px, 2.4vw, 24px);
+  line-height: 1.15;
+  margin: 0 0 6px;
+  color: #fff;
+}
+.linhas-cta-sub {
+  margin: 0;
+  max-width: 520px;
+  font-size: 15px;
+  color: rgba(245,245,245,0.78);
+}
+.linhas-cta-btn { flex: 0 0 auto; }
+@media (max-width: 640px) {
+  .linhas-cta { padding: 24px; }
+  .linhas-cta-btn { width: 100%; justify-content: center; }
+}
+
+/* ---------- Hero em leque de veiculos (LP HUB) ---------- */
+.hero-arc { overflow: hidden; }
+.hero-arc .hero-overlay {
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(4,31,48,0.55) 0%, rgba(4,31,48,0.86) 60%, rgba(4,31,48,0.96) 100%);
+}
+.hero-arc-head { position: relative; z-index: 2; text-align: center; max-width: 780px; margin: 0 auto; }
+.hero-arc-head .hero-h1,
+.hero-arc-head .hero-sub { margin-left: auto; margin-right: auto; }
+.hero-arc-head .hero-sub { max-width: 560px; }
+.hero-arc-head .hero-trusts-desktop { justify-content: center; }
+
+.veh-arc {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 46px;
+  padding-bottom: 18px;
+}
+.veh-card {
+  position: relative;
+  width: 178px;
+  margin: 0 -14px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a1620;
+  border: 1px solid rgba(245,245,245,0.14);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+  transform-origin: 50% 100%;
+}
+.veh-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.veh-card figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 14px 8px 7px;
+  font-family: var(--f-head);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.03em;
+  text-transform: uppercase; text-align: center; color: #fff;
+  background: linear-gradient(180deg, rgba(4,31,48,0) 0%, rgba(4,31,48,0.85) 70%);
+}
+/* Arco: cartao central maior/mais alto, laterais rebaixados e girados pra dentro */
+.veh-pos-0 { transform: rotate(-20deg) translateY(58px) scale(0.84); z-index: 1; }
+.veh-pos-1 { transform: rotate(-13deg) translateY(32px) scale(0.90); z-index: 2; }
+.veh-pos-2 { transform: rotate(-6deg)  translateY(11px) scale(0.96); z-index: 3; }
+.veh-pos-3 { transform: rotate(0deg)   translateY(0)    scale(1.06); z-index: 5; box-shadow: 0 22px 50px rgba(0,0,0,0.55); }
+.veh-pos-4 { transform: rotate(6deg)   translateY(11px) scale(0.96); z-index: 3; }
+.veh-pos-5 { transform: rotate(13deg)  translateY(32px) scale(0.90); z-index: 2; }
+.veh-pos-6 { transform: rotate(20deg)  translateY(58px) scale(0.84); z-index: 1; }
+
+@media (max-width: 1080px) {
+  .veh-card { width: 148px; }
+}
+@media (max-width: 860px) {
+  /* Vira faixa rolavel de cards retos — sem leque, mais limpo no mobile */
+  .veh-arc {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 4px 4px 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .veh-card {
+    width: 60vw; max-width: 240px; flex: 0 0 auto; margin: 0;
+    transform: none !important; scroll-snap-align: center;
+  }
+  .veh-card figcaption { font-size: 12px; }
+}
+
 @media (max-width: 720px) {
   .hero {
     min-height: clamp(480px, 78svh, 620px);

@@ -3,6 +3,11 @@
 // dedicada (Caterpillar, JCB, John Deere...) também linkam, pois já existem
 // como LP de máquina no repo.
 
+import { waLink } from '../../_components/lib/wa';
+import { WhatsAppIcon } from '../../_components/atoms';
+
+const WA_MSG = 'Olá! Achei a linha do meu veículo na landing page de bico injetor diesel. Vou mandar o modelo e o ano pra confirmarem o bico certo e o prazo de envio.';
+
 const GRUPOS = [
   {
     titulo: 'Picapes e SUVs diesel',
@@ -85,6 +90,19 @@ export default function Linhas() {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="linhas-cta">
+          <div>
+            <h3 className="linhas-cta-title">Achou a linha do seu veículo? Fale com a gente.</h3>
+            <p className="linhas-cta-sub">
+              Manda o modelo e o ano no WhatsApp que a gente confirma o bico certo
+              e o prazo de envio na hora.
+            </p>
+          </div>
+          <a className="btn btn-red btn-lg linhas-cta-btn" href={waLink(WA_MSG, 'bico-injetor')} target="_blank" rel="noreferrer">
+            <WhatsAppIcon /> Chamar no WhatsApp
+          </a>
         </div>
       </div>
     </section>

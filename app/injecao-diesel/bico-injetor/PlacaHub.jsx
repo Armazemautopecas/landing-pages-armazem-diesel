@@ -204,7 +204,7 @@ export default function PlacaHub({ cfg }) {
   const hasResult = !!result;
 
   return (
-    <section className={`sec-off sec-pad search-section ${hasResult ? 'has-result' : 'is-empty'}`} id="buscar">
+    <section className={`sec-off sec-pad search-section search-hub ${hasResult ? 'has-result' : 'is-empty'}`} id="buscar">
       <div className="container" ref={resultRef}>
         {hasResult ? (
           <>
