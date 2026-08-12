@@ -9,3 +9,4 @@ Fotos de terceiros usadas nas heros, com licença e crédito exigido. Atualizado
 | case | `case-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Case_IH_Magnum_225_CVT.jpg) | CC BY 2.0 | Stevie Rocco |
 | new-holland | `new-holland-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:New_Holland_CR980_combine_harvester,_near_Uffcott_-_geograph.org.uk_-_2048774.jpg) | CC BY-SA 2.0 | Brian Robert Marshall / geograph.org.uk |
 | pajero | `pajero-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2020_Mitsubishi_Pajero_3.2_GLS_DI-D_4x4.jpg) | CC BY-SA 4.0 | Ethan Llamas (placa borrada; derivado sob mesma licença) |
+| bico-injetor | `hero-static.*` / `og.webp` | imagem gerada por IA (ChatGPT, Diego 2026-08-12) | própria | não exige |
