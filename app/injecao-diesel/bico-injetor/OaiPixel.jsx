@@ -52,7 +52,8 @@ export default function OaiPixel() {
       } catch (_) { /* href fora do padrão */ }
       const hit = LINHAS.find((l) => text.includes(l.chave) || text.includes(normalizar(l.nome)));
       if (hit) return { id: hit.slug, name: hit.nome };
-      const oem = text.match(/bico injetor ([a-z0-9-]{6,})/);
+      // código OEM tem sempre dígito — evita engolir palavra solta ("diesel")
+      const oem = text.match(/bico injetor ((?=[a-z0-9-]*\d)[a-z0-9-]{6,})/);
       if (oem) return { id: `oem-${oem[1]}`, name: `OEM ${oem[1].toUpperCase()}` };
       // Área onde DEVIA ter veículo (busca por placa ou grade de linhas)?
       const areaVeiculo = a.closest('#buscar') || a.closest('#linhas');
