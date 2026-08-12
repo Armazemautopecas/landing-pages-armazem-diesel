@@ -1,12 +1,17 @@
-// Grade "Linhas que trabalhamos" — server component. Agrupa as LPs dedicadas
-// por segmento e linka pra cada uma em /injecao-diesel/<slug>/. Itens sem LP
-// dedicada (Caterpillar, JCB, John Deere...) também linkam, pois já existem
-// como LP de máquina no repo.
+// Grade "Linhas que trabalhamos" — server component. Cada item abre o WhatsApp
+// com o veículo já escrito na mensagem (decisão Diego 2026-08-12 — em vez de
+// mandar pra LP dedicada, o clique vira lead rastreável e mede qual veículo o
+// visitante clicou via o tracker do waLink).
 
 import { waLink } from '../../_components/lib/wa';
 import { WhatsAppIcon } from '../../_components/atoms';
 
 const WA_MSG = 'Olá! Achei a linha do meu veículo na landing page de bico injetor diesel. Vou mandar o modelo e o ano pra confirmarem o bico certo e o prazo de envio.';
+
+// Mensagem por linha — carrega o nome do veículo pra medir o clique no tracker.
+function linhaMsg(nome) {
+  return `Olá! Tenho um(a) ${nome} e preciso de bico injetor diesel. Pode me ajudar a achar o código certo e cotar?`;
+}
 
 const GRUPOS = [
   {
@@ -69,8 +74,8 @@ export default function Linhas() {
           <div className="eyebrow" style={{ color: 'var(--muted)', marginBottom: 10 }}>Cobertura</div>
           <h2 className="h2">Linhas que trabalhamos</h2>
           <p style={{ color: 'var(--muted)', maxWidth: 640, margin: '10px auto 0' }}>
-            Bico injetor diesel pras principais linhas do Brasil. Achou a sua? Abra a página dedicada.
-            Não achou? Consulte a placa acima ou chame no WhatsApp — trabalhamos com muito mais do que cabe aqui.
+            Bico injetor diesel pras principais linhas do Brasil. Achou a sua? Chame no WhatsApp que já vai o veículo escrito.
+            Não achou? Consulte a placa acima — trabalhamos com muito mais do que cabe aqui.
           </p>
         </div>
         <div className="linhas-grid" style={{ display: 'grid', gap: 28, marginTop: 32, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
@@ -82,7 +87,9 @@ export default function Linhas() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
                 {g.itens.map((it) => (
                   <li key={it.slug}>
-                    <a href={`/injecao-diesel/${it.slug}/`} style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: 15 }}>
+                    <a href={waLink(linhaMsg(it.nome), 'bico-injetor')} target="_blank" rel="noreferrer"
+                       style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: 15, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                      <span style={{ color: '#25D366', display: 'inline-flex' }}><WhatsAppIcon size={14} /></span>
                       {it.nome}
                     </a>
                   </li>
