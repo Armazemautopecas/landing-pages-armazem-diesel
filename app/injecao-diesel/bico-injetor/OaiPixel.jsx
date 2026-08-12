@@ -37,10 +37,39 @@ export default function OaiPixel() {
       window.__oaiqInitDone = true;
     }
 
+    // Identifica O QUE o visitante escolheu: o slug do bridge é sempre
+    // 'bico-injetor' (carimbo da campanha), então o veículo vem da mensagem
+    // pré-preenchida do link (?text=...). Recorta o modelo conhecido e manda
+    // no contents — mesmo formato do page_viewed.
+    const VEICULOS = [
+      'PAJERO SPORT', 'DISCOVERY SPORT', 'RANGE ROVER SPORT', 'NEW HOLLAND',
+      'FORD CARGO', 'CONSTELLATION', 'JOHN DEERE', 'CATERPILLAR', 'AMAROK',
+      'HILUX', 'RANGER', 'FRONTIER', 'SPRINTER', 'MASTER', 'DUCATO', 'BOXER',
+      'JUMPER', 'TRANSIT', 'DAILY', 'TRITON', 'PAJERO', 'EVOQUE', 'FREELANDER',
+      'DISCOVERY', 'CUMMINS', 'S10', 'L200', 'JCB', 'CASE', 'HR',
+    ];
+    const vehicleFromHref = (href) => {
+      try {
+        const text = decodeURIComponent(new URL(href).searchParams.get('text') || '').toUpperCase();
+        const hit = VEICULOS.find((v) => text.includes(v));
+        if (hit) return hit;
+        const oem = text.match(/BICO INJETOR ([A-Z0-9-]{6,})/);
+        if (oem) return `OEM ${oem[1]}`;
+      } catch (_) { /* href fora do padrão — segue genérico */ }
+      return 'geral';
+    };
     const onClick = (e) => {
       const a = e.target.closest && e.target.closest('a[href*="/wa/bico-injetor"]');
       if (!a || !window.oaiq) return;
-      window.oaiq('measure', 'custom', { type: 'custom' }, { custom_event_name: 'whatsapp_click' });
+      const veic = vehicleFromHref(a.href);
+      window.oaiq('measure', 'custom', {
+        type: 'custom',
+        contents: [{
+          id: veic.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+          name: `WhatsApp: ${veic}`,
+          content_type: 'cta',
+        }],
+      }, { custom_event_name: 'whatsapp_click' });
     };
     document.addEventListener('click', onClick, true);
     return () => document.removeEventListener('click', onClick, true);
