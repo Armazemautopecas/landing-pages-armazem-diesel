@@ -3,6 +3,7 @@ import '../../_components/styles.css';
 import HeroMaquina from '../../_components/HeroMaquina';
 import TrustBar from '../../_components/TrustBar';
 import PlacaHub from './PlacaHub';
+import OaiPixel from './OaiPixel';
 import Linhas from './Linhas';
 import WhySection from '../../_components/WhySection';
 import Testimonials from '../../_components/Testimonials';
@@ -55,6 +56,7 @@ export default function Page() {
       <link rel="preload" as="image" href={`/injecao-diesel/${CFG.slug}/assets/hero-static.webp`} type="image/webp" fetchPriority="high" />
       <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" href="/injecao-diesel/fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2" />
 
+      <OaiPixel />
       <HeroMaquina cfg={CFG} />
       <TrustBar cfg={CFG} style="numbers" />
       <PlacaHub cfg={CFG} />

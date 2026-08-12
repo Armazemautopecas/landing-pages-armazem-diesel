@@ -18,13 +18,15 @@
     "sub": "Pronta entrega para as principais linhas diesel do Brasil. Envio para todo o país.",
     "foto_static": "assets/hero-static.webp",
     "foto_alt": "Frota de picapes e SUVs diesel enfileirados ao pôr do sol",
-    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+    "cta_mobile_label": "Falar com o vendedor no WhatsApp",
+    "cta_desktop_label": "Consultar a placa",
+    "cta_desktop_anchor": "#buscar"
   },
 
   "selector": {
-    "titulo_l1": "Consulte a placa",
-    "titulo_l2": "e ache o bico certo",
-    "subtexto": "Digite a placa ou o chassi que a gente identifica o veículo e o bico injetor compatível."
+    "titulo_l1": "Consulta grátis",
+    "titulo_l2": "placa ou chassi",
+    "subtexto": "Resposta na hora com o bico compatível."
   },
 
   "catalogo_pecas": [

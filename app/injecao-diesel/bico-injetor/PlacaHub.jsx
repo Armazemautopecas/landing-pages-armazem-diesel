@@ -275,24 +275,31 @@ export default function PlacaHub({ cfg }) {
   const hasResult = !!result;
 
   return (
-    <section className={`sec-off sec-pad search-section search-hub ${hasResult ? 'has-result' : 'is-empty'}`} id="buscar">
+    <section className={`sec-navy sec-pad search-section search-hub bi-plate-band ${hasResult ? 'has-result' : 'is-empty'}`} id="buscar">
       <div className="container" ref={resultRef}>
         {hasResult ? (
           <>
-            <div className="eyebrow" style={{ color: 'var(--muted)', marginBottom: 16 }}>Resultado da busca</div>
+            <div className="eyebrow" style={{ color: 'rgba(245,245,245,0.65)', marginBottom: 16 }}>Resultado da busca</div>
             {result.kind === 'bico' && <ResultBico cfg={cfg} vehicle={result.vehicle} veiculo={result.veiculo} bicos={result.bicos} exactYear={result.exactYear} />}
             {result.kind === 'generic' && <ResultGeneric cfg={cfg} vehicle={result.vehicle} />}
             {result.kind === 'notfound' && <ResultNotFound cfg={cfg} query={result.query} />}
             {result.kind === 'error' && <ResultError cfg={cfg} query={result.query} message={result.message} />}
-            <p style={{ fontSize: 13, color: 'var(--muted)', marginTop: 18 }}>
+            <p style={{ fontSize: 13, color: 'rgba(245,245,245,0.7)', marginTop: 18 }}>
               Consultar outro veículo?{' '}
-              <a onClick={() => { setResult(null); setPlate(''); }} style={{ textDecoration: 'underline', cursor: 'pointer' }}>
+              <a onClick={() => { setResult(null); setPlate(''); }} style={{ color: 'var(--off)', textDecoration: 'underline', cursor: 'pointer' }}>
                 Nova consulta
               </a>.
             </p>
           </>
         ) : (
-          <div className="search-section-empty-wrap">
+          <div className="bi-plate-inner">
+            <div className="bi-plate-head">
+              <h2 className="bi-plate-title">Sabe a placa? A gente acha o bico certo pra você.</h2>
+              <p className="bi-plate-lead">
+                Digite a placa ou o chassi. Consultamos FIPE/Denatran, identificamos seu
+                veículo e mostramos o bico injetor compatível — sem achismo, na hora.
+              </p>
+            </div>
             <div className="selector">
               <h2 className="sel-title">{cfg.selector.titulo_l1}<br />{cfg.selector.titulo_l2}</h2>
               <p className="sel-small">{cfg.selector.subtexto}</p>
@@ -314,13 +321,19 @@ export default function PlacaHub({ cfg }) {
                 </div>
               </form>
               {err && <p style={{ color: '#c1121f', fontSize: 12, marginTop: 10 }}>{err}</p>}
-              <p className="sel-note">
-                <b style={{ color: 'var(--ink)' }}>Consultamos FIPE/Denatran pra você</b> —
-                achamos o bico certo, sem achismo. Não tem placa em mãos?{' '}
-                <a href={waLink(cfg.wa.fab_default, SLUG)} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
-                  chame o vendedor no WhatsApp
-                </a>.
-              </p>
+            </div>
+
+            <div className="bi-plate-paths">
+              <span className="bi-plate-paths-label">Não tem a placa em mãos?</span>
+              <a className="bi-path-link" href="#linhas">
+                Procurar pela linha do veículo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19" /><polyline points="6 13 12 19 18 13" />
+                </svg>
+              </a>
+              <a className="bi-path-link is-wa" href={waLink(cfg.wa.fab_default, SLUG)} target="_blank" rel="noreferrer">
+                <WhatsAppIcon size={16} /> Chamar o vendedor agora
+              </a>
             </div>
           </div>
         )}

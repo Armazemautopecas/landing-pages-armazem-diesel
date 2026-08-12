@@ -70,27 +70,24 @@ export default function Linhas() {
   return (
     <section className="sec-pad" id="linhas">
       <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: 8 }}>
-          <div className="eyebrow" style={{ color: 'var(--muted)', marginBottom: 10 }}>Cobertura</div>
-          <h2 className="h2">Linhas que trabalhamos</h2>
-          <p style={{ color: 'var(--muted)', maxWidth: 640, margin: '10px auto 0' }}>
-            Bico injetor diesel pras principais linhas do Brasil. Achou a sua? Chame no WhatsApp que já vai o veículo escrito.
-            Não achou? Consulte a placa acima — trabalhamos com muito mais do que cabe aqui.
+        <div style={{ textAlign: 'center', marginBottom: 8, maxWidth: 660, marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2 className="h2" style={{ textWrap: 'balance' }}>Prefere procurar pela linha?</h2>
+          <p style={{ color: 'var(--muted)', margin: '14px auto 0', fontSize: 17 }}>
+            Ache seu veículo na lista e toque no nome: abre o WhatsApp com o modelo
+            já escrito. É só mandar o ano que a gente confirma o bico certo e o prazo.
           </p>
         </div>
-        <div className="linhas-grid" style={{ display: 'grid', gap: 28, marginTop: 32, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        <div className="linhas-grid" style={{ display: 'grid', gap: 24, marginTop: 36, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
           {GRUPOS.map((g) => (
-            <div key={g.titulo}>
-              <h3 style={{ fontSize: 14, textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--ink)', marginBottom: 14, borderBottom: '2px solid var(--red, #c1121f)', paddingBottom: 8 }}>
-                {g.titulo}
-              </h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
+            <div className="linhas-col" key={g.titulo}>
+              <h3 className="linhas-col-title">{g.titulo}</h3>
+              <ul className="linhas-list">
                 {g.itens.map((it) => (
                   <li key={it.slug}>
-                    <a href={waLink(linhaMsg(it.nome), 'bico-injetor')} target="_blank" rel="noreferrer"
-                       style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: 15, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                      <span style={{ color: '#25D366', display: 'inline-flex' }}><WhatsAppIcon size={14} /></span>
-                      {it.nome}
+                    <a className="linhas-item" href={waLink(linhaMsg(it.nome), 'bico-injetor')} target="_blank" rel="noreferrer">
+                      <span className="linhas-item-wa"><WhatsAppIcon size={15} /></span>
+                      <span className="linhas-item-name">{it.nome}</span>
+                      <span className="linhas-item-cue">Chamar</span>
                     </a>
                   </li>
                 ))}
