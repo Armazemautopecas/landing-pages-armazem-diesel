@@ -31,11 +31,15 @@ jobs:
           BODY="{}"
           SIG=$(printf '%s' "$BODY" | openssl dgst -sha256 -hmac "$HMAC_SECRET" -hex | awk '{print $2}')
           echo "Calling $ENDPOINT"
-          HTTP=$(curl -sS -o /tmp/resp.json -w '%{http_code}' \
-            -X POST "$ENDPOINT" \
-            -H "Content-Type: application/json" \
-            -H "X-Signature: $SIG" \
-            --data "$BODY" || echo 000)
-          echo "HTTP $HTTP"
-          cat /tmp/resp.json
+          for i in 1 2 3; do
+            HTTP=$(curl -sS -o /tmp/resp.json -w '%{http_code}' \
+              -X POST "$ENDPOINT" \
+              -H "Content-Type: application/json" \
+              -H "X-Signature: $SIG" \
+              --data "$BODY" || echo 000)
+            echo "Tentativa $i: HTTP $HTTP"
+            cat /tmp/resp.json
+            [ "$HTTP" = "200" ] && break
+            [ "$i" -lt 3 ] && sleep 15
+          done
           test "$HTTP" = "200"
