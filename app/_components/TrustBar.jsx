@@ -1,5 +1,5 @@
 import { TrustIcon } from './atoms';
-import { getFabricanteLabel } from '@/lib/content';
+import { getFabricanteLabel, getMarcasLabel, isMaquina } from '@/lib/content';
 
 // Server component (Onda 3 — 2026-05-08). Conteúdo aparece direto, sem
 // reveal-on-scroll que exigia useState+IntersectionObserver. Animation
@@ -7,12 +7,25 @@ import { getFabricanteLabel } from '@/lib/content';
 // e perceptualmente igual sem o fade-in.
 export default function TrustBar({ cfg, style }) {
   const fabricante = getFabricanteLabel(cfg);
-  const cells = [
-    { icon: 'shield', ttl: 'Peças Originais', sub: fabricante ? `OEM ${fabricante}` : 'Garantia de fábrica', num: '100%' },
-    { icon: 'box', ttl: 'Despacho Rápido', sub: 'Saída em até 24h úteis', num: '24h' },
-    { icon: 'gear', ttl: 'Compatibilidade Confirmada', sub: 'FIPE/Denatran', num: 'OEM' },
-    { icon: 'factory', ttl: 'Bicos Vendidos', sub: 'Pra todo o Brasil', num: '10K+' },
-  ];
+  const maquina = isMaquina(cfg);
+  const marcas = maquina ? getMarcasLabel(cfg) : '';
+
+  // Em LP de máquina/caminhão a barra não pode falar de FIPE/Denatran (máquina
+  // não tem placa) nem prometer "OEM Bosch" sozinho enquanto o texto logo
+  // abaixo cita as outras marcas. Os argumentos viram os do frotista.
+  const cells = maquina
+    ? [
+      { icon: 'shield', ttl: 'Peças Originais', sub: marcas || 'Garantia do fabricante', num: '100%' },
+      { icon: 'box', ttl: 'Despacho Rápido', sub: 'Saída em até 24h úteis', num: '24h' },
+      { icon: 'gear', ttl: 'Compatibilidade Confirmada', sub: 'Código do fabricante conferido', num: 'OEM' },
+      { icon: 'factory', ttl: 'Bicos Vendidos', sub: 'Envio pra obra e fazenda', num: '10K+' },
+    ]
+    : [
+      { icon: 'shield', ttl: 'Peças Originais', sub: fabricante ? `OEM ${fabricante}` : 'Garantia de fábrica', num: '100%' },
+      { icon: 'box', ttl: 'Despacho Rápido', sub: 'Saída em até 24h úteis', num: '24h' },
+      { icon: 'gear', ttl: 'Compatibilidade Confirmada', sub: 'FIPE/Denatran', num: 'OEM' },
+      { icon: 'factory', ttl: 'Bicos Vendidos', sub: 'Pra todo o Brasil', num: '10K+' },
+    ];
 
   return (
     <section className={`trust ${style === 'minimal' ? 'is-minimal' : ''} ${style === 'numbers' ? 'is-numbers' : ''}`}>
