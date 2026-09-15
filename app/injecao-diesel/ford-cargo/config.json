@@ -15,7 +15,7 @@
     "sub": "Cargo Euro V, C1119, C2932. Motor Cummins ISB — identificamos o bico exato pelo modelo e ano do caminhão.",
     "foto_static": "assets/ford-cargo-static.webp",
     "foto_alt": "Caminhão pesado branco em rodovia",
-    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+    "cta_mobile_label": "ACHAR O BICO CERTO"
   },
   "selector": {
     "titulo_l1": "Encontre o bico certo",
@@ -158,7 +158,7 @@
     "sub_pre": "Mande o código da peça ou o modelo/ano do Cargo no",
     "sub_anchor": "WhatsApp",
     "sub_post": "que a gente confirma e cota na hora.",
-    "btn": "Falar com o vendedor agora",
+    "btn": "FALAR COM O VENDEDOR AGORA",
     "microtext_pre": "WhatsApp",
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },

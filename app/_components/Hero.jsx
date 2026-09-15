@@ -1,4 +1,4 @@
-import { getFabricanteLabel } from '@/lib/content';
+import { getFabricanteLabel, CTA_PRINCIPAL, CTA_SECUNDARIO } from '@/lib/content';
 import { waLink } from './lib/wa';
 import { WhatsAppIcon } from './atoms';
 import Selector from './Selector';
@@ -43,7 +43,12 @@ export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSear
               <span className="line-2">{cfg.hero.h1_sub}</span>
             </h1>
             <p className="hero-sub">{cfg.hero.sub}</p>
-            {/* item #10 do backlog: no celular o unico botao do topo rolava ate o
+            {/* Bloco de CTAs do topo — padrao fixo (decisao Diego 15/09/2026):
+                botao secundario (contorno claro, so onde existe busca por
+                placa/ano) + botao principal vermelho com icone do WhatsApp e o
+                texto unico CTA_PRINCIPAL. Vale no celular E no desktop.
+
+                item #10 do backlog: no celular o unico botao do topo rolava ate o
                 formulario. Quem ja esta decidido (trafego de Ads costuma estar)
                 tinha que rolar a pagina inteira ate o rodape pra achar o
                 WhatsApp. Agora o topo tem os dois: o de rolar vira secundario e
@@ -52,7 +57,7 @@ export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSear
                 nova. Altura reservada no CSS pra nao empurrar o conteudo. */}
             <div className="hero-ctas-mobile">
               <a className="hero-cta-mobile is-secondary" href="#buscar">
-                <span>{cfg.hero.cta_mobile_label}</span>
+                <span>{CTA_SECUNDARIO}</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="13 6 19 12 13 18" />
@@ -65,7 +70,7 @@ export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSear
                 rel="noreferrer"
               >
                 <WhatsAppIcon size={18} />
-                <span>{cfg.final_cta.btn}</span>
+                <span>{CTA_PRINCIPAL}</span>
               </a>
             </div>
             <ul className="hero-trusts" aria-label="Garantias">

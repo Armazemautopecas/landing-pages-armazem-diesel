@@ -25,7 +25,7 @@
     "foto_alt": "Hyundai HR baú branco em galpão de logística",
     "bg_position_mobile": "50% 50%",
     "bg_position_desktop": "center center",
-    "cta_mobile_label": "Achar o bico certo"
+    "cta_mobile_label": "ACHAR O BICO CERTO"
   },
   "selector": {
     "titulo_l1": "Encontre o bico certo",
@@ -110,7 +110,7 @@
     "sub_pre": "Insira a placa no",
     "sub_anchor": "seletor acima",
     "sub_post": "ou chame direto no WhatsApp.",
-    "btn": "Falar com o vendedor agora",
+    "btn": "FALAR COM O VENDEDOR AGORA",
     "microtext_pre": "WhatsApp",
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },

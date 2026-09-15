@@ -291,7 +291,10 @@ a { color: inherit; }
   box-shadow: inset 0 0 0 1px var(--red), 0 6px 20px rgba(4,31,48,0.3);
   transform: translateY(-1px);
 }
+/* pilula: o CTA principal tem o mesmo formato no topo, no meio e no fecho
+   (decisao Diego 15/09/2026) */
 .btn-red {
+  border-radius: 999px;
   background: var(--red); color: #fff;
   box-shadow: 0 4px 14px rgba(255,2,30,0.28);
 }
@@ -360,13 +363,65 @@ section { position: relative; }
     linear-gradient(95deg, rgba(4,31,48,0.95) 0%, rgba(4,31,48,0.78) 28%, rgba(4,31,48,0.3) 58%, rgba(4,31,48,0) 100%),
     linear-gradient(180deg, rgba(4,31,48,0) 60%, rgba(4,31,48,0.8) 100%);
 }
-/* default: mobile-only CTA hidden on desktop, search-section vazia hidden on desktop */
-.hero-cta-mobile { display: none; }
-/* item #10: bloco de CTAs do topo no celular (rolar + WhatsApp com texto).
-   `min-height` reserva a altura dos dois botoes antes de qualquer pintura, pra
-   o bloco nao empurrar o conteudo depois (CLS). */
-.hero-ctas-mobile { display: none; }
-.hero-cta-wa { display: none; }
+/* ---- CTAs do topo — PADRAO FIXO (decisao Diego 15/09/2026) ----------------
+   Ate a Onda 1 estes botoes eram mobile-only (`display:none` aqui): no desktop
+   o hero nao tinha CTA nenhum e cada LP resolvia do seu jeito. Agora a ordem e
+   o par de botoes sao os MESMOS no celular e no desktop:
+     secundario (contorno claro, so onde ha busca por placa/ano)
+     + principal (pilula vermelha, icone do WhatsApp, texto unico).
+   O bloco @media (max-width: 720px) mais abaixo so ajusta tamanhos — a altura
+   do hero mobile fechada na Onda 1 nao muda.
+   `min-height` reserva a altura dos botoes antes de qualquer pintura (CLS). */
+.hero-ctas-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+}
+.hero-cta-mobile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 15px 26px;
+  background: transparent;
+  border: 1.5px solid rgba(245,245,245,0.45);
+  color: var(--off);
+  font-family: var(--f-head);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform .12s ease, border-color .15s ease;
+}
+.hero-cta-mobile:hover { border-color: var(--off); }
+.hero-cta-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 15px 26px;
+  max-width: 100%;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--f-head);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(255,2,30,0.45), 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.hero-cta-wa:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(255,2,30,0.5); }
+.hero-cta-wa svg { flex: 0 0 auto; }
 .search-section.is-empty { display: none; }
 .search-section { scroll-margin-top: 16px; }
 
@@ -458,6 +513,8 @@ section { position: relative; }
     /* 2 botoes de 52px + 12px de gap = 116px reservados */
     min-height: 116px;
   }
+  /* LP sem busca por placa/ano (maquina, caminhao): so o botao principal */
+  .hero-ctas-mobile.is-single { min-height: 52px; }
   .hero-cta-mobile {
     margin-top: 0;
     min-height: 52px;

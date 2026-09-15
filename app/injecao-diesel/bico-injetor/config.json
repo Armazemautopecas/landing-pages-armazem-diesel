@@ -18,7 +18,7 @@
     "sub": "Pronta entrega para as principais linhas diesel do Brasil. Envio para todo o país.",
     "foto_static": "assets/hero-static.webp",
     "foto_alt": "Frota de picapes e SUVs diesel enfileirados ao pôr do sol",
-    "cta_mobile_label": "Falar com o vendedor no WhatsApp",
+    "cta_mobile_label": "ACHAR O BICO CERTO",
     "cta_desktop_label": "Consultar a placa",
     "cta_desktop_anchor": "#buscar"
   },
@@ -104,7 +104,7 @@
     "sub_pre": "Consulte a placa no",
     "sub_anchor": "seletor acima",
     "sub_post": "ou chame direto no WhatsApp.",
-    "btn": "Falar com o vendedor agora",
+    "btn": "FALAR COM O VENDEDOR AGORA",
     "microtext_pre": "WhatsApp",
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },

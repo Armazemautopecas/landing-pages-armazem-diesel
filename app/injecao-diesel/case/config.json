@@ -28,7 +28,7 @@
     "sub": "Escavadeiras, carregadeiras e bulldozers Case. Confirmamos a peça exata pelo código FPT ou pelo modelo da máquina.",
     "foto_static": "assets/case-static.webp",
     "foto_alt": "Trator Case IH Magnum 225 vermelho",
-    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+    "cta_mobile_label": "ACHAR O BICO CERTO"
   },
   "selector": {
     "titulo_l1": "Encontre o bico certo",
@@ -186,7 +186,7 @@
     "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
     "sub_anchor": "WhatsApp",
     "sub_post": "que a gente confirma e cota na hora.",
-    "btn": "Falar com o vendedor agora",
+    "btn": "FALAR COM O VENDEDOR AGORA",
     "microtext_pre": "WhatsApp",
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },

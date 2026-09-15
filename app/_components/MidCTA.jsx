@@ -1,5 +1,6 @@
 import { waLink } from './lib/wa';
 import { WhatsAppIcon } from './atoms';
+import { CTA_PRINCIPAL } from '@/lib/content';
 
 // Item #25 do backlog: a LP tinha saida pro WhatsApp so no topo e no fecho —
 // em ~5 telas de rolagem, quem se convencia no meio do caminho precisava
@@ -23,7 +24,7 @@ export default function MidCTA({ cfg }) {
           target="_blank"
           rel="noreferrer"
         >
-          <WhatsAppIcon /> {cfg.final_cta.btn}
+          <WhatsAppIcon /> {CTA_PRINCIPAL}
         </a>
       </div>
     </section>

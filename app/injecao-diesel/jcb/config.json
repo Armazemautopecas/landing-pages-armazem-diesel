@@ -24,7 +24,7 @@
     "sub": "Escavadeiras JS200, JS210, JS220 e retroescavadeira 3CX. Máquina parada é prejuízo — resolvemos pelo código da peça.",
     "foto_static": "assets/jcb-static.webp",
     "foto_alt": "Retroescavadeira JCB amarela com caçamba frontal em obra",
-    "cta_mobile_label": "Falar com o vendedor no WhatsApp"
+    "cta_mobile_label": "ACHAR O BICO CERTO"
   },
   "selector": {
     "titulo_l1": "Encontre o bico certo",
@@ -177,7 +177,7 @@
     "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
     "sub_anchor": "WhatsApp",
     "sub_post": "que a gente confirma e cota na hora.",
-    "btn": "Falar com o vendedor agora",
+    "btn": "FALAR COM O VENDEDOR AGORA",
     "microtext_pre": "WhatsApp",
     "microtext_post": "— resposta em minutos, de segunda a sexta."
   },
