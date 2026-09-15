@@ -11,6 +11,7 @@ import TechnicalBlock from '../../_components/TechnicalBlock';
 import FAQ from '../../_components/FAQ';
 import FinalCTA from '../../_components/FinalCTA';
 import Footer from '../../_components/Footer';
+import WaClickBeacon from '../../_components/WaClickBeacon';
 import { WhatsAppIcon } from '../../_components/atoms';
 import { waLink } from '../../_components/lib/wa';
 import { buildJsonLd } from '../../_components/lib/jsonld';
@@ -69,6 +70,7 @@ export default function Page() {
       <FAQ cfg={CFG} />
       <FinalCTA cfg={CFG} />
       <Footer />
+      <WaClickBeacon slug={CFG.slug} />
 
       <a className="wa-fab" href={waLink(CFG.wa.fab_default, CFG.slug)} target="_blank" rel="noreferrer" aria-label="WhatsApp">
         <WhatsAppIcon size={24} />
