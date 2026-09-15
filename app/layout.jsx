@@ -3,6 +3,12 @@ import './globals.css';
 
 export const metadata = {
   metadataBase: new URL('https://www.armazemautopecas.com.br'),
+  // Favicon servido de dentro de /injecao-diesel/ porque a Bunny so roteia
+  // /injecao-diesel/* e /_next/*. O arquivo padrao do Next (app/icon.svg)
+  // nascia em /icon.svg, fora do prefixo, e dava 404 em todas as 31 LPs.
+  icons: {
+    icon: [{ url: '/injecao-diesel/icon.svg', type: 'image/svg+xml', sizes: 'any' }],
+  },
 };
 
 export default function RootLayout({ children }) {
