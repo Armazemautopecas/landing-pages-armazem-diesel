@@ -1,6 +1,11 @@
 import { WA_NUMBER_DISPLAY } from './lib/wa';
 
 export default function Footer() {
+  // A pagina e estatica: o ano e carimbado na hora do build, nao na visita.
+  // Basta um deploy no comeco do ano pra virar sozinho — melhor que "2026"
+  // escrito na mao, que vira dado errado em 01/01/2027 sem ninguem notar.
+  const ano = new Date().getFullYear();
+
   return (
     <footer>
       <div className="container">
@@ -44,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bot">
-          <div>© 2026 Armazém Auto Peças Ltda.</div>
+          <div>© {ano} Armazém Auto Peças Ltda.</div>
         </div>
       </div>
     </footer>
