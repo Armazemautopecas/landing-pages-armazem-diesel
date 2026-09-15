@@ -362,6 +362,11 @@ section { position: relative; }
 }
 /* default: mobile-only CTA hidden on desktop, search-section vazia hidden on desktop */
 .hero-cta-mobile { display: none; }
+/* item #10: bloco de CTAs do topo no celular (rolar + WhatsApp com texto).
+   `min-height` reserva a altura dos dois botoes antes de qualquer pintura, pra
+   o bloco nao empurrar o conteudo depois (CLS). */
+.hero-ctas-mobile { display: none; }
+.hero-cta-wa { display: none; }
 .search-section.is-empty { display: none; }
 .search-section { scroll-margin-top: 16px; }
 
@@ -436,10 +441,61 @@ section { position: relative; }
     box-shadow: 0 10px 28px rgba(255,2,30,0.45), 0 2px 6px rgba(0,0,0,0.2);
     transition: transform .12s ease, box-shadow .12s ease;
   }
+  .hero-ctas-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+    /* 2 botoes de 52px + 12px de gap = 116px reservados */
+    min-height: 116px;
+  }
+  .hero-cta-mobile {
+    margin-top: 0;
+    min-height: 52px;
+  }
+  /* o botao de rolar vira secundario: contorno claro em vez de bloco vermelho */
+  .hero-cta-mobile.is-secondary {
+    background: transparent;
+    border: 1.5px solid rgba(245,245,245,0.45);
+    box-shadow: none;
+    font-size: 14px;
+    padding: 14px 22px;
+  }
   .hero-cta-mobile:active {
     transform: scale(0.97);
     box-shadow: 0 4px 14px rgba(255,2,30,0.4);
   }
+  .hero-cta-mobile.is-secondary:active { box-shadow: none; }
+  /* WhatsApp com TEXTO acima da dobra — principal */
+  .hero-cta-wa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 15px 22px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    background: var(--red);
+    color: var(--off);
+    font-family: var(--f-head);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    border-radius: 999px;
+    box-shadow: 0 10px 28px rgba(255,2,30,0.45), 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .hero-cta-wa:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 14px rgba(255,2,30,0.4);
+  }
+  .hero-cta-wa svg { flex: 0 0 auto; }
   /* item #12: a linha de argumentos cabe em 390px — fonte menor, sem quebrar
      o rótulo no meio e com respiro suficiente entre os itens. */
   .hero-trusts {
