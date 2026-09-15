@@ -409,16 +409,24 @@ section { position: relative; }
 }
 
 @media (max-width: 720px) {
+  /* item #26 do backlog: no celular o hero comia quase uma tela inteira de foto
+     sem entregar informacao, e a barra de confianca so aparecia depois de rolar.
+     Corte de ~35% na altura reservada da foto (desktop intocado):
+       min-height  clamp(480px, 78svh, 620px) -> clamp(320px, 52svh, 400px)
+       padding     64px 0 56px                -> 40px 0 32px
+       hero-grid gap  28px -> 20px   ·   .hero-ctas-mobile margin-top 24px -> 18px
+     Como min-height e MINIMO, o hero passa a encolher ate a altura do proprio
+     conteudo e a TrustBar sobe junto. */
   .hero {
-    min-height: clamp(480px, 78svh, 620px);
-    padding: 64px 0 56px;
+    min-height: clamp(320px, 52svh, 400px);
+    padding: 40px 0 32px;
   }
   .hero-overlay {
     background:
       linear-gradient(180deg, rgba(4,31,48,0.82) 0%, rgba(4,31,48,0.42) 35%, rgba(4,31,48,0.20) 60%, rgba(4,31,48,0.55) 100%);
   }
   .hero-bg { object-position: 30% 50%; }
-  .hero-grid { gap: 28px; }
+  .hero-grid { gap: 20px; }
   .hero-h1 { font-size: clamp(38px, 10vw, 52px); line-height: 0.96; }
   .hero-h1 .line-2 { font-size: 0.52em; }
   .hero .wa-link { display: none; }
@@ -446,7 +454,7 @@ section { position: relative; }
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    margin-top: 24px;
+    margin-top: 18px;
     /* 2 botoes de 52px + 12px de gap = 116px reservados */
     min-height: 116px;
   }
