@@ -5,6 +5,8 @@ import {
   isSupported,
   getYearVariants,
   getVeiculoModelo,
+  formatOem,
+  listaCompativeis,
 } from '@/app/_components/lib/parts.js';
 import amarokCfg from '@/app/injecao-diesel/amarok/config.json';
 import hrCfg from '@/app/injecao-diesel/hr/config.json';
@@ -99,5 +101,60 @@ describe('getYearVariants / getVeiculoModelo', () => {
   it('getVeiculoModelo retorna nome correto', () => {
     expect(getVeiculoModelo(amarokCfg)).toBeTruthy();
     expect(getVeiculoModelo(hrCfg)).toBeTruthy();
+  });
+});
+
+
+// Item #11 do backlog: formato único de código OEM na renderização do resultado
+// e o código principal sempre presente na lista de compatíveis.
+describe('formatOem', () => {
+  it('tira os espaços do código Bosch', () => {
+    expect(formatOem('0 445 110 369')).toBe('0445110369');
+  });
+
+  it('preserva hífen (Denso/Kia) e código alfanumérico', () => {
+    expect(formatOem('095000-5800')).toBe('095000-5800');
+    expect(formatOem('A2C59517051')).toBe('A2C59517051');
+  });
+
+  it('não mexe em texto que não é código', () => {
+    expect(formatOem('Consulte no WhatsApp')).toBe('Consulte no WhatsApp');
+    expect(formatOem(amarokCfg.result_messages.default_oem_unknown))
+      .toBe(amarokCfg.result_messages.default_oem_unknown);
+  });
+
+  it('aceita vazio/nulo sem quebrar', () => {
+    expect(formatOem(null)).toBe('');
+    expect(formatOem('')).toBe('');
+  });
+});
+
+describe('listaCompativeis', () => {
+  it('põe o código principal na frente da lista, no mesmo formato', () => {
+    const lista = listaCompativeis('0 445 110 369', ['0445110646', '0445110647']);
+    expect(lista[0]).toBe('0445110369');
+    expect(lista).toContain('0445110646');
+  });
+
+  it('não repete o principal quando ele já está entre os equivalentes', () => {
+    const lista = listaCompativeis('0 445 110 646', ['0445110646', '0445110647']);
+    expect(lista.filter((c) => c === '0445110646')).toHaveLength(1);
+    expect(lista).toEqual(['0445110646', '0445110647']);
+  });
+
+  it('descarta o OEM desconhecido (texto) e devolve só códigos', () => {
+    const lista = listaCompativeis(amarokCfg.result_messages.default_oem_unknown, ['0445110646']);
+    expect(lista).toEqual(['0445110646']);
+  });
+
+  it('sem equivalentes devolve só o principal (a UI então esconde a linha)', () => {
+    expect(listaCompativeis('0 445 110 369', [])).toEqual(['0445110369']);
+    expect(listaCompativeis('0 445 110 369', undefined)).toHaveLength(1);
+  });
+
+  it('o principal da Amarok 2.0 TDI aparece na lista de compatíveis', () => {
+    const part = resolvePart(amarokCfg, '2.0 TDI', 2020, 180);
+    const lista = listaCompativeis(part.oem, part.equivalentes);
+    expect(lista).toContain(formatOem(part.oem));
   });
 });

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { fmt, waLink } from './lib/wa';
-import { getVeiculoModelo } from './lib/parts';
+import { getVeiculoModelo, formatOem, listaCompativeis } from './lib/parts';
 import { WhatsAppIcon } from './atoms';
 import Selector from './Selector';
 
@@ -32,6 +32,8 @@ function ResultPlate({ cfg, vehicle }) {
     modelo: vehicle.modelo, ano: vehicle.ano, motor: vehicle.motor,
   });
   const fotoSrc = pecaSrc(cfg, resolvePecaFoto(cfg, p));
+  const oemLabel = formatOem(p.oem);
+  const compativeis = listaCompativeis(p.oem, p.equivalentes);
 
   return (
     <div className="result-wrap fade-in">
@@ -48,14 +50,14 @@ function ResultPlate({ cfg, vehicle }) {
       <div className="part-card">
         <div className="part-photo">
           <Image src={fotoSrc} alt={`${p.name} — ${p.oem}`} width={600} height={600} sizes="(max-width: 768px) 90vw, 400px" />
-          <div className="ph-label">{p.name} · {p.oem}</div>
+          <div className="ph-label">{p.name} · {oemLabel}</div>
         </div>
         <div>
           <div className="part-title">{p.name}</div>
-          <div className="part-oem">Cód. OEM: {p.oem}{p.marca_bico ? ` · ${p.marca_bico}` : ''}</div>
-          {p.equivalentes && p.equivalentes.length > 0 && (
+          <div className="part-oem">Cód. OEM: {oemLabel}{p.marca_bico ? ` · ${p.marca_bico}` : ''}</div>
+          {compativeis.length > 1 && (
             <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 4, lineHeight: 1.4 }}>
-              Códigos compatíveis: {p.equivalentes.join(', ')}
+              Códigos compatíveis: {compativeis.join(', ')}
             </div>
           )}
           <div className="brand-tag">{p.brand}</div>
@@ -102,7 +104,8 @@ function ResultYear({ cfg, year, variants }) {
         {groups.map((g, i) => {
           const msg = fmt(cfg.wa.result_year_template, { oem: g.oem, year, motor: g.motor });
           const fotoSrc = pecaSrc(cfg, resolvePecaFoto(cfg, g));
-          const equivalentes = cfg.peca?.equivalentes_por_motor?.[g.motor] || [];
+          const oemLabel = formatOem(g.oem);
+          const compativeis = listaCompativeis(g.oem, cfg.peca?.equivalentes_por_motor?.[g.motor]);
           return (
             <div className="variant-card" key={i}>
               <div className="variant-photo">
@@ -111,23 +114,28 @@ function ResultYear({ cfg, year, variants }) {
               <div className="v-motor">{g.motor}</div>
               <div className="v-part">
                 <div className="v-part-name">{cfg.peca.short_label}</div>
-                <div className="v-part-oem">Cód. OEM: {g.oem}{g.marca_bico ? ` · ${g.marca_bico}` : ''}</div>
+                <div className="v-part-oem">Cód. OEM: {oemLabel}{g.marca_bico ? ` · ${g.marca_bico}` : ''}</div>
                 <div className="brand-tag" style={{ marginTop: 10 }}>{cfg.peca.fabricante_label}</div>
               </div>
-              {equivalentes.length > 0 && (
+              {compativeis.length > 1 && (
                 <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 10, lineHeight: 1.4 }}>
-                  Códigos compatíveis: {equivalentes.join(', ')}
+                  Códigos compatíveis: {compativeis.join(', ')}
                 </div>
               )}
               {g.alternativeOems.length > 0 && (
                 <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 10, lineHeight: 1.4 }}>
-                  Variantes alternativas: {g.alternativeOems.join(', ')}.<br />
+                  Variantes alternativas: {g.alternativeOems.map(formatOem).join(', ')}.<br />
                   Confira o nº estampado na sua peça antiga ou chame o vendedor.
                 </div>
               )}
-              <a className="btn btn-navy btn-block" style={{ marginTop: 16 }}
+              {/* Item #11 do backlog: aqui o botao era um "Ver detalhes" azul —
+                  no clique de maior intencao da pagina, o botao grande nao era
+                  o de vender. Agora e o mesmo CTA vermelho de WhatsApp do
+                  resultado por placa, com a mensagem do result_year_template
+                  (ja nomeia veiculo, ano, motor e OEM). */}
+              <a className="btn btn-red btn-block" style={{ marginTop: 16 }}
                  href={waLink(msg, cfg.slug)} target="_blank" rel="noreferrer">
-                Ver detalhes
+                <WhatsAppIcon /> Falar no WhatsApp
               </a>
             </div>
           );
