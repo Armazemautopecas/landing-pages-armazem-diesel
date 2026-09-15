@@ -31,8 +31,8 @@ const AUTOPARTS_STORE = {
 };
 
 // Hardcoded — vem do Google Business da Armazém (4,6 ★ · 109 avaliações em 2026-05-07).
-// Reflete reputação da loja inteira; aplicado a Product como proxy (Google aceita pra
-// merchants pequenos sem reviews individuais por SKU).
+// É a nota da LOJA, não do bico: fica no nó AutoPartsStore. Nunca dentro de Product —
+// o Google trata nota da loja auto-atribuída ao produto como review falsa (regra N5).
 const AGGREGATE_RATING = {
   '@type': 'AggregateRating',
   ratingValue: '4.6',
@@ -149,12 +149,11 @@ export function buildJsonLd(cfg, pageUrl, opts = {}) {
     brand: brandNode(product.brands),
     category: 'Peça automotiva — sistema de injeção diesel',
     isRelatedTo: (product.vehicles || []).map((name) => ({ '@type': 'Vehicle', name })),
-    aggregateRating: AGGREGATE_RATING,
     offers: buildOffersNode(product, AUTOPARTS_STORE['@id'], pageUrl, opts.oemCount),
   };
 
   return {
     '@context': 'https://schema.org',
-    '@graph': [AUTOPARTS_STORE, productNode],
+    '@graph': [{ ...AUTOPARTS_STORE, aggregateRating: AGGREGATE_RATING }, productNode],
   };
 }
