@@ -83,6 +83,11 @@ function normalizeVehicle(p, { plate, chassi }) {
     motor,
     ano,
     cv,
+    // Item #32 do backlog: o combustível vinha do upstream e era jogado fora
+    // (só entrava colado no nome do motor). Agora sai cru no payload pra a
+    // página poder recusar veículo que não é diesel em vez de cravar selo
+    // verde. Vazio = a API não informou — quem decide é decidirConsulta().
+    combustivel: combust,
   };
 }
 

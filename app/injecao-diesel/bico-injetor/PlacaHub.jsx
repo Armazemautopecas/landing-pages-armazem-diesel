@@ -13,6 +13,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { fmt, waLink } from '../../_components/lib/wa';
+import { decidirConsulta, identificacao } from '../../_components/lib/consulta';
 import { WhatsAppIcon } from '../../_components/atoms';
 import OEMS from '@/data/oems.json';
 
@@ -103,21 +104,21 @@ function resolveBicos(slug, ano) {
   return { veiculo: entry.veiculo, bicos: Array.from(seen.values()), exactYear };
 }
 
-function ResultGeneric({ cfg, vehicle }) {
-  const msg = fmt(cfg.wa.result_vehicle_template, { marca: vehicle.marca, modelo: vehicle.modelo });
+// Item #32 (b)/(d): o hub confirma qualquer veículo DIESEL que caia na whitelist
+// de linhas do MATCHERS/oems.json. Fora disso — carro a gasolina, placa com dado
+// podre (o Santana 1986 a álcool do relatório) ou linha que a gente não atende —
+// NUNCA mais sai selo verde afirmando "trabalhamos com bico diesel pra essa
+// linha". Vira estado claro com saída pro WhatsApp.
+function ResultForaEscopo({ cfg, vehicle, query }) {
+  const ident = identificacao(vehicle);
+  const msg = fmt(cfg.wa.result_notsupported_template, { query, ident: ident || query });
   return (
     <div className="result-wrap fade-in">
-      <div className="result-head">
-        <span className="check">✓</span> Veículo Identificado
-      </div>
-      <div className="vehicle-name">{vehicle.marca} {vehicle.modelo}</div>
-      <div className="vehicle-spec">
-        {[vehicle.motor, vehicle.ano].filter(Boolean).join(' · ')}
-        {vehicle.plate ? <><br />Placa: {vehicle.plate}</> : null}
-      </div>
-      <hr className="hr-dashed" />
+      <div className="vehicle-name" style={{ color: '#c1121f' }}>Fora da linha desta página</div>
       <div className="vehicle-spec" style={{ marginTop: 8 }}>
-        Trabalhamos com bico injetor diesel pra essa linha. Chame o vendedor com o veículo já preenchido que a gente confirma o código e cota na hora.
+        {ident
+          ? <>Essa placa é de um <b style={{ color: 'var(--ink)' }}>{ident}</b>, que não é a linha desta página. Me chama no WhatsApp que a nossa equipe confere.</>
+          : <>Não consegui confirmar que esse veículo é a linha desta página. Me chama no WhatsApp que a nossa equipe confere.</>}
       </div>
       <a className="btn btn-red btn-lg" style={{ marginTop: 18 }} href={waLink(msg, SLUG)} target="_blank" rel="noreferrer">
         <WhatsAppIcon /> Falar no WhatsApp
@@ -180,9 +181,9 @@ function ResultBico({ cfg, vehicle, veiculo, bicos, exactYear }) {
 function ResultNotFound({ cfg, query }) {
   return (
     <div className="result-wrap fade-in">
-      <div className="vehicle-name" style={{ color: '#c1121f' }}>Não encontramos</div>
+      <div className="vehicle-name" style={{ color: '#c1121f' }}>Não encontrei essa placa</div>
       <div className="vehicle-spec" style={{ marginTop: 8 }}>
-        Não localizamos um veículo para <b style={{ color: 'var(--ink)' }}>{query}</b>. Confira a placa ou fale com um vendedor pra gente conferir pela nota do carro.
+        Não encontrei <b style={{ color: 'var(--ink)' }}>{query}</b>. Me chama no WhatsApp com a placa ou o modelo que a nossa equipe confere pra você.
       </div>
       <a className="btn btn-red btn-lg" style={{ marginTop: 18 }}
          href={waLink(fmt(cfg.wa.result_notfound_template, { query }), SLUG)} target="_blank" rel="noreferrer">
@@ -245,28 +246,31 @@ export default function PlacaHub({ cfg }) {
         setResult({ kind: 'error', query: clean, message: 'Muitas consultas. Tente de novo em 1 minuto.' });
         return;
       }
-      if (!r.ok) {
-        setResult({ kind: 'error', query: clean, message: 'Não conseguimos consultar agora. Fale com um vendedor no WhatsApp.' });
-        return;
-      }
-      const data = await r.json();
-      if (!data.found) {
+      // API fora do ar / 5xx / timeout caem em "não encontrei", nunca em selo verde.
+      const data = r.ok ? await r.json() : { error: 'upstream_error' };
+      const decisao = decidirConsulta(data, {
+        escopo: (v) => !!matchSlug(v.marca, v.modelo),
+      });
+      if (decisao.status === 'nao_encontrado') {
         setResult({ kind: 'notfound', query: clean });
         return;
       }
-      const vehicle = data.vehicle || {};
-      const slug = matchSlug(vehicle.marca, vehicle.modelo);
-      if (slug) {
-        const { veiculo, bicos, exactYear } = resolveBicos(slug, vehicle.ano);
-        if (bicos.length) {
-          setResult({ kind: 'bico', vehicle, veiculo, bicos, exactYear });
-          return;
-        }
+      if (decisao.status === 'fora_do_escopo') {
+        setResult({ kind: 'foraescopo', query: clean, vehicle: decisao.vehicle });
+        return;
       }
-      setResult({ kind: 'generic', vehicle });
+      const vehicle = decisao.vehicle;
+      const slug = matchSlug(vehicle.marca, vehicle.modelo);
+      const { veiculo, bicos, exactYear } = resolveBicos(slug, vehicle.ano);
+      if (bicos.length) {
+        setResult({ kind: 'bico', vehicle, veiculo, bicos, exactYear });
+        return;
+      }
+      // linha da whitelist mas sem bico mapeado: não dá pra afirmar peça.
+      setResult({ kind: 'foraescopo', query: clean, vehicle });
     } catch (e2) {
       console.error('consulta_veiculo_error', e2);
-      setResult({ kind: 'error', query: clean, message: 'Erro de conexão. Tente novamente ou fale com um vendedor no WhatsApp.' });
+      setResult({ kind: 'notfound', query: clean });
     } finally {
       setSearching(false);
     }
@@ -281,7 +285,7 @@ export default function PlacaHub({ cfg }) {
           <>
             <div className="eyebrow" style={{ color: 'rgba(245,245,245,0.65)', marginBottom: 16 }}>Resultado da busca</div>
             {result.kind === 'bico' && <ResultBico cfg={cfg} vehicle={result.vehicle} veiculo={result.veiculo} bicos={result.bicos} exactYear={result.exactYear} />}
-            {result.kind === 'generic' && <ResultGeneric cfg={cfg} vehicle={result.vehicle} />}
+            {result.kind === 'foraescopo' && <ResultForaEscopo cfg={cfg} vehicle={result.vehicle} query={result.query} />}
             {result.kind === 'notfound' && <ResultNotFound cfg={cfg} query={result.query} />}
             {result.kind === 'error' && <ResultError cfg={cfg} query={result.query} message={result.message} />}
             <p style={{ fontSize: 13, color: 'rgba(245,245,245,0.7)', marginTop: 18 }}>

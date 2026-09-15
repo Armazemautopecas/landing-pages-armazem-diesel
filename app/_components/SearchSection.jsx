@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { fmt, waLink } from './lib/wa';
 import { getVeiculoModelo, formatOem, listaCompativeis } from './lib/parts';
+import { identificacao } from './lib/consulta';
 import { WhatsAppIcon } from './atoms';
 import Selector from './Selector';
 
@@ -148,12 +149,14 @@ function ResultYear({ cfg, year, variants }) {
   );
 }
 
+// Item #32 (a): placa que não existe, API fora do ar ou retorno vazio. Nunca
+// selo verde — estado claro e saída direta pro WhatsApp com a placa digitada.
 function ResultNotFound({ cfg, query }) {
   return (
     <div className="result-wrap fade-in">
-      <div className="vehicle-name" style={{ color: '#c1121f' }}>Não encontramos</div>
+      <div className="vehicle-name" style={{ color: '#c1121f' }}>Não encontrei essa placa</div>
       <div className="vehicle-spec" style={{ marginTop: 8 }}>
-        Não localizamos um veículo para <b style={{ color: 'var(--ink)' }}>{query}</b>. Verifique a placa ou fale com um vendedor pra gente conferir pela nota do carro.
+        Não encontrei <b style={{ color: 'var(--ink)' }}>{query}</b>. Me chama no WhatsApp com a placa ou o modelo que a nossa equipe confere pra você.
       </div>
       <a className="btn btn-red btn-lg" style={{ marginTop: 18 }}
          href={waLink(fmt(cfg.wa.result_notfound_template, { query }), cfg.slug)}
@@ -164,14 +167,19 @@ function ResultNotFound({ cfg, query }) {
   );
 }
 
-function ResultNotSupported({ cfg, vehicle, query, message }) {
-  const ident = [vehicle?.marca, vehicle?.modelo, vehicle?.ano].filter(Boolean).join(' ') || query;
-  const waMsg = fmt(cfg.wa.result_notsupported_template, { query, ident });
+// Item #32 (b): o veículo existe, mas não é diesel, veio com dado incoerente
+// (0.0, ano fora da faixa) ou é outra linha — a LP da Amarok não pode confirmar
+// um Santana. Também nunca mostra selo verde.
+function ResultNotSupported({ cfg, vehicle, query }) {
+  const ident = identificacao(vehicle);
+  const waMsg = fmt(cfg.wa.result_notsupported_template, { query, ident: ident || query });
   return (
     <div className="result-wrap fade-in">
-      <div className="vehicle-name">Identificamos: {ident}</div>
+      <div className="vehicle-name" style={{ color: '#c1121f' }}>Fora da linha desta página</div>
       <div className="vehicle-spec" style={{ marginTop: 8 }}>
-        {message || cfg.result_messages.not_supported_default}
+        {ident
+          ? <>Essa placa é de um <b style={{ color: 'var(--ink)' }}>{ident}</b>, que não é a linha desta página. Me chama no WhatsApp que a nossa equipe confere.</>
+          : <>Não consegui confirmar que esse veículo é a linha desta página. Me chama no WhatsApp que a nossa equipe confere.</>}
       </div>
       <a className="btn btn-red btn-lg" style={{ marginTop: 18 }}
          href={waLink(waMsg, cfg.slug)} target="_blank" rel="noreferrer">
@@ -208,7 +216,7 @@ export default function SearchSection({ cfg, result, onSearch, isSearching, sele
             {result.kind === 'plate' && result.vehicle && <ResultPlate cfg={cfg} vehicle={result.vehicle} />}
             {result.kind === 'year' && <ResultYear cfg={cfg} year={result.year} variants={result.variants} />}
             {result.kind === 'notfound' && <ResultNotFound cfg={cfg} query={result.query} />}
-            {result.kind === 'notsupported' && <ResultNotSupported cfg={cfg} vehicle={result.vehicle} query={result.query} message={result.message} />}
+            {result.kind === 'notsupported' && <ResultNotSupported cfg={cfg} vehicle={result.vehicle} query={result.query} />}
             {result.kind === 'error' && <ResultError cfg={cfg} query={result.query} message={result.message} />}
           </>
         ) : (

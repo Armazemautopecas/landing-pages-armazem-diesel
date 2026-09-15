@@ -10,6 +10,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { enrichMotor, isSupported, resolvePart, getYearVariants } from './lib/parts';
+import { decidirConsulta } from './lib/consulta';
 import Hero from './Hero';
 import SearchSection from './SearchSection';
 
@@ -60,32 +61,31 @@ export default function LandingClient({ cfg, children }) {
         body: JSON.stringify(body),
       });
 
+      // Item #32 do backlog: quem decide se pode mostrar selo verde é
+      // decidirConsulta(), função pura testada em tests/consulta.test.js.
+      // Rate limit continua com mensagem própria (é o único caso em que o
+      // visitante pode simplesmente tentar de novo).
       if (r.status === 429) {
         setResult({ kind: 'error', query: clean, message: 'Muitas consultas. Tente de novo em 1 minuto.' });
         return;
       }
-      if (!r.ok) {
-        setResult({ kind: 'error', query: clean, message: 'Não conseguimos consultar agora. Fale com um vendedor no WhatsApp.' });
-        return;
-      }
 
-      const data = await r.json();
-      if (!data.found) {
+      // API fora do ar / 5xx / timeout entram no mesmo caminho de "não
+      // encontrei" — nunca em selo verde.
+      const data = r.ok ? await r.json() : { error: 'upstream_error' };
+      const decisao = decidirConsulta(data, { escopo: (veh) => isSupported(cfg, enrichMotor(cfg, veh)) });
+
+      if (decisao.status === 'nao_encontrado') {
         setResult({ kind: 'notfound', query: clean });
         return;
       }
 
-      const v = enrichMotor(cfg, data.vehicle || {});
-      if (!isSupported(cfg, v)) {
-        setResult({
-          kind: 'notsupported',
-          query: clean,
-          vehicle: v,
-          message: data.message,
-        });
+      if (decisao.status === 'fora_do_escopo') {
+        setResult({ kind: 'notsupported', query: clean, vehicle: decisao.vehicle, motivo: decisao.motivo });
         return;
       }
 
+      const v = enrichMotor(cfg, decisao.vehicle);
       setResult({
         kind: 'plate',
         vehicle: {
@@ -101,7 +101,7 @@ export default function LandingClient({ cfg, children }) {
       });
     } catch (e) {
       console.error('consulta_veiculo_error', e);
-      setResult({ kind: 'error', query: clean, message: 'Erro de conexão. Tente novamente ou fale com um vendedor no WhatsApp.' });
+      setResult({ kind: 'notfound', query: clean });
     } finally {
       setSearching(false);
     }
