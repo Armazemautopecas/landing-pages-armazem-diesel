@@ -7,6 +7,7 @@ import OaiPixel from './OaiPixel';
 import Linhas from './Linhas';
 import WhySection from '../../_components/WhySection';
 import Testimonials from '../../_components/Testimonials';
+import MidCTA from '../../_components/MidCTA';
 import TechnicalBlock from '../../_components/TechnicalBlock';
 import FAQ from '../../_components/FAQ';
 import FinalCTA from '../../_components/FinalCTA';
@@ -63,6 +64,7 @@ export default function Page() {
       <Linhas />
       <WhySection cfg={CFG} style="stacked" />
       <Testimonials cfg={CFG} />
+      <MidCTA cfg={CFG} />
       <TechnicalBlock cfg={CFG} />
       <FAQ cfg={CFG} />
       <FinalCTA cfg={CFG} />

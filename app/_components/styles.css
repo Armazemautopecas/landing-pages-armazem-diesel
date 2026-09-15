@@ -1478,3 +1478,21 @@ footer {
   .aplic-motor { font-size: 18px; }
   .cat-dl > div { grid-template-columns: 110px 1fr; }
 }
+
+
+/* ---------- MidCTA (item #25): saida pro WhatsApp no meio da pagina ---------- */
+.mid-cta-band {
+  background: var(--off);
+  padding: 0 0 56px;
+}
+.mid-cta {
+  display: flex;
+  justify-content: center;
+}
+.mid-cta .btn {
+  min-height: 52px;
+  max-width: 100%;
+}
+@media (max-width: 720px) {
+  .mid-cta .btn { width: 100%; justify-content: center; }
+}
