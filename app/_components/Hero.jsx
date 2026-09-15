@@ -48,7 +48,7 @@ export default function Hero({ cfg, heroLayout, selectorStyle, heroImage, onSear
                 <polyline points="13 6 19 12 13 18" />
               </svg>
             </a>
-            <ul className="hero-trusts-desktop" aria-label="Garantias">
+            <ul className="hero-trusts" aria-label="Garantias">
               <li>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF021E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />

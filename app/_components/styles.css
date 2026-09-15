@@ -440,6 +440,16 @@ section { position: relative; }
     transform: scale(0.97);
     box-shadow: 0 4px 14px rgba(255,2,30,0.4);
   }
+  /* item #12: a linha de argumentos cabe em 390px — fonte menor, sem quebrar
+     o rótulo no meio e com respiro suficiente entre os itens. */
+  .hero-trusts {
+    margin-top: 18px;
+    gap: 8px 16px;
+    font-size: 11.5px;
+    letter-spacing: 0.02em;
+  }
+  .hero-trusts li { gap: 6px; white-space: nowrap; }
+  .hero-trusts svg { flex: 0 0 auto; }
   .search-section.is-empty {
     display: block;
     padding: 48px 0 56px;
@@ -456,9 +466,14 @@ section { position: relative; }
   .wa-fab { width: 52px; height: 52px; bottom: 14px; right: 14px; }
 }
 
-/* Hero trust signals — só desktop */
-.hero-trusts-desktop {
-  display: none;
+/* Hero trust signals — visíveis em TODAS as larguras (item #12 do backlog).
+   Antes eram `display:none` até 960px, então "FRETE GRÁTIS" e "GARANTIA <marca>"
+   sumiam justo no celular, de onde vem a maior parte do clique pago. Os dados
+   continuam vindo do config (seo.product.free_shipping e peca.fabricante_
+   principal_short) — a LP que não tem frete grátis segue sem a badge, e a LP de
+   máquina usa a lista própria do HeroMaquina (sem "consulta por placa"). */
+.hero-trusts {
+  display: flex;
   list-style: none; padding: 0;
   margin: 28px 0 0;
   flex-wrap: wrap;
@@ -467,13 +482,10 @@ section { position: relative; }
   color: rgba(245,245,245,0.88);
   letter-spacing: 0.01em;
 }
-.hero-trusts-desktop li {
+.hero-trusts li {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-}
-@media (min-width: 960px) {
-  .hero-trusts-desktop { display: flex; }
 }
 
 /* Final CTA — link "seletor acima" sutilmente destacado */
