@@ -10,3 +10,8 @@ Fotos de terceiros usadas nas heros, com licença e crédito exigido. Atualizado
 | new-holland | `new-holland-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:New_Holland_CR980_combine_harvester,_near_Uffcott_-_geograph.org.uk_-_2048774.jpg) | CC BY-SA 2.0 | Brian Robert Marshall / geograph.org.uk |
 | pajero | `pajero-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2020_Mitsubishi_Pajero_3.2_GLS_DI-D_4x4.jpg) | CC BY-SA 4.0 | Ethan Llamas (placa borrada; derivado sob mesma licença) |
 | bico-injetor | `hero-static.*` / `og.webp` | imagem gerada por IA (ChatGPT, Diego 2026-08-12) | própria | não exige |
+| komatsu | `komatsu-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pelleteuse_Komatsu_PC210_sur_le_chantier_du_Mas_des_Andr%C3%A9s_(novembre_2019)_-_0016.jpg) | CC0 (domínio público) | não exige (Benoît Prieur) |
+| massey-ferguson | `massey-ferguson-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Massey_Ferguson_tractor_and_buzzard.jpg) | CC BY 2.0 | Mark Robinson |
+| valtra | `valtra-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Valtra_tractor_with_Quicke_front_loader_and_Howard_power_harrow_4200114.jpg) | CC BY-SA 4.0 | Ermell (derivado sob a mesma licença) |
+| isuzu | `isuzu-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hitachi_ZX350_LC_(51807877601).jpg) | CC BY-SA 2.0 | Alexandre Prevot (derivado sob a mesma licença) |
+| scania | `scania-static.*` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Scania_R450_truck_-_2020-01-31_IZE-096.jpg) | CC BY 2.0 | Zachi Evenor (placa borrada e corte 16:9; derivado sob a mesma licença) |
