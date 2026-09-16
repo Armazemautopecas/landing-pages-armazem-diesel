@@ -1,0 +1,199 @@
+{
+  "_doc": "LP Valtra (trator agricola, publico agro). Segmento maquina/caminhao pesado: sem consulta por placa, catalogo estatico. O catalogo do M8 tem SO 2 itens pra Valtra (bico Delphi BH140 e bomba injetora Delphi 620DS/BH180L/180CV) — nada foi inventado pra completar 6. Como nao temos a familia de motor cadastrada no M8, o bloco de aplicacoes organiza por MODELO DE TRATOR -> PECA.",
+  "slug": "valtra",
+  "categoria": "bico-injetor",
+  "veiculo_key": "valtra",
+  "veiculo": {
+    "marca_aliases": [
+      "VALTRA"
+    ],
+    "modelo_aliases": [
+      "BH140",
+      "BH180L",
+      "620DS",
+      "180CV",
+      "18805"
+    ]
+  },
+  "hero": {
+    "eyebrow": "TRATOR PARADO É SAFRA PERDENDO.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "VALTRA",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "BH140, BH180L, 620DS e 180CV. Bico injetor e bomba injetora Delphi pro seu trator. Identificamos a peça pelo modelo do trator ou pelo código gravado nela.",
+    "foto_static": "assets/valtra-static.webp",
+    "foto_alt": "Trator Valtra vermelho puxando implemento de solo numa lavoura",
+    "cta_mobile_label": "FALAR COM O VENDEDOR AGORA"
+  },
+  "selector": {
+    "titulo_l1": "Encontre a peça certa",
+    "titulo_l2": "pro seu trator",
+    "subtexto": "Localize o modelo do seu Valtra e confirme a peça pelo código Delphi."
+  },
+  "aplicacoes_heading": "Encontre a peça certa pro seu trator",
+  "aplicacoes_sub": "No Valtra quem monta pede pelo modelo do trator ou pelo código gravado na peça. Localize seu modelo aqui, e no catálogo abaixo tá o código Delphi de cada aplicação.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Valtra BH140",
+      "veiculos": [
+        "Bico injetor Delphi V0020413B1",
+        "Pronta entrega"
+      ]
+    },
+    {
+      "motor": "Valtra BH180L",
+      "veiculos": [
+        "Bomba injetora Delphi V8861A420W-13B1",
+        "Pronta entrega"
+      ]
+    },
+    {
+      "motor": "Valtra 620DS (18805)",
+      "veiculos": [
+        "Bomba injetora Delphi V8861A420W-13B1",
+        "Pronta entrega"
+      ]
+    },
+    {
+      "motor": "Valtra 180CV",
+      "veiculos": [
+        "Bomba injetora Delphi V8861A420W-13B1",
+        "Pronta entrega"
+      ]
+    },
+    {
+      "motor": "Outro modelo Valtra",
+      "veiculos": [
+        "Catálogo sob consulta — chama no WhatsApp com o código da peça"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo do trator. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor Delphi Valtra BH140",
+      "ref_fabricante": "V0020413B1",
+      "cod_montadora": "V00204-13B1",
+      "aplicacao": "Trator Valtra BH140",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bomba Injetora Delphi Valtra",
+      "ref_fabricante": "V8861A420W-13B1",
+      "aplicacao": "Trator Valtra 620DS (18805), BH180L e 180CV",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR VALTRA",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Delphi",
+    "motores_label": "Valtra BH140, BH180L, 620DS e 180CV",
+    "fabricantes_aceitos": [
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/28602948.webp",
+    "foto_alt": "Bico injetor Delphi original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu trator",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha Valtra. Fale com a gente no WhatsApp que a gente confirma a compatibilidade pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre peça de injeção para trator Valtra.",
+    "fab_default": "Olá, quero falar com o vendedor sobre peça de injeção para trator Valtra.",
+    "result_plate_template": "Olá, quero cotar a peça {oem} pra Valtra.",
+    "result_year_template": "Olá, quero cotar a peça {oem} pra Valtra.",
+    "result_dontknow_motor": "Olá, não sei qual é o modelo do meu trator Valtra. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Valtra e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Valtra e meu trator é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Valtra e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre peça de injeção para trator Valtra."
+  },
+  "why": {
+    "h2_l1": "Trator parado",
+    "h2_l2": "é safra",
+    "h2_l2_red": "perdendo",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo modelo do trator antes de fechar. Sem achismo, sem peça voltando, sem trator parado no meio da lavoura esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Delphi — a marca dos bicos e da bomba injetora dos tratores Valtra BH140, BH180L, 620DS e 180CV, com código conferido por modelo."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu trator volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — fazenda, sítio, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo do trator no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "FALAR COM O VENDEDOR AGORA",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco tecnico-educacional. Reforca keyword Valtra + BH140 + BH180L + Delphi pra ranquear cauda longa. Sem spec de motor (regra N2).",
+    "heading": "Como saber se o bico injetor do seu Valtra está com problema",
+    "intro": "O bico injetor do trator Valtra é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor bem mais caro no meio da janela de plantio ou de colheita, quando a lavoura não espera.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força puxando implemento pesado",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Peça original (OEM Delphi) e primeira linha são as duas opções confiáveis pro Valtra — a diferença está na origem. A original é calibrada de fábrica pro modelo específico do trator: padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma aplicação, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é peça de procedência duvidosa — sem rastreabilidade nem homologação. Essas sim podem trabalhar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos a peça exata pelo código do fabricante ou pelo modelo do trator — sem margem de erro de compatibilidade. Em estoque: bico injetor Delphi do BH140 e bomba injetora Delphi do 620DS, BH180L e 180CV. Outro modelo Valtra, a gente confere no WhatsApp."
+  },
+  "seo": {
+    "title": "Bico Injetor Valtra BH140 e BH180L | Armazém Auto Peças",
+    "description": "Bico injetor e bomba injetora pra trator Valtra BH140, BH180L, 620DS e 180CV. Confirmamos a peça pelo código. Envio pra fazenda em todo o Brasil.",
+    "og_image": "assets/valtra-static-og.webp",
+    "og_image_alt": "Trator Valtra vermelho trabalhando o solo numa lavoura",
+    "twitter_description": "Bico injetor e bomba injetora Delphi pra trator Valtra BH140, BH180L, 620DS e 180CV.",
+    "canonical_path": "/injecao-diesel/valtra/",
+    "product": {
+      "name": "Bico Injetor e Bomba Injetora Delphi para trator Valtra BH140, BH180L, 620DS e 180CV",
+      "description": "Bico injetor e bomba injetora Delphi, original e primeira linha, para tratores Valtra BH140, BH180L, 620DS (18805) e 180CV. Códigos V0020413B1 e V8861A420W-13B1.",
+      "brands": [
+        "Delphi"
+      ],
+      "vehicles": [
+        "Valtra BH140",
+        "Valtra BH180L",
+        "Valtra 620DS",
+        "Valtra 180CV"
+      ],
+      "price_range": "R$ 999 - R$ 6.900",
+      "free_shipping": true
+    }
+  }
+}
