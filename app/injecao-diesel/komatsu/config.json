@@ -1,0 +1,274 @@
+{
+  "_doc": "LP Komatsu — segmento máquina pesada (diesel-pesado). Catálogo estático de peças + aplicações por família de motor. Dados do M8 (ids 27604, 25046, 26295, 26297, 26299, 27719). Sem placa/FIPE/Denatran. Componentes: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "komatsu",
+  "categoria": "bico-injetor",
+  "veiculo_key": "komatsu",
+  "veiculo": {
+    "marca_aliases": [
+      "KOMATSU"
+    ],
+    "modelo_aliases": [
+      "PC200",
+      "PC220",
+      "PC270",
+      "PC300",
+      "PC350",
+      "PC400",
+      "PC450",
+      "WA320",
+      "WA470",
+      "D31",
+      "D37"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "KOMATSU",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Escavadeiras PC200, PC220, PC300 e PC400, tratores de esteira D31/D37 e carregadeiras WA320/WA470. Identificamos pelo código da peça ou do motor.",
+    "foto_static": "assets/komatsu-static.webp",
+    "foto_alt": "Escavadeira Komatsu PC210 amarela em obra de terraplenagem",
+    "cta_mobile_label": "FALAR COM O VENDEDOR AGORA"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pra sua Komatsu",
+    "subtexto": "Localize a família do motor da sua máquina e confirme a peça pelo código do fabricante."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pra sua máquina",
+  "aplicacoes_sub": "A Komatsu monta famílias de motor diferentes na mesma linha de máquina — quem monta busca pelo motor, não pelo modelo. Localize sua família aqui, e no catálogo abaixo tá o código da peça pra cada aplicação.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Cummins QSB 6.7 / QSB 4.5",
+      "veiculos": [
+        "Komatsu PC200",
+        "Komatsu PC220",
+        "Komatsu PC270",
+        "Komatsu PC200-8",
+        "Komatsu PC220-8"
+      ]
+    },
+    {
+      "motor": "Cummins QSL9 8.9",
+      "veiculos": [
+        "Komatsu PC300"
+      ]
+    },
+    {
+      "motor": "Cummins QSB 3.3",
+      "veiculos": [
+        "Trator de esteira Komatsu D31",
+        "Trator de esteira Komatsu D37"
+      ]
+    },
+    {
+      "motor": "Komatsu SAA6D125E",
+      "veiculos": [
+        "Komatsu PC350-7",
+        "Komatsu PC400-7",
+        "Komatsu PC450-7",
+        "Komatsu PC400-8",
+        "Komatsu PC450-8",
+        "Komatsu WA320",
+        "Komatsu WA470"
+      ]
+    },
+    {
+      "motor": "Linha PC-400 (código 6156-11-3300)",
+      "veiculos": [
+        "Komatsu PC400"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor QSB 6.7 (PC200-8 / PC220-8)",
+      "ref_fabricante": "0445120059 / 0445120231",
+      "aplicacao": "Komatsu PC200-8 e PC220-8, Case CX210",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSB 6.7 / 4.5",
+      "ref_fabricante": "0445120231",
+      "aplicacao": "Komatsu PC200, PC220 e PC270, escavadeira Hyundai 260L",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSL9 8.9 (PC300)",
+      "ref_fabricante": "0445120236 / 5263308 / 84346812",
+      "cod_montadora": "6745-12-3100",
+      "aplicacao": "Komatsu PC300, New Holland e Case com QSL9",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor QSB 3.3 (D31 / D37)",
+      "ref_fabricante": "0445110307 / 4955415 / 491109",
+      "cod_montadora": "6271113100",
+      "aplicacao": "Tratores de esteira Komatsu D31 e D37",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor PC-400",
+      "ref_fabricante": "6156-11-3300",
+      "aplicacao": "Komatsu PC400",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Denso SAA6D125E",
+      "ref_fabricante": "095000-6070",
+      "cod_montadora": "6251-11-3100",
+      "aplicacao": "Komatsu PC350-7, PC400-7, PC450-7, PC400-8, PC450-8, WA320 e WA470",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR KOMATSU",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "motores_label": "Cummins QSB 3.3, QSB 4.5/6.7, QSL9 8.9 e Komatsu SAA6D125E",
+    "fabricantes_aceitos": [
+      "Bosch",
+      "Denso"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445120002.webp",
+    "foto_alt": "Bico injetor Bosch original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua máquina",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre as máquinas Komatsu. Fale com a gente no WhatsApp que a gente confirma a compatibilidade pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Komatsu.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Komatsu.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Komatsu.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Komatsu.",
+    "result_dontknow_motor": "Olá, não sei qual é a família do motor da minha Komatsu. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Komatsu e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Komatsu e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Komatsu e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Komatsu."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "A mesma escavadeira Komatsu sai de fábrica com motor diferente conforme a série. Por isso confirmamos a peça pelo código do fabricante ou da montadora antes de fechar — sem achismo, sem peça voltando, sem obra parada esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Bosch e Denso — as marcas que equipam de fábrica os motores das Komatsu PC200, PC220, PC270, PC300, PC400, WA320/WA470 e dos tratores de esteira D31/D37, com códigos confirmados por família de motor."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, mineração, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "FALAR COM O VENDEDOR AGORA",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "content": {
+    "testimonials": [
+      {
+        "q": "Peça cara, mas aqui o preço estava bem melhor. Fiz o pix na sexta, a peça chegou na segunda. Original, já foi instalada, ficou perfeito. Ganharam um bom cliente.",
+        "name": "Ton R.",
+        "role": "Automaticar · Londrina/PR"
+      },
+      {
+        "q": "Recebi as peças conforme pedido, originais. Entrega e rastreio muito bom e fácil. Obrigado Vanderson pelo atendimento.",
+        "name": "Ramon R.",
+        "role": "Local Guide do Google · 53 avaliações"
+      },
+      {
+        "q": "Fui muito bem atendido, a peça veio corretamente, com qualidade. Com certeza voltarei a comprar. Super indico a loja Armazém Auto Peças.",
+        "name": "Marcelo M.",
+        "role": "Cliente, Erechim/RS"
+      },
+      {
+        "q": "Atendimento ímpar, gentileza e presteza absoluta. Com certeza comprarei novamente.",
+        "name": "Joaquim F.",
+        "role": "Cliente Armazém"
+      }
+    ]
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça Komatsu + PC200/PC300/PC400 + QSB/QSL9/SAA6D125E + Bosch/Denso pra cauda longa. Fecho com cross-link pra LP Cummins (QSL9 8.9 compartilhado com Case/New Holland).",
+    "heading": "Como saber se o bico injetor da sua Komatsu está com problema",
+    "intro": "O bico injetor das máquinas Komatsu — seja no Cummins QSB 4.5/6.7 da PC200/PC220, no QSL9 8.9 da PC300 ou no Komatsu SAA6D125E da PC400/PC450 e das carregadeiras WA320/WA470 — é quem atomiza o diesel dentro da câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total, e identificar cedo evita um conserto de motor muito mais caro numa máquina que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força ao operar com carga, em rampa ou no corte",
+      "Consumo de diesel acima do normal por hora trabalhada",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM Bosch ou Denso) e bico de primeira linha são as duas opções confiáveis pras Komatsu — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor (QSB 3.3, QSB 4.5/6.7, QSL9 8.9, SAA6D125E): padrão de pulverização, vazão e vedação seguem a especificação da montadora. A primeira linha é fabricada por fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem trabalhar fora da faixa correta e causar injeção irregular com dano ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da máquina — sem margem de erro de compatibilidade. Estoque pras escavadeiras PC200, PC220, PC270, PC300 e PC400, pros tratores de esteira D31/D37 e pras carregadeiras WA320/WA470. Máquina Case ou New Holland com o mesmo Cummins QSL9 8.9? A peça pode ser a mesma (0445120236) — veja também a LP Cummins."
+  },
+  "seo": {
+    "title": "Bico Injetor Komatsu PC200, PC300 e D31 | Armazém Auto Peças",
+    "description": "Bico injetor Bosch e Denso pra Komatsu PC200, PC220, PC300, PC400 e tratores D31/D37. Compatibilidade confirmada pelo código no WhatsApp.",
+    "og_image": "assets/komatsu-static-og.webp",
+    "og_image_alt": "Escavadeira Komatsu PC210 amarela em obra de terraplenagem",
+    "twitter_description": "Bico injetor Bosch e Denso pra Komatsu PC200, PC220, PC300, PC400 e tratores de esteira D31/D37. Confirmamos a compatibilidade pelo código.",
+    "canonical_path": "/injecao-diesel/komatsu/",
+    "product": {
+      "name": "Bico Injetor Bosch/Denso para Komatsu PC200, PC220, PC270, PC300, PC400 e D31/D37",
+      "description": "Bico injetor original e primeira linha (Bosch, Denso) para máquinas Komatsu com motor Cummins QSB 3.3, QSB 4.5/6.7, QSL9 8.9 e Komatsu SAA6D125E. Aplicações: escavadeiras PC200, PC220, PC270, PC200-8, PC220-8, PC300, PC350-7, PC400-7/8, PC450-7/8, carregadeiras WA320 e WA470, tratores de esteira D31 e D37.",
+      "brands": [
+        "Bosch",
+        "Denso"
+      ],
+      "vehicles": [
+        "Komatsu PC200",
+        "Komatsu PC220",
+        "Komatsu PC270",
+        "Komatsu PC200-8",
+        "Komatsu PC220-8",
+        "Komatsu PC300",
+        "Komatsu PC350-7",
+        "Komatsu PC400-7",
+        "Komatsu PC450-7",
+        "Komatsu PC400-8",
+        "Komatsu PC450-8",
+        "Komatsu WA320",
+        "Komatsu WA470",
+        "Komatsu D31",
+        "Komatsu D37"
+      ],
+      "price_range": "R$ 1.800 - R$ 3.100",
+      "free_shipping": true
+    }
+  }
+}

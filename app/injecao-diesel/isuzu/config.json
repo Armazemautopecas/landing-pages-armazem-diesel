@@ -1,0 +1,219 @@
+{
+  "_doc": "LP Isuzu — segmento máquina pesada. Isuzu aqui é o MOTOR (4HK1/6HK1) que equipa escavadeiras Case, Hitachi, JCB e XCMG. Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas. Catálogo estático (sem data/oems.json).",
+  "slug": "isuzu",
+  "categoria": "bico-injetor",
+  "veiculo_key": "isuzu",
+  "veiculo": {
+    "marca_aliases": [
+      "ISUZU"
+    ],
+    "modelo_aliases": [
+      "4HK1",
+      "6HK1",
+      "GH-6HK1XKSS-01D",
+      "GH-6HK1XKSC-03"
+    ]
+  },
+  "hero": {
+    "eyebrow": "MÁQUINA PARADA É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "ISUZU",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Motor Isuzu 4HK1 e 6HK1 das escavadeiras Case, Hitachi, JCB e XCMG. Confirmamos a peça exata pelo código Denso ou pelo modelo da máquina.",
+    "foto_static": "assets/isuzu-static.webp",
+    "foto_alt": "Escavadeira Hitachi Zaxis 350LC laranja sobre esteiras com martelo hidráulico em obra urbana",
+    "cta_mobile_label": "FALAR COM O VENDEDOR AGORA"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu motor Isuzu",
+    "subtexto": "Localize a família do motor Isuzu e confirme a peça pelo código gravado no bico."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pro seu motor Isuzu",
+  "aplicacoes_sub": "Isuzu é uma família de motores — quem monta busca pelo motor, não pela marca da escavadeira. O mesmo 4HK1/6HK1 trabalha embaixo de Case, Hitachi, JCB e XCMG. Localize sua aplicação aqui e no catálogo abaixo tá o código da peça.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Isuzu 4HK1 / 6HK1 — escavadeiras Case",
+      "veiculos": [
+        "CX220C",
+        "CX240C",
+        "CX350C",
+        "CX370C"
+      ]
+    },
+    {
+      "motor": "Isuzu 4HK1 / 6HK1 — escavadeiras Hitachi",
+      "veiculos": [
+        "ZX210",
+        "ZX250",
+        "ZX350"
+      ]
+    },
+    {
+      "motor": "Isuzu 4HK1 / 6HK1 — escavadeiras JCB",
+      "veiculos": [
+        "JS200",
+        "JS220"
+      ]
+    },
+    {
+      "motor": "Isuzu GH-6HK1XKSS-01D",
+      "veiculos": [
+        "Escavadeiras com motor Isuzu GH-6HK1XKSS-01D"
+      ]
+    },
+    {
+      "motor": "Isuzu GH-6HK1XKSC-03",
+      "veiculos": [
+        "XCMG XE370D"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo da máquina. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor Isuzu 4HK1 / 6HK1",
+      "ref_fabricante": "095000-8900",
+      "cod_montadora": "8-98151837-3",
+      "aplicacao": "Case CX220C, CX240C, CX350C, CX370C · Hitachi ZX210, ZX250, ZX350 · JCB JS200, JS220",
+      "sob_consulta": true
+    },
+    {
+      "peca": "Bico Injetor Isuzu GH-6HK1XKSS-01D",
+      "ref_fabricante": "095000-5471",
+      "aplicacao": "Escavadeiras com motor Isuzu GH-6HK1XKSS-01D",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Isuzu GH-6HK1XKSC-03",
+      "ref_fabricante": "295050-1520",
+      "aplicacao": "Escavadeira XCMG XE370D",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Válvula IMV da bomba injetora",
+      "ref_fabricante": "294200-0650",
+      "cod_montadora": "294000-1190",
+      "aplicacao": "Bomba injetora dos motores Isuzu 4HK1 e 6HK1",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR ISUZU",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Denso",
+    "motores_label": "Isuzu 4HK1 e 6HK1",
+    "fabricantes_aceitos": [
+      "Denso"
+    ],
+    "foto_default": "/injecao-diesel/pecas/095000-5801.webp",
+    "foto_alt": "Bico injetor Denso original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Código Denso conferido antes de fechar",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com sua máquina",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre os motores Isuzu 4HK1 e 6HK1. Fale no WhatsApp que a gente confirma pelo modelo da máquina e pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para motor Isuzu.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para motor Isuzu.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra motor Isuzu.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra motor Isuzu.",
+    "result_dontknow_motor": "Olá, não sei qual é a família do motor Isuzu da minha máquina. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Isuzu e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Isuzu e minha máquina é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Isuzu e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para motor Isuzu."
+  },
+  "why": {
+    "h2_l1": "Máquina parada",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "O mesmo motor Isuzu roda embaixo de marcas diferentes de escavadeira, e o bico muda conforme a versão. Confirmamos a peça pelo código gravado ou pelo modelo da máquina antes de fechar — sem achismo, sem peça voltando, sem obra parada."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Denso, que é quem monta a injeção dos motores Isuzu 4HK1 e 6HK1 de fábrica, com código confirmado por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo da sua máquina no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "FALAR COM O VENDEDOR AGORA",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Isuzu 4HK1 / 6HK1 + escavadeira + Denso. Fecho com cross-link pras LPs irmãs Case e JCB.",
+    "heading": "Como saber se o bico injetor do motor Isuzu 4HK1 ou 6HK1 está com problema",
+    "intro": "O bico injetor do motor Isuzu 4HK1 e 6HK1 é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro em cima de uma escavadeira que já é cara pra ficar parada.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em operação pesada ou em escavação com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em cilindro identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM Denso) e primeira linha são as duas opções confiáveis pro motor Isuzu — a diferença está na origem. O original é calibrado de fábrica pra versão específica do motor (4HK1, 6HK1, GH-6HK1XKSS-01D, GH-6HK1XKSC-03): padrão de pulverização, vedação e calibração seguem a especificação Isuzu. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código gravado na peça ou pelo modelo da sua escavadeira. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação. Sua máquina é Case ou JCB? Além do motor Isuzu, essas marcas têm linha própria de peça — veja também a LP Case (/injecao-diesel/case/) e a LP JCB (/injecao-diesel/jcb/)."
+  },
+  "seo": {
+    "title": "Bico Injetor Isuzu 4HK1 6HK1 Original | Armazém Auto Peças",
+    "description": "Bico injetor Denso pra motor Isuzu 4HK1 e 6HK1. Escavadeiras Case CX, Hitachi ZX, JCB JS e XCMG XE370D. Confirme a compatibilidade pelo código no WhatsApp.",
+    "og_image": "assets/isuzu-static-og.webp",
+    "og_image_alt": "Escavadeira Hitachi Zaxis 350LC laranja em obra, equipada com motor Isuzu",
+    "twitter_description": "Bico injetor Denso pra motor Isuzu 4HK1 e 6HK1. Escavadeiras Case CX, Hitachi ZX, JCB JS e XCMG XE370D.",
+    "canonical_path": "/injecao-diesel/isuzu/",
+    "product": {
+      "name": "Bico Injetor Denso para motor Isuzu 4HK1 e 6HK1",
+      "description": "Bico injetor Denso original e primeira linha para a família de motores Isuzu 4HK1 e 6HK1. Aplicações: escavadeiras Case CX220C, CX240C, CX350C e CX370C, Hitachi ZX210, ZX250 e ZX350, JCB JS200 e JS220, e XCMG XE370D.",
+      "brands": [
+        "Denso"
+      ],
+      "vehicles": [
+        "Case CX220C",
+        "Case CX240C",
+        "Case CX350C",
+        "Case CX370C",
+        "Hitachi ZX210",
+        "Hitachi ZX250",
+        "Hitachi ZX350",
+        "JCB JS200",
+        "JCB JS220",
+        "XCMG XE370D"
+      ],
+      "price_range": "R$ 700 - R$ 3.000",
+      "free_shipping": true
+    }
+  }
+}

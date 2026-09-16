@@ -1,0 +1,232 @@
+{
+  "_doc": "LP Scania — caminhão pesado (frotista). Catálogo estático com os 3 itens que existem no M8 (XPI 2488244/2031836 Cummins, P-538 remanufaturado sob consulta, elemento de bomba 2418455518). Componentes shared: HeroMaquina, AplicacoesPorMotor, CatalogoPecas. Nada de placa/FIPE/Denatran aqui.",
+  "slug": "scania",
+  "categoria": "bico-injetor",
+  "veiculo_key": "scania",
+  "veiculo": {
+    "marca_aliases": [
+      "SCANIA"
+    ],
+    "modelo_aliases": [
+      "XPI DC09",
+      "XPI DC13",
+      "XPI DC16",
+      "SÉRIE 4",
+      "114",
+      "124",
+      "400"
+    ]
+  },
+  "hero": {
+    "eyebrow": "CAMINHÃO PARADO É PREJUÍZO POR HORA.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "SCANIA",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "XPI DC09 9.3, DC13 12.7 e DC16 16.4 das séries P, G e R — e a Série 4 (114, 124 e 400). Identificamos pelo código do motor ou da peça.",
+    "foto_static": "assets/scania-static.webp",
+    "foto_alt": "Caminhão Scania branco da série R rodando em rodovia",
+    "cta_mobile_label": "ACHAR O BICO CERTO"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu Scania",
+    "subtexto": "Localize a família do motor Scania e confirme a peça pelo código."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pro seu caminhão",
+  "aplicacoes_sub": "Scania XPI é uma família de motores — quem monta busca pelo motor, não pelo modelo do caminhão. Localize sua família aqui, e no catálogo abaixo tá o código da peça pra cada aplicação.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "XPI DC09 9.3",
+      "veiculos": [
+        "Série P",
+        "Série G",
+        "Série R"
+      ]
+    },
+    {
+      "motor": "XPI DC13 12.7",
+      "veiculos": [
+        "Série P",
+        "Série G",
+        "Série R"
+      ]
+    },
+    {
+      "motor": "XPI DC16 16.4",
+      "veiculos": [
+        "Série P",
+        "Série G",
+        "Série R"
+      ]
+    },
+    {
+      "motor": "Série 4 (geração anterior)",
+      "veiculos": [
+        "Scania 114",
+        "Scania 124",
+        "Scania 400"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo e o motor do caminhão. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bico Injetor XPI (Cummins)",
+      "ref_fabricante": "2488244 / 2031836",
+      "aplicacao": "Scania XPI DC09 9.3, DC13 12.7 e DC16 16.4 (séries P, G e R) · escavadeira Doosan DX350",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Série 4 remanufaturado",
+      "ref_fabricante": "P-538",
+      "aplicacao": "Scania 124, 400 e demais da Série 4",
+      "sob_consulta": true
+    },
+    {
+      "peca": "Elemento da bomba injetora",
+      "ref_fabricante": "2418455518",
+      "aplicacao": "Scania 114 e 124",
+      "sob_consulta": false
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR SCANIA",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "motores_label": "Scania XPI DC09 9.3, DC13 12.7 e DC16 16.4 e a Série 4",
+    "fabricantes_aceitos": [
+      "Cummins",
+      "Bosch"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu Scania",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre a linha Scania XPI e a Série 4. Fale no WhatsApp que a gente confirma pelo motor e pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Scania.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Scania.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pra Scania.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pra Scania.",
+    "result_dontknow_motor": "Olá, não sei qual é o motor do meu Scania. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Scania e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Scania e meu caminhão é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Scania e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Scania."
+  },
+  "why": {
+    "h2_l1": "Caminhão parado",
+    "h2_l2": "é prejuízo",
+    "h2_l2_red": "por hora",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo motor do seu Scania antes de fechar. Sem achismo, sem peça voltando, sem carreta parada esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "No XPI trabalhamos com o bico de fabricação Cummins, e na Série 4 com Bosch — sempre o código conferido por família de motor, original ou primeira linha homologada."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu caminhão volta a rodar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — transportadora, frota ou oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a rodar",
+    "sub_pre": "Mande o código da peça ou o motor do seu Scania no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "FALAR COM O VENDEDOR AGORA",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "content": {
+    "testimonials": [
+      {
+        "q": "Peça cara, mas aqui o preço estava bem melhor. Fiz o pix na sexta, a peça chegou na segunda. Original, já foi instalada, ficou perfeito. Ganharam um bom cliente.",
+        "name": "Ton R.",
+        "role": "Automaticar · Londrina/PR"
+      },
+      {
+        "q": "Recebi as peças conforme pedido, originais. Entrega e rastreio muito bom e fácil. Obrigado Vanderson pelo atendimento.",
+        "name": "Ramon R.",
+        "role": "Local Guide do Google · 53 avaliações"
+      },
+      {
+        "q": "Fui muito bem atendido, a peça veio corretamente, com qualidade. Com certeza voltarei a comprar. Super indico a loja Armazém Auto Peças.",
+        "name": "Marcelo M.",
+        "role": "Cliente, Erechim/RS"
+      },
+      {
+        "q": "Atendimento ímpar, gentileza e presteza absoluta. Com certeza comprarei novamente.",
+        "name": "Joaquim F.",
+        "role": "Cliente Armazém"
+      }
+    ]
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Scania + XPI + DC09/DC13/DC16 + Série 4 pra cauda longa.",
+    "heading": "Como saber se o bico injetor do Scania XPI está com problema",
+    "intro": "O bico injetor dos motores Scania XPI (DC09 9.3, DC13 12.7 e DC16 16.4) e da Série 4 é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor bem mais caro em cima de um caminhão que já é caro pra ficar parado no pátio.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força em subida com carga",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis pro Scania — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor (XPI DC09, DC13, DC16): padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outro fornecedor também homologado pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa, sem rastreabilidade nem homologação — esse sim pode trabalhar fora da faixa correta e causar injeção irregular com dano ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo motor do seu Scania — XPI DC09 9.3, DC13 12.7, DC16 16.4 das séries P, G e R, ou Série 4 (114, 124 e 400). Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+  },
+  "seo": {
+    "title": "Bico Injetor Scania XPI DC13 e Série 4 | Armazém Auto Peças",
+    "description": "Bico injetor e elemento de bomba pra Scania XPI DC09, DC13 e DC16 (séries P, G, R) e Série 4 114/124. Compatibilidade pelo código, no WhatsApp.",
+    "og_image": "assets/scania-static-og.webp",
+    "og_image_alt": "Caminhão Scania branco rodando em rodovia",
+    "twitter_description": "Bico injetor e elemento de bomba injetora pra Scania XPI DC09 9.3, DC13 12.7 e DC16 16.4 (séries P, G e R) e Série 4 (114, 124 e 400). Confirme o código no WhatsApp.",
+    "canonical_path": "/injecao-diesel/scania/",
+    "product": {
+      "name": "Bico Injetor para Scania XPI (DC09 9.3, DC13 12.7 e DC16 16.4) e Série 4",
+      "description": "Bico injetor original e primeira linha para a família de motores Scania XPI (DC09 9.3, DC13 12.7, DC16 16.4) e para a Série 4. Aplicações: Scania séries P, G e R, Scania 114, 124 e 400, escavadeira Doosan DX350.",
+      "brands": [
+        "Cummins",
+        "Bosch"
+      ],
+      "vehicles": [
+        "Scania Série P",
+        "Scania Série G",
+        "Scania Série R",
+        "Scania 114",
+        "Scania 124",
+        "Scania 400",
+        "Doosan DX350"
+      ],
+      "price_range": "R$ 399 - R$ 2.999",
+      "free_shipping": true
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "_doc": "LP de trator agrícola Massey Ferguson (segmento máquina/pesado, público agro). Catálogo estático + aplicações por família de motor Perkins. Catálogo do M8 tem só 3 itens para a marca — não completar com código inventado. Componentes: HeroMaquina, AplicacoesPorMotor, CatalogoPecas.",
+  "slug": "massey-ferguson",
+  "categoria": "bico-injetor",
+  "veiculo_key": "massey-ferguson",
+  "veiculo": {
+    "marca_aliases": [
+      "MASSEY FERGUSON",
+      "MASSEY",
+      "MF"
+    ],
+    "modelo_aliases": [
+      "MF 292",
+      "MF 4292",
+      "PERKINS 1103",
+      "PERKINS 1104",
+      "VISTA 1104"
+    ]
+  },
+  "hero": {
+    "eyebrow": "LAVOURA NÃO ESPERA. PEÇA CERTA, RÁPIDO.",
+    "h1_linha1": "BICO INJETOR",
+    "h1_linha2": "MASSEY FERGUSON",
+    "h1_sub": "Original ou primeira linha",
+    "sub": "Perkins 1103, 1104 e Vista 1104. Pra MF 292, MF 4292 e a linha de tratores Massey Ferguson. Identificamos pelo código do motor ou da peça.",
+    "foto_static": "assets/massey-ferguson-static.webp",
+    "foto_alt": "Trator Massey Ferguson vermelho trabalhando em lavoura arada",
+    "cta_mobile_label": "ACHAR O BICO CERTO"
+  },
+  "selector": {
+    "titulo_l1": "Encontre o bico certo",
+    "titulo_l2": "pro seu trator",
+    "subtexto": "Localize a família do motor Perkins do seu Massey Ferguson e confirme a peça pelo código."
+  },
+  "aplicacoes_heading": "Encontre o bico certo pro seu trator",
+  "aplicacoes_sub": "Perkins é uma família de motores — quem monta busca pelo motor, não pelo trator. Localize sua família aqui, e no catálogo abaixo tá o código da peça pra cada aplicação.",
+  "aplicacoes_por_motor": [
+    {
+      "motor": "Perkins Vista 1104A",
+      "veiculos": [
+        "Massey Ferguson MF 4292"
+      ]
+    },
+    {
+      "motor": "Perkins 1103 / 1104",
+      "veiculos": [
+        "Massey Ferguson MF 292",
+        "Tratores Massey Ferguson com motor Perkins 1103 e 1104"
+      ]
+    },
+    {
+      "motor": "Outras aplicações Perkins",
+      "veiculos": [
+        "Catálogo sob consulta — chama no WhatsApp"
+      ]
+    }
+  ],
+  "catalogo_heading": "Peças em destaque",
+  "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo do trator e o motor. Confirmamos a compatibilidade antes de fechar.",
+  "catalogo_pecas": [
+    {
+      "peca": "Bomba Injetora Delphi MF 4292",
+      "ref_fabricante": "V3340F401G-13B1",
+      "aplicacao": "Massey Ferguson MF 4292, motor Perkins Vista 1104A. Pro MF 292 a bomba é outra variante — confirme pelo código com a gente",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Delphi Perkins 1103 / 1104",
+      "ref_fabricante": "2645K016 / B03202A / LJBB03202A",
+      "aplicacao": "Tratores Massey Ferguson com motor Perkins 1103 e 1104",
+      "sob_consulta": false
+    },
+    {
+      "peca": "Bico Injetor Motor Perkins 2308999",
+      "ref_fabricante": "2308999",
+      "aplicacao": "Motor Perkins — confirme a aplicação pelo código com a gente",
+      "sob_consulta": true
+    }
+  ],
+  "peca": {
+    "nome": "BICO INJETOR MASSEY FERGUSON",
+    "short_label": "BICO",
+    "fabricante_label": "ORIGINAL",
+    "fabricante_principal_short": "Delphi",
+    "motores_label": "Perkins 1103, 1104 e Vista 1104",
+    "fabricantes_aceitos": [
+      "Delphi"
+    ],
+    "foto_default": "/injecao-diesel/pecas/0445110189.webp",
+    "foto_alt": "Bico injetor diesel original na caixa",
+    "tem_primeira_linha": true,
+    "bullets_default": [
+      "Peça original ou primeira linha",
+      "Garantia do fabricante",
+      "Envio pra todo o Brasil"
+    ],
+    "bullets_unknown": [
+      "Peça compatível com seu trator",
+      "Envio de Chapecó/SC pra todo Brasil",
+      "Compatibilidade confirmada pelo código"
+    ]
+  },
+  "result_messages": {
+    "default_oem_unknown": "Consulte no WhatsApp",
+    "hint_primeira_linha_bold": "Trabalhamos com original e primeira linha",
+    "hint_primeira_linha_tail": "— consulte disponibilidade pra sua aplicação.",
+    "not_supported_default": "Esta LP cobre os tratores Massey Ferguson com motor Perkins. Fale com a gente no WhatsApp que a gente confirma a compatibilidade pelo código da peça."
+  },
+  "wa": {
+    "hero_link": "Olá, cheguei pela landing page e quero falar sobre bico injetor para Massey Ferguson.",
+    "fab_default": "Olá, quero falar com o vendedor sobre bico injetor para Massey Ferguson.",
+    "result_plate_template": "Olá, quero cotar o bico injetor {oem} pro meu Massey Ferguson.",
+    "result_year_template": "Olá, quero cotar o bico injetor {oem} pro meu Massey Ferguson.",
+    "result_dontknow_motor": "Olá, não sei qual é a família do motor Perkins do meu trator Massey Ferguson. Podem me ajudar?",
+    "result_notfound_template": "Olá, tentei buscar {query} na landing page Massey Ferguson e não encontrou. Podem me ajudar?",
+    "result_notsupported_template": "Olá, consultei {query} na landing page Massey Ferguson e meu trator é {ident}. Podem me ajudar?",
+    "result_error_template": "Olá, tentei consultar {query} na landing page Massey Ferguson e deu erro. Podem me ajudar?",
+    "final_cta": "Olá, quero falar com o vendedor sobre bico injetor para Massey Ferguson."
+  },
+  "why": {
+    "h2_l1": "Trator parado",
+    "h2_l2": "é safra",
+    "h2_l2_red": "perdendo",
+    "items": [
+      {
+        "num": "01",
+        "ttl": "Compatibilidade que não erra.",
+        "body": "Confirmamos a peça pelo código do fabricante ou pelo motor Perkins do seu trator antes de fechar. Sem achismo, sem peça voltando, sem trator parado no meio da lavoura esperando o item errado."
+      },
+      {
+        "num": "02",
+        "ttl": "A marca que o fabricante recomenda.",
+        "body": "Trabalhamos com Delphi — a marca dos bicos e das bombas injetoras que equipam os motores Perkins 1103, 1104 e Vista 1104 dos tratores Massey Ferguson, com código conferido por aplicação."
+      },
+      {
+        "num": "03",
+        "ttl": "Seu trator volta a trabalhar no mesmo dia.",
+        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — fazenda, revenda agrícola e oficina."
+      }
+    ]
+  },
+  "final_cta": {
+    "h2_l1": "Pronto pra",
+    "h2_l2_red_l1": "voltar",
+    "h2_l2_red_l2": "a trabalhar",
+    "sub_pre": "Mande o código da peça ou o modelo do trator e o motor no",
+    "sub_anchor": "WhatsApp",
+    "sub_post": "que a gente confirma e cota na hora.",
+    "btn": "FALAR COM O VENDEDOR AGORA",
+    "microtext_pre": "WhatsApp",
+    "microtext_post": "— resposta em minutos, de segunda a sexta."
+  },
+  "technical_block": {
+    "_doc": "Bloco técnico-educacional. Reforça keyword Massey Ferguson + Perkins 1103/1104 + Delphi pra ranquear cauda longa no público agro.",
+    "heading": "Como saber se o bico injetor do motor Perkins do Massey Ferguson está com problema",
+    "intro": "O bico injetor do Perkins 1103, 1104 ou Vista 1104 é responsável por atomizar o diesel na câmara de combustão com precisão milimétrica. Quando ele começa a falhar, os sinais aparecem antes da pane total — e identificar cedo evita um conserto de motor muito mais caro no meio da safra, com o trator parado e a janela de colheita correndo.",
+    "symptoms": [
+      "Fumaça preta ou branca no escapamento",
+      "Perda de força no serviço pesado, com implemento ou em terreno inclinado",
+      "Consumo de diesel acima do normal",
+      "Marcha lenta irregular ou tranco ao acelerar",
+      "Dificuldade na partida a frio",
+      "Falha em um ou mais cilindros identificada pela scan"
+    ],
+    "quality_explanation": "Bico original (OEM Delphi) e primeira linha são as duas opções confiáveis pros motores Perkins 1103, 1104 e Vista 1104 — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor: padrão de pulverização e vedação seguem a especificação Perkins. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem trabalhar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo do trator e o motor — sem margem de erro de compatibilidade. Trabalhamos com bico e bomba injetora Delphi pras aplicações Perkins 1103, 1104 e Vista 1104 do MF 292 e MF 4292, com despacho no mesmo dia útil pra não atrasar a safra."
+  },
+  "seo": {
+    "title": "Bico Injetor Massey Ferguson Perkins 1104 e 1103 | Armazém",
+    "description": "Bico injetor e bomba injetora Delphi pra Massey Ferguson MF 292 e MF 4292, motor Perkins 1103 e 1104. Compatibilidade pelo código no WhatsApp.",
+    "og_image": "assets/massey-ferguson-static-og.webp",
+    "og_image_alt": "Trator Massey Ferguson vermelho trabalhando em lavoura arada",
+    "twitter_description": "Bico injetor e bomba injetora Delphi pra Massey Ferguson MF 292 e MF 4292, motor Perkins 1103, 1104 e Vista 1104.",
+    "canonical_path": "/injecao-diesel/massey-ferguson/",
+    "product": {
+      "name": "Bico Injetor e Bomba Injetora Delphi para Massey Ferguson motor Perkins 1103, 1104 e Vista 1104",
+      "description": "Bico injetor e bomba injetora original e primeira linha (Delphi) para tratores Massey Ferguson com motor Perkins 1103, 1104 e Vista 1104. Aplicações: MF 292 e MF 4292.",
+      "brands": [
+        "Delphi"
+      ],
+      "vehicles": [
+        "Massey Ferguson MF 292",
+        "Massey Ferguson MF 4292",
+        "Tratores Massey Ferguson com motor Perkins 1103",
+        "Tratores Massey Ferguson com motor Perkins 1104"
+      ],
+      "price_range": "R$ 1.059 - R$ 7.900",
+      "free_shipping": true
+    }
+  }
+}
