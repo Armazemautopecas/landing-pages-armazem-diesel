@@ -36,17 +36,16 @@
   "aplicacoes_sub": "Perkins é uma família de motores — quem monta busca pelo motor, não pelo trator. Localize sua família aqui, e no catálogo abaixo tá o código da peça pra cada aplicação.",
   "aplicacoes_por_motor": [
     {
-      "motor": "Perkins 1104 / Vista 1104",
+      "motor": "Perkins Vista 1104A",
       "veiculos": [
-        "Massey Ferguson MF 292",
         "Massey Ferguson MF 4292"
       ]
     },
     {
       "motor": "Perkins 1103 / 1104",
       "veiculos": [
-        "Tratores Massey Ferguson com motor Perkins 1103",
-        "Tratores Massey Ferguson com motor Perkins 1104"
+        "Massey Ferguson MF 292",
+        "Tratores Massey Ferguson com motor Perkins 1103 e 1104"
       ]
     },
     {
@@ -60,9 +59,9 @@
   "catalogo_sub": "Preço só no WhatsApp — mande o código da peça ou o modelo do trator e o motor. Confirmamos a compatibilidade antes de fechar.",
   "catalogo_pecas": [
     {
-      "peca": "Bomba Injetora Delphi MF 292 / MF 4292",
+      "peca": "Bomba Injetora Delphi MF 4292",
       "ref_fabricante": "V3340F401G-13B1",
-      "aplicacao": "Massey Ferguson MF 292 e MF 4292, motor Perkins Vista 1104",
+      "aplicacao": "Massey Ferguson MF 4292, motor Perkins Vista 1104A. Pro MF 292 a bomba é outra variante — confirme pelo código com a gente",
       "sob_consulta": false
     },
     {
