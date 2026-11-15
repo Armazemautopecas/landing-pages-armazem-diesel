@@ -175,7 +175,7 @@
       {
         "num": "03",
         "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Envio pra todo o Brasil — obra, fazenda, oficina."
       }
     ]
   },
@@ -203,7 +203,7 @@
       "Falha em cilindro identificada pela scan"
     ],
     "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis — a diferença está na origem. O original é calibrado de fábrica pro motor específico: pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
-    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua Case. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação. Máquina New Holland com a mesma plataforma FPT? A peça pode ser a mesma — veja também a LP New Holland."
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo da sua Case. Estoque em Chapecó/SC, saída no mesmo dia pra pagamento confirmado até as 15h em dia útil. Máquina New Holland com a mesma plataforma FPT? A peça pode ser a mesma — veja também a LP New Holland."
   },
   "seo": {
     "title": "Bico Injetor Case 821E, 721E e CX130 | Armazém Auto Peças",

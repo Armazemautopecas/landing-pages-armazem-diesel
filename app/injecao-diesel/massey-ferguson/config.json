@@ -135,7 +135,7 @@
       {
         "num": "03",
         "ttl": "Seu trator volta a trabalhar no mesmo dia.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — fazenda, revenda agrícola e oficina."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Envio pra todo o Brasil — fazenda, revenda agrícola e oficina."
       }
     ]
   },
@@ -163,7 +163,7 @@
       "Falha em um ou mais cilindros identificada pela scan"
     ],
     "quality_explanation": "Bico original (OEM Delphi) e primeira linha são as duas opções confiáveis pros motores Perkins 1103, 1104 e Vista 1104 — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor: padrão de pulverização e vedação seguem a especificação Perkins. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses sim podem trabalhar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
-    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo do trator e o motor — sem margem de erro de compatibilidade. Trabalhamos com bico e bomba injetora Delphi pras aplicações Perkins 1103, 1104 e Vista 1104 do MF 292 e MF 4292, com despacho no mesmo dia útil pra não atrasar a safra."
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo modelo do trator e o motor — sem margem de erro de compatibilidade. Trabalhamos com bico e bomba injetora Delphi pras aplicações Perkins 1103, 1104 e Vista 1104 do MF 292 e MF 4292, com despacho no mesmo dia pra pagamento confirmado até as 15h em dia útil, sem atrasar a safra."
   },
   "seo": {
     "title": "Bico Injetor Massey Ferguson Perkins 1104 e 1103 | Armazém",

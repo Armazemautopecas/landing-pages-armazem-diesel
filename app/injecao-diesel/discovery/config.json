@@ -121,7 +121,7 @@
       {
         "num": "03",
         "ttl": "Sua Discovery volta a rodar no mesmo dia.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Sua Discovery não fica parado esperando peça."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Sua Discovery não fica parado esperando peça."
       }
     ]
   },
@@ -148,7 +148,7 @@
       "Dificuldade na partida a frio"
     ],
     "quality_explanation": "O bico injetor Bosch ou Continental que o Discovery usa é calibrado de fábrica pro motor específico (2.7 V6 TDV6 e 3.0 V6 SDV6): pressão de abertura, padrão de pulverização e vedação seguem a especificação do fabricante. Bicos de procedência duvidosa — sem rastreabilidade nem homologação — podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
-    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi sua Discovery. Estoque disponível pra 2.7 V6 TDV6 e 3.0 V6 SDV6, com despacho no mesmo dia útil."
+    "closing": "Na Armazém, identificamos o bico exato pelo número de placa ou chassi sua Discovery. Estoque disponível pra 2.7 V6 TDV6 e 3.0 V6 SDV6, com despacho no mesmo dia pra pagamento confirmado até as 15h em dia útil."
   },
   "seo": {
     "title": "Bico Injetor Land Rover Discovery 2.7 e 3.0 V6 | Armazém",

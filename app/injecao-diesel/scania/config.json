@@ -148,7 +148,7 @@
       {
         "num": "03",
         "ttl": "Seu caminhão volta a rodar no mesmo dia.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — transportadora, frota ou oficina."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Envio pra todo o Brasil — transportadora, frota ou oficina."
       }
     ]
   },
@@ -200,7 +200,7 @@
       "Falha em um ou mais cilindros identificada pela scan"
     ],
     "quality_explanation": "Bico original (OEM) e primeira linha são as duas opções confiáveis pro Scania — a diferença está na origem. O original é calibrado de fábrica pra família específica de motor (XPI DC09, DC13, DC16): padrão de pulverização e vedação seguem a especificação do fabricante. A primeira linha é feita por outro fornecedor também homologado pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa, sem rastreabilidade nem homologação — esse sim pode trabalhar fora da faixa correta e causar injeção irregular com dano ao motor a médio prazo.",
-    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo motor do seu Scania — XPI DC09 9.3, DC13 12.7, DC16 16.4 das séries P, G e R, ou Série 4 (114, 124 e 400). Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação."
+    "closing": "Na Armazém, identificamos o bico exato pelo código do fabricante ou pelo motor do seu Scania — XPI DC09 9.3, DC13 12.7, DC16 16.4 das séries P, G e R, ou Série 4 (114, 124 e 400). Estoque em Chapecó/SC, saída no mesmo dia pra pagamento confirmado até as 15h em dia útil."
   },
   "seo": {
     "title": "Bico Injetor Scania XPI DC13 e Série 4 | Armazém Auto Peças",
