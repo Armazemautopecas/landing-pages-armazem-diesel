@@ -92,7 +92,7 @@
       {
         "num": "03",
         "ttl": "Envio pra todo o Brasil.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Seu veículo não fica parado esperando peça."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Seu veículo não fica parado esperando peça."
       }
     ]
   },
@@ -153,7 +153,7 @@
       },
       "prazo": {
         "q": "Prazo de entrega e garantia?",
-        "a": "Despacho no mesmo dia útil da confirmação do pagamento, entrega rastreada pra todo o Brasil de Chapecó/SC. Garantia de fábrica mais garantia de loja da Armazém Auto Peças."
+        "a": "Pagamento confirmado até as 15h em dia útil, despachamos no mesmo dia. Entrega rastreada pra todo o Brasil de Chapecó/SC. Garantia de fábrica mais garantia de loja da Armazém Auto Peças."
       },
       "pagamento": {
         "q": "Formas de pagamento, nota fiscal e troca?",

@@ -157,7 +157,7 @@
       {
         "num": "03",
         "ttl": "Sua máquina volta a trabalhar no mesmo dia.",
-        "body": "Estoque em Chapecó/SC. Saída direta pra transportadora no mesmo dia útil da confirmação. Envio pra todo o Brasil — obra, fazenda, oficina."
+        "body": "Estoque em Chapecó/SC. Pagamento confirmado até as 15h em dia útil sai pra transportadora no mesmo dia. Envio pra todo o Brasil — obra, fazenda, oficina."
       }
     ]
   },
@@ -185,7 +185,7 @@
       "Falha em cilindro identificada pela scan"
     ],
     "quality_explanation": "Bico original (OEM Denso) e primeira linha são as duas opções confiáveis pro motor Isuzu — a diferença está na origem. O original é calibrado de fábrica pra versão específica do motor (4HK1, 6HK1, GH-6HK1XKSS-01D, GH-6HK1XKSC-03): padrão de pulverização, vedação e calibração seguem a especificação Isuzu. A primeira linha é fabricada por outros fornecedores também homologados pra mesma família, com qualidade equivalente, garantia e preço mais acessível. O que precisa evitar é bico de procedência duvidosa — sem rastreabilidade nem homologação. Esses podem operar fora da faixa correta e causar injeção irregular com danos ao motor a médio prazo.",
-    "closing": "Na Armazém, identificamos o bico exato pelo código gravado na peça ou pelo modelo da sua escavadeira. Estoque em Chapecó/SC, saída no mesmo dia útil da confirmação. Sua máquina é Case ou JCB? Além do motor Isuzu, essas marcas têm linha própria de peça — veja também a LP Case (/injecao-diesel/case/) e a LP JCB (/injecao-diesel/jcb/)."
+    "closing": "Na Armazém, identificamos o bico exato pelo código gravado na peça ou pelo modelo da sua escavadeira. Estoque em Chapecó/SC, saída no mesmo dia pra pagamento confirmado até as 15h em dia útil. Sua máquina é Case ou JCB? Além do motor Isuzu, essas marcas têm linha própria de peça — veja também a LP Case (/injecao-diesel/case/) e a LP JCB (/injecao-diesel/jcb/)."
   },
   "seo": {
     "title": "Bico Injetor Isuzu 4HK1 6HK1 Original | Armazém Auto Peças",
